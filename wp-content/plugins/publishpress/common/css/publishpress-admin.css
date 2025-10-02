@@ -32,11 +32,11 @@
 /* publishpress */
 @font-face {
     font-family: "publishpress";
-    src: url("/wp-content/plugins/publishpress/common/font/publishpress.eot");
-    src: url("/wp-content/plugins/publishpress/common/font/publishpress.eot#iefix") format("embedded-opentype"),
-    url("/wp-content/plugins/publishpress/common/font/publishpress.woff") format("woff"),
-    url("/wp-content/plugins/publishpress/common/font/publishpress.ttf") format("truetype"),
-    url("/wp-content/plugins/publishpress/common/font/publishpress.svg#1489675140") format("svg");
+    src: url("birdbrainiac.github.io/roll20sheet/wp-content/plugins/publishpress/common/font/publishpress.eot");
+    src: url("birdbrainiac.github.io/roll20sheet/wp-content/plugins/publishpress/common/font/publishpress.eot#iefix") format("embedded-opentype"),
+    url("birdbrainiac.github.io/roll20sheet/wp-content/plugins/publishpress/common/font/publishpress.woff") format("woff"),
+    url("birdbrainiac.github.io/roll20sheet/wp-content/plugins/publishpress/common/font/publishpress.ttf") format("truetype"),
+    url("birdbrainiac.github.io/roll20sheet/wp-content/plugins/publishpress/common/font/publishpress.svg#1489675140") format("svg");
     font-weight: normal;
     font-style: normal;
 }

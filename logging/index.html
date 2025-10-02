@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<title>Logging in the Browser Console &ndash; Cybersphere</title>
+<meta name="robots" content="max-image-preview:large">
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<link rel="dns-prefetch" href="//stats.wp.com">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="preconnect" href="//c0.wp.com">
+<link rel="alternate" type="application/rss+xml" title="Cybersphere &raquo; Feed" href="birdbrainiac.github.io/roll20sheet/feed/">
+<link rel="alternate" type="application/rss+xml" title="Cybersphere &raquo; Comments Feed" href="birdbrainiac.github.io/roll20sheet/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Cybersphere &raquo; Logging in the Browser Console Comments Feed" href="birdbrainiac.github.io/roll20sheet/logging/feed/">
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"birdbrainiac.github.io\/roll20sheet\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.3"}};
+/*! This file is auto-generated */
+!function(s,n){var o,i,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),a=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===a[t]})}function u(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);for(var n=e.getImageData(16,16,1,1),a=0;a<n.data.length;a++)if(0!==n.data[a])return!1;return!0}function f(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\udedf")}return!1}function g(e,t,n,a){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):s.createElement("canvas"),o=r.getContext("2d",{willReadFrequently:!0}),i=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(function(e){i[e]=t(o,e,n,a)}),i}function t(e){var t=s.createElement("script");t.src=e,t.defer=!0,s.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",i=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){s.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+g.toString()+"("+[JSON.stringify(i),f.toString(),p.toString(),u.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"}),r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=function(e){c(n=e.data),r.terminate(),t(n)})}catch(e){}c(n=g(i,f,p,u))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<link rel="stylesheet" id="sdm-styles-css" href="birdbrainiac.github.io/roll20sheet/wp-content/plugins/simple-download-monitor/css/sdm_wp_styles.css?ver=6.8.3" type="text/css" media="all">
+<style id="wp-emoji-styles-inline-css" type="text/css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel="stylesheet" id="wp-block-library-css" href="https://c0.wp.com/c/6.8.3/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all">
+<style id="classic-theme-styles-inline-css" type="text/css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<link rel="stylesheet" id="mediaelement-css" href="https://c0.wp.com/c/6.8.3/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-mediaelement-css" href="https://c0.wp.com/c/6.8.3/wp-includes/js/mediaelement/wp-mediaelement.min.css" type="text/css" media="all">
+<style id="jetpack-sharing-buttons-style-inline-css" type="text/css">
+.jetpack-sharing-buttons__services-list{display:flex;flex-direction:row;flex-wrap:wrap;gap:0;list-style-type:none;margin:5px;padding:0}.jetpack-sharing-buttons__services-list.has-small-icon-size{font-size:12px}.jetpack-sharing-buttons__services-list.has-normal-icon-size{font-size:16px}.jetpack-sharing-buttons__services-list.has-large-icon-size{font-size:24px}.jetpack-sharing-buttons__services-list.has-huge-icon-size{font-size:36px}@media print{.jetpack-sharing-buttons__services-list{display:none!important}}.editor-styles-wrapper .wp-block-jetpack-sharing-buttons{gap:0;padding-inline-start:0}ul.jetpack-sharing-buttons__services-list.has-background{padding:1.25em 2.375em}
+</style>
+<link rel="stylesheet" id="syntax-highlighting-code-block-theme-css" href="birdbrainiac.github.io/roll20sheet/wp-content/plugins/syntax-highlighting-code-block/vendor/scrivo/highlight-php/styles/github.css?ver=1.5.1" type="text/css" media="all">
+<style id="syntax-highlighting-code-block-inline-css" type="text/css">
+.wp-block-code {
+	border: 0;
+	padding: 0;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+.wp-block-code > span {
+	display: block;
+	overflow: auto;
+}
+
+.shcb-language {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	-webkit-clip-path: inset(50%);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	word-wrap: normal;
+	word-break: normal;
+}
+
+.hljs {
+	box-sizing: border-box;
+}
+
+.hljs.shcb-code-table {
+	display: table;
+	width: 100%;
+}
+
+.hljs.shcb-code-table > .shcb-loc {
+	color: inherit;
+	display: table-row;
+	width: 100%;
+}
+
+.hljs.shcb-code-table .shcb-loc > span {
+	display: table-cell;
+}
+
+.wp-block-code code.hljs:not(.shcb-wrap-lines) {
+	white-space: pre;
+}
+
+.wp-block-code code.hljs.shcb-wrap-lines {
+	white-space: pre-wrap;
+}
+
+.hljs.shcb-line-numbers {
+	border-spacing: 0;
+	counter-reset: line;
+}
+
+.hljs.shcb-line-numbers > .shcb-loc {
+	counter-increment: line;
+}
+
+.hljs.shcb-line-numbers .shcb-loc > span {
+	padding-left: 0.75em;
+}
+
+.hljs.shcb-line-numbers .shcb-loc::before {
+	border-right: 1px solid #ddd;
+	content: counter(line);
+	display: table-cell;
+	padding: 0 0.75em;
+	text-align: right;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	white-space: nowrap;
+	width: 1%;
+}
+
+.hljs > mark.shcb-loc { background-color: #ddf6ff; }
+</style>
+<style id="global-styles-inline-css" type="text/css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="stylesheet" id="rgg-simplelightbox-css" href="birdbrainiac.github.io/roll20sheet/wp-content/plugins/responsive-gallery-grid/lib/simplelightbox/simplelightbox.min.css?ver=2.3.18" type="text/css" media="all">
+<link rel="stylesheet" id="slickstyle-css" href="birdbrainiac.github.io/roll20sheet/wp-content/plugins/responsive-gallery-grid/lib/slick/slick.1.9.0.min.css?ver=2.3.18" type="text/css" media="all">
+<link rel="stylesheet" id="slick-theme-css" href="birdbrainiac.github.io/roll20sheet/wp-content/plugins/responsive-gallery-grid/lib/slick/slick-theme.css?ver=2.3.18" type="text/css" media="all">
+<link rel="stylesheet" id="rgg-style-css" href="birdbrainiac.github.io/roll20sheet/wp-content/plugins/responsive-gallery-grid/css/style.css?ver=2.3.18" type="text/css" media="all">
+<link rel="stylesheet" id="light-style-css" href="birdbrainiac.github.io/roll20sheet/wp-content/plugins/organize-series/orgSeriesLightTheme.css?ver=6.8.3" type="text/css" media="all">
+<link rel="stylesheet" id="chld_thm_cfg_parent-css" href="birdbrainiac.github.io/roll20sheet/wp-content/themes/gridme/style.css?ver=6.8.3" type="text/css" media="all">
+<link rel="stylesheet" id="gridme-maincss-css" href="birdbrainiac.github.io/roll20sheet/wp-content/themes/gridme-child/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="fontawesome-css" href="birdbrainiac.github.io/roll20sheet/wp-content/themes/gridme/assets/css/all.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="chld_thm_cfg_separate-css" href="birdbrainiac.github.io/roll20sheet/wp-content/themes/gridme-child/ctc-style.css?ver=6.8.3" type="text/css" media="all">
+<link rel="stylesheet" id="gridme-webfont-css" href="//fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i%7CDomine:400,700%7COswald:400,700%7CPatua+One&amp;display=swap" type="text/css" media="all">
+<link rel="stylesheet" id="kadence-blocks-tabs-css" href="birdbrainiac.github.io/roll20sheet/wp-content/plugins/kadence-blocks/dist/style-blocks-tabs.css?ver=3.5.21" type="text/css" media="all">
+<style id="kadence-blocks-global-variables-inline-css" type="text/css">
+:root {--global-kb-font-size-sm:clamp(0.8rem, 0.73rem + 0.217vw, 0.9rem);--global-kb-font-size-md:clamp(1.1rem, 0.995rem + 0.326vw, 1.25rem);--global-kb-font-size-lg:clamp(1.75rem, 1.576rem + 0.543vw, 2rem);--global-kb-font-size-xl:clamp(2.25rem, 1.728rem + 1.63vw, 3rem);--global-kb-font-size-xxl:clamp(2.5rem, 1.456rem + 3.26vw, 4rem);--global-kb-font-size-xxxl:clamp(2.75rem, 0.489rem + 7.065vw, 6rem);}:root {--global-palette1: #3182CE;--global-palette2: #2B6CB0;--global-palette3: #1A202C;--global-palette4: #2D3748;--global-palette5: #4A5568;--global-palette6: #718096;--global-palette7: #EDF2F7;--global-palette8: #F7FAFC;--global-palette9: #ffffff;}
+</style>
+<style id="kadence_blocks_css-inline-css" type="text/css">
+.kt-tabs-id_af61ac-2c > .kt-tabs-content-wrap > .wp-block-kadence-tab{border-top-width:3px;border-right-width:0px;border-bottom-width:0px;border-left-width:0px;border-color:#0a6689;background:#ffffff;}.wp-block-kadence-tabs .kt-tabs-id_af61ac-2c > .kt-tabs-title-list li{margin-top:0px;margin-right:8px;margin-bottom:0px;margin-left:0px;}.wp-block-kadence-tabs .kt-tabs-id_af61ac-2c > .kt-tabs-title-list li:last-child{margin-right:0px;}.wp-block-kadence-tabs .kt-tabs-id_af61ac-2c > .kt-tabs-title-list li .kt-tab-title, .wp-block-kadence-tabs .kt-tabs-id_af61ac-2c > .kt-tabs-content-wrap > .kt-tabs-accordion-title .kt-tab-title{font-size:1.1em;line-height:1.4em;border-top-width:0px;border-right-width:0px;border-bottom-width:0px;border-left-width:0px;border-top-left-radius:4px;border-top-right-radius:4px;border-bottom-right-radius:0px;border-bottom-left-radius:0px;padding-top:8px;padding-right:20px;padding-bottom:8px;padding-left:20px;border-color:#eeeeee;color:#222222;background:#eeeeee;}.wp-block-kadence-tabs .kt-tabs-id_af61ac-2c > .kt-tabs-content-wrap > .kt-tabs-accordion-title .kt-tab-title{margin-top:0px;margin-right:8px;margin-bottom:0px;margin-left:0px;}.wp-block-kadence-tabs .kt-tabs-id_af61ac-2c > .kt-tabs-title-list li .kt-tab-title:hover, .wp-block-kadence-tabs .kt-tabs-id_af61ac-2c > .kt-tabs-content-wrap > .kt-tabs-accordion-title .kt-tab-title:hover{border-color:#eeeeee;color:#222222;background:#e2e2e2;}.wp-block-kadence-tabs .kt-tabs-id_af61ac-2c > .kt-tabs-title-list li.kt-tab-title-active .kt-tab-title, .wp-block-kadence-tabs .kt-tabs-id_af61ac-2c > .kt-tabs-content-wrap > .kt-tabs-accordion-title.kt-tab-title-active .kt-tab-title{border-color:#eeeeee;color:#ffffff;background:#0a6689;}.kt-tabs-id_38340b-fa > .kt-tabs-content-wrap > .wp-block-kadence-tab{border-top-width:3px;border-right-width:0px;border-bottom-width:0px;border-left-width:0px;border-color:#0a6689;background:#ffffff;}.wp-block-kadence-tabs .kt-tabs-id_38340b-fa > .kt-tabs-title-list li{margin-top:0px;margin-right:8px;margin-bottom:0px;margin-left:0px;}.wp-block-kadence-tabs .kt-tabs-id_38340b-fa > .kt-tabs-title-list li:last-child{margin-right:0px;}.wp-block-kadence-tabs .kt-tabs-id_38340b-fa > .kt-tabs-title-list li .kt-tab-title, .wp-block-kadence-tabs .kt-tabs-id_38340b-fa > .kt-tabs-content-wrap > .kt-tabs-accordion-title .kt-tab-title{font-size:1.1em;line-height:1.4em;border-top-width:0px;border-right-width:0px;border-bottom-width:0px;border-left-width:0px;border-top-left-radius:4px;border-top-right-radius:4px;border-bottom-right-radius:0px;border-bottom-left-radius:0px;padding-top:8px;padding-right:20px;padding-bottom:8px;padding-left:20px;border-color:#eeeeee;color:#222222;background:#eeeeee;}.wp-block-kadence-tabs .kt-tabs-id_38340b-fa > .kt-tabs-content-wrap > .kt-tabs-accordion-title .kt-tab-title{margin-top:0px;margin-right:8px;margin-bottom:0px;margin-left:0px;}.wp-block-kadence-tabs .kt-tabs-id_38340b-fa > .kt-tabs-title-list li .kt-tab-title:hover, .wp-block-kadence-tabs .kt-tabs-id_38340b-fa > .kt-tabs-content-wrap > .kt-tabs-accordion-title .kt-tab-title:hover{border-color:#eeeeee;color:#222222;background:#e2e2e2;}.wp-block-kadence-tabs .kt-tabs-id_38340b-fa > .kt-tabs-title-list li.kt-tab-title-active .kt-tab-title, .wp-block-kadence-tabs .kt-tabs-id_38340b-fa > .kt-tabs-content-wrap > .kt-tabs-accordion-title.kt-tab-title-active .kt-tab-title{border-color:#eeeeee;color:#ffffff;background:#0a6689;}
+</style>
+<script type="text/javascript" src="https://c0.wp.com/c/6.8.3/wp-includes/js/jquery/jquery.min.js" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://c0.wp.com/c/6.8.3/wp-includes/js/jquery/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="sdm-scripts-js-extra">
+/* <![CDATA[ */
+var sdm_ajax_script = {"ajaxurl":"birdbrainiac.github.io\/roll20sheet\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="birdbrainiac.github.io/roll20sheet/wp-content/plugins/simple-download-monitor/js/sdm_wp_scripts.js?ver=6.8.3" id="sdm-scripts-js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="birdbrainiac.github.io/roll20sheet/wp-content/themes/gridme/assets/js/respond.min.js" id="respond-js"></script>
+<![endif]-->
+<link rel="https://api.w.org/" href="birdbrainiac.github.io/roll20sheet/wp-json/"><link rel="alternate" title="JSON" type="application/json" href="birdbrainiac.github.io/roll20sheet/wp-json/wp/v2/posts/3970"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="birdbrainiac.github.io/roll20sheet/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.8.3">
+<link rel="canonical" href="birdbrainiac.github.io/roll20sheet/logging/">
+<link rel="shortlink" href="birdbrainiac.github.io/roll20sheet/?p=3970">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="birdbrainiac.github.io/roll20sheet/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Flogging%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="birdbrainiac.github.io/roll20sheet/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Flogging%2F&amp;format=xml">
+<style>
+
+	.enlighter-t-enlighter .enlighter-text {
+		color: red;
+	}
+	.enlighter-t-enlighter .enlighter-x12 {
+	  color: blue;
+	  text-decoration: none;
+	}
+
+</style>
+	<style>img#wpstats{display:none}</style>
+		<link rel="pingback" href="birdbrainiac.github.io/roll20sheet/xmlrpc.php">    <style type="text/css">
+            .gridme-site-title, .gridme-site-title a, .gridme-site-title a:hover, .gridme-site-title a:focus, .gridme-site-title a:active, .gridme-site-description {color: #ffffff;}
+        </style>
+    <style type="text/css" id="custom-background-css">
+body.custom-background { background-image: url("birdbrainiac.github.io/roll20sheet/wp-content/themes/gridme/assets/images/background.png"); background-position: left top; background-size: auto; background-repeat: repeat; background-attachment: fixed; }
+</style>
+			<style type="text/css" id="wp-custom-css">
+			/* widget separation is too high */
+.gridme-sidebar-widget-areas .widget {
+	margin-bottom: 20px;
+}
+.gridme-sidebar-widget-areas .widget li {
+  padding: 0 0 6px 0px;
+}
+.gridme-sidebar-widget-areas .widget li li {
+	padding: 0 0 0 10px;
+}
+
+/* font size */
+.entry-content p,
+.entry-content ol,
+.entry-content ul {
+	font-size: 110%;
+	
+}
+
+/* temporary date box */
+.gridme-grid-post .gridme-grid-datebox {
+	width:47px;
+}
+
+.gridme-grid-post-details {
+	height: 100px;
+}
+
+.gridme-grid-post,
+.gridme-sidebar-widget-areas .widget {
+	margin-bottom: 15px;
+}
+
+h2 {
+	font-variant-caps: small-caps;
+	background-color: none; /*black; */
+	border-radius:5px;
+	color: #ec008c; /* #f8f8f8;*/
+	padding: 5px;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	border: 1pt solid #ec008c;
+text-align: center;
+	text-decoration: none;
+}
+h3 {
+  text-decoration: underline;
+}
+.entry-title {
+	font: normal bold 32px 'Playfair Display',Arial,sans-serif;
+		/* normal normal 32px Domine,Arial,Helvetica,sans-serif; */
+	background-color: black;
+	padding: 10px;
+	padding-bottom: 15px;
+	border-radius: 10px;
+	color: #f8f8f8;
+	
+}
+.entry-title a,
+.entry-title a:hover {
+	color: #f8f8f8;
+	text-shadow: 2px 0px 4px #000000;
+}
+/* roll20 colours */
+h1, /* h2, */
+h1.page-title,
+.entry-title,
+.gridme-header-inside,
+.gridme-sidebar-widget-areas .widget .gridme-widget-title,
+.gridme-grid-post .gridme-grid-datebox{
+	color: #FFF;
+	background-color: #ec008c;
+	border-color: #ec008c;
+}
+h1.gridme-site-title {
+	background: transparent;
+}
+/* no gradient on datebox */
+h1, /* h2, */ 
+h1.page-title,
+.entry-title,
+.gridme-header-inside,
+.gridme-sidebar-widget-areas .widget .gridme-widget-title {
+  background: linear-gradient(0deg, rgba(238,174,202,1) 0%, rgba(236,0,110,1) 30%);
+}
+
+h2 {
+	border-radius: 15px;
+	color: #FFF;
+	background-color: #ec008c;
+	border-color: #ec008c;
+}
+
+p {
+	border-radius: 15px;
+}
+.gridme-page-header-inside {
+	width: 100%;
+}
+.gridme-grid-post .gridme-grid-datebox {
+	border-radius: 10px;
+}
+h1.page-title {
+	padding: 10px 50px 15px 50px;
+	border-radius: 10px;
+}
+
+/* active tab colour */
+.wp-block-kadence-tabs .kt-tabs-wrap > .kt-tabs-title-list li.kt-tab-title-active .kt-tab-title {
+	background: #ec008c;
+}
+
+div.enlighter {
+	background-color: whitesmoke;
+}
+
+.curved {
+	border-radius: 10%;
+}
+
+div.taxonomy-description {
+  background-color: #ffffff;
+  color: #333;
+  text-shadow: none;
+	padding: 10px;
+	margin-left: 7px;
+	margin-right: 7px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+/* footer titles */
+#gridme-footer-blocks .widget .gridme-widget-title {
+	padding-top: 7px;
+}
+
+.gridme-primary-nav-menu > li > a {
+  font-size: 120%;
+}
+
+h2 {
+border-radius: 0;
+color: #ec008c;
+background-color: transparent;
+border: 0;
+border-bottom: 1pt solid #ec008c;
+border-top: 3pt solid #ec008c;
+}
+h3 {
+	color: #ec008c;
+}
+
+.gridme-logo {
+	-webkit-flex: 0 0 18%;
+	width: 18%;
+	max-width: 18%;
+	
+}
+.gridme-header-menu {
+	-webkit-flex: 0 0 80%;
+	width: 80%;
+	max-width: 80%;
+}
+
+.wp-block-kadence-tabs .kt-tabs-wrap > .kt-tabs-title-list li.kt-tab-title-active .kt-tab-title {
+	color: white;
+}
+.kt-tabs-wrap  > .kt-tabs-content-wrap > .wp-block-kadence-tab {
+	border-top-color: #ec008c;
+}
+
+ul.lcp_catlist li a {
+	font-weight:bold;
+	color: #ec008c;
+}
+div.seriesbox {
+	display:none;
+}
+div.seriesbox a,
+span.series-nav-left a,
+.entry-content a {
+	color: #ec008c;
+}
+.wp-block-kadence-tabs .kt-tabs-mobile-layout-accordion > .kt-tabs-title-list li.kt-tab-title-active .kt-tab-title,
+.wp-block-kadence-tabs .kt-tabs-mobile-layout-accordion > .kt-tabs-content-wrap > .kt-tabs-accordion-title.kt-tab-title-active .kt-tab-title{
+	background-color: #ec008c;
+}
+
+.entry-content ul.lcp_catlist {
+	list-style: decimal;
+}
+
+.gridme-featured-posts-area .widget {
+	text-align: center;
+}
+
+#post-5420 div.seriesbox {
+	display: none;
+}
+
+.border-top {
+	border-top: 1pt solid black;
+	border-left: 1pt solid black;
+	border-right: 1pt solid black;
+	background-color: antiquewhite;
+	color:black;
+	margin-bottom: 0;
+	padding-bottom: 12px;
+	margin-left: 2%;
+	margin-right: 2%;
+	padding-left: 1%;
+	padding-right: 1%;
+	padding-top: 8px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.border-bottom {
+	border-bottom: 1pt solid black;
+	border-left: 1pt solid black;
+	border-right: 1pt solid black;
+	background-color: antiquewhite;
+	border-radius: 0;
+	margin-left: 2%;
+	margin-right: 2%;
+	padding-left: 1%;
+	padding-right: 1%;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+#gridme-posts-wrapper div.so-panel {
+	margin-bottom: 0;
+}
+
+.panel-grid.panel-no-style {
+	margin-bottom: 0px !important;
+	text-align: center;
+}
+.panel-grid-cell h3.widget-title {
+  margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+.panel-grid-cell .panel-last-child {
+  margin-bottom: 0;
+  width: 107%;
+	margin-left: -10px;
+}
+.series-nav-right  {
+	float:right
+}
+.gridme-masonry-inactive .gridme-grid-post.gridme-4-col {
+	margin-right: 5px;
+}
+
+.front-page .gridme-grid-post .gridme-grid-datebox {
+  width: 60px;
+}
+.front-page .gridme-grid-post .gridme-grid-datebox {
+  height:75px;
+ }
+.front-page .gridme-grid-post .gridme-grid-datebox .gridme-grid-datebox-day {
+  font-size: 24px;
+}
+.front-page .gridme-grid-post .gridme-grid-datebox .gridme-grid-datebox-month,
+.front-page .gridme-grid-post .gridme-grid-datebox .gridme-grid-datebox-year
+ {
+  font-size: 16px;
+}
+
+#post-8842 h2, #post-8842 h3 {
+	clear: none;
+}
+.heading-band,
+.heading-band a {
+   background-color: #ec008c;
+	color: white;
+}
+.heading-band {
+	border-radius: 10px;
+	font-size: 170%;
+  margin-top: 20px;
+}
+div.gridme-box-inside a:hover {
+	color:yellow; 
+	text-decoration: underline;
+	background:#ec008c;
+	  padding: 5px;
+  margin-left: -5px;
+	border-radius: 5px;
+	
+}
+.heading-band a:hover {
+	color:yellow;
+}
+
+div.front-page a:hover {
+	background:initial;
+}
+
+p.emphasis {
+	font-weight: bold;
+	background-color: #ec008c;
+	color: white;
+	margin-bottom: 2px;
+}
+#ez-toc-container.ez-toc-black {
+  background: #ec008c;
+	border-radius: 15px;
+}
+#ez-toc-container .ez-toc-link:hover,
+#ez-toc-container .ez-toc-link:visited {
+	background-color: blue;	
+}
+
+div.display-posts-online {
+	display: grid;
+	grid-template-columns: repeat(4, 25%);
+	text-align: center;
+}
+div.display-posts-online div.listing-item {
+	display: grid;
+}
+
+div.display-posts-online div.listing-item a.image,
+div.display-posts-online div.listing-item .title,
+div.display-posts-online div.listing-item .excerpt {
+	grid-column: 1 / -1;
+
+}
+div.display-posts-online div.listing-item .excerpt-dash {
+	display: none;
+}
+.small-column {
+	font-size: 70% !important;
+}		</style>
+		</head>
+
+<body class="wp-singular post-template-default single single-post postid-3970 single-format-standard custom-background wp-theme-gridme wp-child-theme-gridme-child gridme-animated gridme-fadein gridme-theme-is-active gridme-layout-type-full gridme-masonry-inactive gridme-header-menu-active gridme-tagline-inactive gridme-primary-menu-active gridme-primary-mobile-menu-active gridme-secondary-mobile-menu-active gridme-secondary-menu-centered gridme-footer-social-buttons-active gridme-uc-links" id="gridme-site-body" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+<a class="skip-link screen-reader-text" href="#gridme-content-wrapper">Skip to content</a>
+
+
+
+<div class="gridme-site-header gridme-container" id="gridme-header" itemscope="itemscope" itemtype="http://schema.org/WPHeader" role="banner">
+<div class="gridme-head-content gridme-clearfix" id="gridme-head-content">
+
+<div class="gridme-header-inside gridme-clearfix">
+<div class="gridme-header-inside-content gridme-clearfix">
+<div class="gridme-outer-wrapper">
+<div class="gridme-header-inside-container">
+
+<div class="gridme-logo">
+    <div class="site-branding">
+                  <p class="gridme-site-title"><a href="birdbrainiac.github.io/roll20sheet/" rel="home">Cybersphere</a></p>
+                    </div>
+</div>
+
+<div class="gridme-header-menu">
+<div class="gridme-container gridme-primary-menu-container gridme-clearfix">
+<div class="gridme-primary-menu-container-inside gridme-clearfix">
+<nav class="gridme-nav-primary" id="gridme-primary-navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement" role="navigation" aria-label="Primary Menu">
+<button class="gridme-primary-responsive-menu-icon" aria-controls="gridme-menu-primary-navigation" aria-expanded="false">Menu</button>
+<ul id="gridme-menu-primary-navigation" class="gridme-primary-nav-menu gridme-menu-primary gridme-clearfix"><li id="menu-item-8501" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8501"><a href="birdbrainiac.github.io/roll20sheet/blog/">Blog</a></li>
+<li id="menu-item-5625" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-5625"><a href="birdbrainiac.github.io/roll20sheet/roll20-sheet-author-master-list/">Roll20 Sheet Author</a>
+<ul class="sub-menu">
+	<li id="menu-item-5639" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5639"><a href="birdbrainiac.github.io/roll20sheet/guide-to-the-guide/">Guide to the Guide</a></li>
+	<li id="menu-item-4245" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-4245"><a href="birdbrainiac.github.io/roll20sheet/html-building-blocks/">HTML</a></li>
+	<li id="menu-item-4244" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-4244"><a href="birdbrainiac.github.io/roll20sheet/guide-to-css-styling-a-character-sheet/">CSS</a></li>
+	<li id="menu-item-4246" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-4246"><a href="birdbrainiac.github.io/roll20sheet/sheet-workers-automating-the-sheet/">Sheet Workers</a></li>
+	<li id="menu-item-8768" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-8768"><a href="birdbrainiac.github.io/roll20sheet/repeating-section/">Repeating Sections</a></li>
+	<li id="menu-item-9903" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9903"><a href="birdbrainiac.github.io/roll20sheet/guide-to-rolltemplates-and-translations/">rollTemplates</a></li>
+	<li id="menu-item-11340" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11340"><a href="birdbrainiac.github.io/roll20sheet/guide-to-custom-roll-parsing/">Custom Roll Parsing</a></li>
+	<li id="menu-item-12152" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12152"><a href="birdbrainiac.github.io/roll20sheet/guide-to-rolltemplates-and-translations/">Translations</a></li>
+	<li id="menu-item-13092" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13092"><a href="birdbrainiac.github.io/roll20sheet/guide-to-sheet-templating/">Templating with Handlebars</a></li>
+</ul>
+</li>
+<li id="menu-item-1513" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1513"><a href="birdbrainiac.github.io/roll20sheet/category/online/playing-roll20/">Playing Online</a></li>
+<li id="menu-item-923" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-923"><a href="birdbrainiac.github.io/roll20sheet/category/thinking/">RPG Talk</a>
+<ul class="sub-menu">
+	<li id="menu-item-925" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-925"><a href="birdbrainiac.github.io/roll20sheet/category/thinking/pendragon/">Pendragon</a></li>
+</ul>
+</li>
+<li id="menu-item-8776" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8776"><a href="birdbrainiac.github.io/roll20sheet/game-reviews/">Reviews</a></li>
+<li id="menu-item-8765" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-8765"><a href="birdbrainiac.github.io/roll20sheet/game-designs/">Game Designs</a>
+<ul class="sub-menu">
+	<li id="menu-item-11517" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11517"><a href="birdbrainiac.github.io/roll20sheet/starscape/">Starscape</a></li>
+	<li id="menu-item-13096" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13096"><a href="birdbrainiac.github.io/roll20sheet/carrington/">The Carrington Event</a></li>
+	<li id="menu-item-8766" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8766"><a href="birdbrainiac.github.io/roll20sheet/legends-never-die/">Legends Never Die!</a></li>
+	<li id="menu-item-11518" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11518"><a href="birdbrainiac.github.io/roll20sheet/more-games/">More Games</a></li>
+</ul>
+</li>
+<li id="menu-item-1693" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1693"><a href="birdbrainiac.github.io/roll20sheet/about/">About</a>
+<ul class="sub-menu">
+	<li id="menu-item-1692" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1692"><a href="birdbrainiac.github.io/roll20sheet/portfolio/">Portfolio</a></li>
+</ul>
+</li>
+<li class="gridme-header-icon-search-item"><a href="#" aria-label="Search Button" class="gridme-header-icon-search"><i class="fas fa-search" aria-hidden="true" title="Search"></i></a></li></ul></nav>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div><!--/#gridme-head-content -->
+</div><!--/#gridme-header -->
+
+<div id="gridme-search-overlay-wrap" class="gridme-search-overlay">
+  <div class="gridme-search-overlay-content">
+    
+<form role="search" method="get" class="gridme-search-form" action="birdbrainiac.github.io/roll20sheet/">
+<label>
+    <span class="gridme-sr-only">Search for:</span>
+    <input type="search" class="gridme-search-field" placeholder="Search &hellip;" value="" name="s">
+</label>
+<input type="submit" class="gridme-search-submit" value="">
+</form>  </div>
+  <button class="gridme-search-closebtn" aria-label="Close Search" title="Close Search">&times;</button>
+</div>
+
+
+<div id="gridme-header-end"></div>
+
+
+
+
+<div class="gridme-outer-wrapper" id="gridme-wrapper-outside">
+
+<div class="gridme-container gridme-clearfix" id="gridme-wrapper">
+<div class="gridme-content-wrapper gridme-clearfix" id="gridme-content-wrapper">
+<div class="gridme-main-wrapper gridme-clearfix" id="gridme-main-wrapper" itemscope="itemscope" itemtype="http://schema.org/Blog" role="main">
+<div class="theiaStickySidebar">
+<div class="gridme-main-wrapper-inside gridme-clearfix">
+
+
+
+
+<div class="gridme-posts-wrapper" id="gridme-posts-wrapper">
+
+
+
+<article id="post-3970" class="gridme-post-singular gridme-box post-3970 post type-post status-publish format-standard has-post-thumbnail hentry category-sheet-worker-guide tag-javascript tag-log tag-console tag-console-log tag-console-info tag-console-styles tag-console-groups tag-console-clear series-guide-to-sheet-workers wpcat-263-id">
+<div class="gridme-box-inside">
+
+    
+        <header class="entry-header">
+    <div class="entry-header-inside gridme-clearfix">
+                    <h1 class="post-title entry-title"><a href="birdbrainiac.github.io/roll20sheet/logging/" rel="bookmark">Logging in the Browser Console</a></h1>        
+                    <div class="gridme-entry-meta-single">
+        <span class="gridme-entry-meta-single-date"><i class="far fa-clock" aria-hidden="true"></i>&nbsp;February 28, 2023</span>        <span class="gridme-entry-meta-single-comments"><i class="far fa-comments" aria-hidden="true"></i>&nbsp;<a href="birdbrainiac.github.io/roll20sheet/logging/#respond">Leave a Comment<span class="gridme-sr-only"> on Logging in the Browser Console</span></a></span>
+        <span class="gridme-entry-meta-single-cats"><i class="far fa-folder-open" aria-hidden="true"></i>&nbsp;<span class="gridme-sr-only">Posted in </span><a href="birdbrainiac.github.io/roll20sheet/category/sheet-author/sheet-worker/sheet-worker-guide/" rel="category tag">Sheet Worker Guide</a></span>        </div>
+        </div>
+    </header><!-- .entry-header -->
+    
+    
+    <div class="entry-content gridme-clearfix">
+            <div class="seriesbox"><div class="center"><br><a href="birdbrainiac.github.io/roll20sheet/series/guide-to-sheet-workers/" class="series-143" title="Guide to Sheet Workers">Guide to Sheet Workers</a></div><ol class="serieslist-ol"><li class="serieslist-li"><a href="birdbrainiac.github.io/roll20sheet/anatomy-of-a-sheet-worker/" title="Anatomy of a Sheet Worker">Anatomy of a Sheet Worker</a></li> <li class="serieslist-li"><a href="birdbrainiac.github.io/roll20sheet/variables/" title="Variables &ndash; How to Name Things">Variables &ndash; How to Name Things</a></li> <li class="serieslist-li"><a href="birdbrainiac.github.io/roll20sheet/arithmetic/" title="Arithmetic in Sheet Workers">Arithmetic in Sheet Workers</a></li> <li class="serieslist-li"><a href="birdbrainiac.github.io/roll20sheet/what-if/" title="What If? in Sheet Workers">What If? in Sheet Workers</a></li> <li class="serieslist-li"><a href="birdbrainiac.github.io/roll20sheet/arrays-in-sheet-workers/" title="Arrays and Dropdowns">Arrays and Dropdowns</a></li> <li class="serieslist-li"><a href="birdbrainiac.github.io/roll20sheet/javascript-objects/" title="JavaScript Objects">JavaScript Objects</a></li> <li class="serieslist-li"><a href="birdbrainiac.github.io/roll20sheet/getting-loopy-with-javascript/" title="Getting Loopy With JavaScript">Getting Loopy With JavaScript</a></li> <li class="serieslist-li"><a href="birdbrainiac.github.io/roll20sheet/strings/" title="Strings in Sheet Workers">Strings in Sheet Workers</a></li> <li class="serieslist-li-current">Logging in the Browser Console</li> <li class="serieslist-li"><a href="birdbrainiac.github.io/roll20sheet/strings-arrays-and-loops/" title="Strings, Arrays, and Loops">Strings, Arrays, and Loops</a></li> <li class="serieslist-li"><a href="birdbrainiac.github.io/roll20sheet/undefined-and-other-errors/" title="Undefined and Other Error Values">Undefined and Other Error Values</a></li> <li class="serieslist-li"><a href="birdbrainiac.github.io/roll20sheet/asynchronicity-and-things-to-avoid-with-loops/" title="Asynchronicity and Things to Avoid With Loops">Asynchronicity and Things to Avoid With Loops</a></li> <li class="serieslist-li"><a href="birdbrainiac.github.io/roll20sheet/events/" title="Events, and watching Attributes">Events, and watching Attributes</a></li> <li class="serieslist-li"><a href="birdbrainiac.github.io/roll20sheet/eventinfo/" title="Changes and the eventInfo Object">Changes and the eventInfo Object</a></li> <li class="serieslist-li"><a href="birdbrainiac.github.io/roll20sheet/action-buttons/" title="Action Buttons">Action Buttons</a></li> <li class="serieslist-li"><a href="birdbrainiac.github.io/roll20sheet/saving-attributes/" title="setAttrs and Saving Attributes">setAttrs and Saving Attributes</a></li> <li class="serieslist-li"><a href="birdbrainiac.github.io/roll20sheet/ternary/" title="The Ternary Operator &ndash; The One-Line If">The Ternary Operator &ndash; The One-Line If</a></li> <li class="serieslist-li"><a href="birdbrainiac.github.io/roll20sheet/template-literals/" title="Template Literals">Template Literals</a></li> <li class="serieslist-li"><a href="birdbrainiac.github.io/roll20sheet/functions/" title="Functions and the Fat Arrow">Functions and the Fat Arrow</a></li> <li class="serieslist-li"><a href="birdbrainiac.github.io/roll20sheet/overview-of-things/" title="A Sheet Worker Reprise">A Sheet Worker Reprise</a></li> <li class="serieslist-li"><a href="birdbrainiac.github.io/roll20sheet/castle-falkenstein-design-4-sheet-workers/" title="Castle Falkenstein Design &ndash; Sheet Workers">Castle Falkenstein Design &ndash; Sheet Workers</a></li> <li class="serieslist-li"><a href="birdbrainiac.github.io/roll20sheet/the-perils-of-sheet-worker-functions/" title="The Perils of Sheet Worker Functions">The Perils of Sheet Worker Functions</a></li> <li class="serieslist-li"><a href="birdbrainiac.github.io/roll20sheet/the-script-block-and-worker-construction/" title="The Script Block and Identifying Characters">The Script Block and Identifying Characters</a></li></ol></div>
+<p>When you create a character sheet on Roll20, you are working <em>in the browser</em>, or maybe you write the sheet in a <a href="birdbrainiac.github.io/roll20sheet/use-a-code-editor/">Programming Editor</a> like <a href="birdbrainiac.github.io/roll20sheet/use-a-code-editor/" target="_blank" rel="noreferrer noopener">Visual Studio Code</a> and run the sheet in the <a href="birdbrainiac.github.io/roll20sheet/custom-sheet-sandbox/">Sandbox</a>. Either way, you see the fruits of your labour in the browser, and that makes it hard to see what is going on in the code itself. If there&rsquo;s an error, often the code just doesn&rsquo;t run and you are left scratching your head wondering what happened. </p>
+
+
+
+<p>This is where the browser console comes in. You can use it to find out what is going on. (For those who have written many sheet workers before, pay attention: you might encounter a lot of stuff you haven&rsquo;t seen before.)</p>
+
+
+
+<h2 class="wp-block-heading">Finding The Browser Console</h2>
+
+
+
+<p>The Console is not usually visible. Whether in Chrome or Firefox, press the F12 key on your keyboard. A sidebar (maybe at the bottom in Chrome) like the one below will appear. See those tabs: Inspector, Console, Debugger, and maybe more. Click the Console one, and that&rsquo;s it, you&rsquo;re in the console.</p>
+
+
+
+<figure class="wp-block-image size-full is-style-default"><img fetchpriority="high" decoding="async" width="979" height="513" src="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-137.png" alt="" class="wp-image-5972" srcset="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-137.png 979w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-137-150x79.png 150w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-137-300x157.png 300w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-137-768x402.png 768w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-137-500x262.png 500w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-137-800x419.png 800w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-137-922x483.png 922w" sizes="(max-width: 979px) 100vw, 979px"></figure>
+
+
+
+<p>It looks confusing, but don&rsquo;t be put off. Also, there&rsquo;ll be a lot of entries in the console, but you can ignore them all. These are messages created by the browser for software engineers &ndash; they relate to the browser itself, not to your character sheet &ndash; so they are irrelevant to you. Part of the skill in using the console is finding the code you have put in there, and ignoring everything else.</p>
+
+
+
+<p>You can see a <strong>hi there!</strong> message I&rsquo;ve created right at the bottom. To make that appear, I added this to a sheet worker:</p>
+
+
+<pre class="wp-block-code" aria-describedby="shcb-language-1" data-shcb-language-name="JavaScript" data-shcb-language-slug="javascript"><span><code class="hljs language-javascript"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">"hi there!"</span>);</code></span><small class="shcb-language" id="shcb-language-1"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">JavaScript</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">javascript</span><span class="shcb-language__paren">)</span></small></pre>
+
+
+<p>That&rsquo;s it &ndash; anything you put inside the brackets is printed to the console. You can enter any variable type &ndash; using quotes here means it&rsquo;s a <a href="birdbrainiac.github.io/roll20sheet/strings-and-more-about-arrays/">String</a>. </p>
+
+
+
+<p>Now we&rsquo;ll talk about how to use that to figure out your own sheet workers, and to analyse errors.</p>
+
+
+
+<h2 class="wp-block-heading">Printing To The Console</h2>
+
+
+
+<div class="wp-block-kadence-tabs alignnone"><div class="kt-tabs-wrap kt-tabs-id_af61ac-2c kt-tabs-has-4-tabs kt-active-tab-1 kt-tabs-layout-tabs kt-tabs-tablet-layout-inherit kt-tabs-mobile-layout-accordion kt-tab-alignment-left kt-create-accordion" style="max-width:none"><ul class="kt-tabs-title-list"><li id="tab-whyuselogging" class="kt-title-item kt-title-item-1 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-active"><a href="#tab-whyuselogging" data-tab="1" class="kt-tab-title kt-tab-title-1 "><span class="kt-title-text">Why Use Logging?</span></a></li><li id="tab-wheretolog" class="kt-title-item kt-title-item-2 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-inactive"><a href="#tab-wheretolog" data-tab="2" class="kt-tab-title kt-tab-title-2 "><span class="kt-title-text">Where To Log?</span></a></li><li id="tab-loggingvariables" class="kt-title-item kt-title-item-3 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-inactive"><a href="#tab-loggingvariables" data-tab="3" class="kt-tab-title kt-tab-title-3 "><span class="kt-title-text">Logging Variables</span></a></li><li id="tab-curlybrackets" class="kt-title-item kt-title-item-4 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-inactive"><a href="#tab-curlybrackets" data-tab="4" class="kt-tab-title kt-tab-title-4 "><span class="kt-title-text">Curly Brackets</span></a></li></ul><div class="kt-tabs-content-wrap">
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-1 kt-inner-tab_5e02c1-a1"><div class="kt-tab-inner-content-inner">
+<p>There are two main reasons you might use logging.</p>
+
+
+
+<p>The first is, simply enough, so you can see what is happening. For example:</p>
+
+
+<pre class="wp-block-code" aria-describedby="shcb-language-2" data-shcb-language-name="JavaScript" data-shcb-language-slug="javascript"><span><code class="hljs language-javascript shcb-wrap-lines">on(<span class="hljs-string">'change:version'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">{
+   getAttrs([<span class="hljs-string">'version'</span>, <span class="hljs-string">'character_name'</span>], function(values</span>) </span>{
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"The version attribute for ' + values.character_name + ' just changed."</span>);
+      <span class="hljs-comment">// rest of code</span></code></span><small class="shcb-language" id="shcb-language-2"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">JavaScript</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">javascript</span><span class="shcb-language__paren">)</span></small></pre>
+
+
+<p>Some people use logging as a kind of progress report. You can see what is happening under the hood. </p>
+
+
+
+<p>Another use, which we&rsquo;ll focus on here, is to find out where errors occur and to learn about the error. The problem is, the sheet worker script blog is isolated from the rest of the sheet. If it fails, it might fail silently and your only clue a failure has happened is that one or more sheet workers stop working. </p>
+
+
+
+<p>It can be hard to figure out why. That&rsquo;s where logging comes in.</p>
+</div></div>
+
+
+
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-2 kt-inner-tab_f98658-29"><div class="kt-tab-inner-content-inner">
+<p>When one or more sheet workers stop working, you have to figure out where the problem is. It&rsquo;s possible that an error in one sheet worker stops everything working <em>in that worker</em> after the error occurs. It&rsquo;s also possible that an error in one worker causes <em>all </em>workers to stop working. It&rsquo;s also possible an error in the event line (that starts <strong>on(</strong>) means the sheet worker never starts!</p>
+
+
+
+<p>So the first thing to do here is to find out <em>where </em>the error is. You can do this by adding cosole.log statements in your code, everywhere you think there might be an error. For example:</p>
+
+
+<pre class="wp-block-code" aria-describedby="shcb-language-3" data-shcb-language-name="JavaScript" data-shcb-language-slug="javascript"><span><code class="hljs language-javascript shcb-wrap-lines">on(<span class="hljs-string">'change:attribute'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">{
+   console.log(<span class="hljs-string">'attribute worker started'</span></span>);
+   <span class="hljs-title">getAttrs</span>(<span class="hljs-params">[<span class="hljs-string">'attribute'</span>], function(values</span>) </span>{
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'attribute worker: getAttrs'</span>);
+      <span class="hljs-keyword">const</span> att = +values.attribute || <span class="hljs-number">0</span>;
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'attribute values = '</span> + att);
+<span class="hljs-comment">// and so on.</span></code></span><small class="shcb-language" id="shcb-language-3"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">JavaScript</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">javascript</span><span class="shcb-language__paren">)</span></small></pre>
+
+
+<p>With methods like this, you can figure out where the problem is. JS will run console.log statements up to an error, and none after the error, so the error can be found in your code before the first console.log that doesn&rsquo;t run.</p>
+</div></div>
+
+
+
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-3 kt-inner-tab_7888d1-e5"><div class="kt-tab-inner-content-inner">
+<p>As shown in the previous tab, you can log specific values of variables and attributes. Sometimes when an attribute has a value you don&rsquo;t expect, that can cause your problem.</p>
+
+
+
+<p>Using string concatenation, you can combine strings &ndash; your label and the desired value.</p>
+
+
+<pre class="wp-block-code" aria-describedby="shcb-language-4" data-shcb-language-name="JavaScript" data-shcb-language-slug="javascript"><span><code class="hljs language-javascript shcb-wrap-lines">      <span class="hljs-keyword">const</span> att = +values.attribute || <span class="hljs-number">0</span>;
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'attribute values = '</span> + att);</code></span><small class="shcb-language" id="shcb-language-4"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">JavaScript</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">javascript</span><span class="shcb-language__paren">)</span></small></pre>
+
+
+<p>Or if you know what you are looking for you can just include the attribute. These can be hard to spot in the browser console (but there is some help here &ndash; see below);</p>
+
+
+<pre class="wp-block-code" aria-describedby="shcb-language-5" data-shcb-language-name="JavaScript" data-shcb-language-slug="javascript"><span><code class="hljs language-javascript shcb-wrap-lines">      <span class="hljs-keyword">const</span> att = +values.attribute || <span class="hljs-number">0</span>;
+      <span class="hljs-built_in">console</span>.log(att);</code></span><small class="shcb-language" id="shcb-language-5"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">JavaScript</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">javascript</span><span class="shcb-language__paren">)</span></small></pre>
+
+
+<p>You can print several attributes at the same time, and even multiple values. Separate each with a comma. And you can print arrays and objects and any other data type.</p>
+
+
+<pre class="wp-block-code" aria-describedby="shcb-language-6" data-shcb-language-name="JavaScript" data-shcb-language-slug="javascript"><span><code class="hljs language-javascript shcb-wrap-lines">      <span class="hljs-built_in">console</span>.log(att, <span class="hljs-string">"this is another stat: "</span> + another_stat);
+      <span class="hljs-keyword">const</span> my_array = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>];
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'my array is: '</span> + my_array);</code></span><small class="shcb-language" id="shcb-language-6"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">JavaScript</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">javascript</span><span class="shcb-language__paren">)</span></small></pre></div></div>
+
+
+
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-4 kt-inner-tab_16b8fd-e4"><div class="kt-tab-inner-content-inner">
+<p>One thing that is really handy, is you can print out a variable <em>and its value</em>, just by listing its variable name inside curly brackets (making it an object). For example:</p>
+
+
+<pre class="wp-block-code" aria-describedby="shcb-language-7" data-shcb-language-name="JavaScript" data-shcb-language-slug="javascript"><span><code class="hljs language-javascript shcb-wrap-lines"><span class="hljs-keyword">const</span> stat1 = <span class="hljs-string">'first value'</span>;
+<span class="hljs-keyword">const</span> stat2 = <span class="hljs-string">'second value'</span>;
+<span class="hljs-keyword">const</span> stat3 = <span class="hljs-string">'third value'</span>;
+<span class="hljs-built_in">console</span>.log({stat1, stat2, stat3});</code></span><small class="shcb-language" id="shcb-language-7"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">JavaScript</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">javascript</span><span class="shcb-language__paren">)</span></small></pre>
+
+
+<p>This looks like this, and (second pic) with the dropdown button clicked:</p>
+
+
+<div class="wp-block-image is-style-default">
+<figure class="alignright size-full"><img decoding="async" width="268" height="90" src="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-139.png" alt="" class="wp-image-6087" srcset="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-139.png 268w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-139-150x50.png 150w" sizes="(max-width: 268px) 100vw, 268px"></figure></div>
+
+
+<figure class="wp-block-image size-full is-style-default"><img decoding="async" width="267" height="33" src="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-138.png" alt="" class="wp-image-6086" srcset="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-138.png 267w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-138-150x19.png 150w" sizes="(max-width: 267px) 100vw, 267px"></figure>
+
+
+
+<p>Being able to enter variables in groups in this way is very handy, or at least saves a lot of typing!</p>
+</div></div>
+</div></div></div>
+
+
+
+<h2 class="wp-block-heading">Finding your console Statements</h2>
+
+
+
+<p>I don&rsquo;t see the things mentioned here used in other character sheets, so even if you are an old hand at sheet authoring, you might want to check this out. Newbies, you can get a leg up on the old-timers here.</p>
+
+
+
+<p>The description above tells you how to use console.log, which is great for examining what is going on in your worker. There are a lot of ways you can make your console statements easier to find. Here&rsquo;s a quick overview of the most useful things you can do.</p>
+
+
+
+<div class="wp-block-kadence-tabs alignnone"><div class="kt-tabs-wrap kt-tabs-id_38340b-fa kt-tabs-has-6-tabs kt-active-tab-1 kt-tabs-layout-tabs kt-tabs-tablet-layout-inherit kt-tabs-mobile-layout-accordion kt-tab-alignment-left kt-create-accordion" style="max-width:none"><ul class="kt-tabs-title-list"><li id="tab-clear" class="kt-title-item kt-title-item-1 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-active"><a href="#tab-clear" data-tab="1" class="kt-tab-title kt-tab-title-1 "><span class="kt-title-text">Clear</span></a></li><li id="tab-inbuiltstyles" class="kt-title-item kt-title-item-2 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-inactive"><a href="#tab-inbuiltstyles" data-tab="2" class="kt-tab-title kt-tab-title-2 "><span class="kt-title-text">Inbuilt Styles</span></a></li><li id="tab-customstyles" class="kt-title-item kt-title-item-3 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-inactive"><a href="#tab-customstyles" data-tab="3" class="kt-tab-title kt-tab-title-3 "><span class="kt-title-text">Custom Styles</span></a></li><li id="tab-grouping" class="kt-title-item kt-title-item-4 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-inactive"><a href="#tab-grouping" data-tab="4" class="kt-tab-title kt-tab-title-4 "><span class="kt-title-text">Grouping</span></a></li><li id="tab-tables" class="kt-title-item kt-title-item-5 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-inactive"><a href="#tab-tables" data-tab="5" class="kt-tab-title kt-tab-title-5 "><span class="kt-title-text">Tables</span></a></li><li id="tab-conditionallogs" class="kt-title-item kt-title-item-6 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-inactive"><a href="#tab-conditionallogs" data-tab="6" class="kt-tab-title kt-tab-title-6 "><span class="kt-title-text">Conditional Logs</span></a></li></ul><div class="kt-tabs-content-wrap">
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-1 kt-inner-tab_cfc711-f3"><div class="kt-tab-inner-content-inner">
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-9d6595d7 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p>The browser console is often full of entries that are useless for you and make it harder for you to find the information you want. See the image to the right and imagine scrolling through pages and pages to find one console.log statement. But you can do this:</p>
+
+
+
+<figure class="wp-block-image size-full is-resized is-style-default"><img loading="lazy" decoding="async" src="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-142.png" alt="" class="wp-image-6118" width="365" height="109" srcset="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-142.png 487w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-142-150x45.png 150w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-142-300x89.png 300w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-142-480x145.png 480w" sizes="auto, (max-width: 365px) 100vw, 365px"></figure>
+
+
+
+<p>You can completely empty the console with this simple command:</p>
+
+
+<pre class="wp-block-code" aria-describedby="shcb-language-8" data-shcb-language-name="JavaScript" data-shcb-language-slug="javascript"><span><code class="hljs language-javascript shcb-wrap-lines"><span class="hljs-built_in">console</span>.clear();</code></span><small class="shcb-language" id="shcb-language-8"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">JavaScript</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">javascript</span><span class="shcb-language__paren">)</span></small></pre>
+
+
+<p>You can enter it in a worker, but if you want maximum control over when it&rsquo;s triggered, it&rsquo;s better to type it directly in the console.</p>
+
+
+
+<figure class="wp-block-image size-full is-style-default"><img loading="lazy" decoding="async" width="479" height="143" src="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-143.png" alt="" class="wp-image-6119" srcset="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-143.png 479w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-143-150x45.png 150w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-143-300x90.png 300w" sizes="auto, (max-width: 479px) 100vw, 479px"></figure>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"><div class="wp-block-image is-style-default">
+<figure class="alignright size-full is-resized"><img loading="lazy" decoding="async" src="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-141.png" alt="" class="wp-image-6116" width="365" height="738" srcset="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-141.png 487w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-141-74x150.png 74w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-141-148x300.png 148w" sizes="auto, (max-width: 365px) 100vw, 365px"></figure></div></div>
+</div>
+</div></div>
+
+
+
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-2 kt-inner-tab_8c24f0-eb"><div class="kt-tab-inner-content-inner">
+<p>In additon to console.log, you can use <strong>console.info</strong>, <strong>console.warn</strong>, and <strong>console.error</strong>. These work <em>exactly</em> like <strong>console.log</strong>, but are printed out to the console with some styling applied-  they look different and might be easier to spot (also you might use error or warn for things you think might be iffy and want to draw attention to them). They look like this:</p>
+
+
+<div class="wp-block-image is-style-default">
+<figure class="alignleft size-full"><img loading="lazy" decoding="async" width="292" height="147" src="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-140.png" alt="" class="wp-image-6106" srcset="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-140.png 292w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-140-150x76.png 150w" sizes="auto, (max-width: 292px) 100vw, 292px"></figure></div>
+
+
+<p>Note that they each place a symbol in the sidebar, error is shaded yellow, and error is shaded red.</p>
+
+
+
+<p>This makes it easier to spot when browsing the long list of useless browser statements. I tend to use <strong>info </strong>for everything &ndash; that i in the sidebar is easy to spot. </p>
+
+
+
+<p>There&rsquo;s also <strong>console.debug</strong>, but as far as I can tell, it looks the same on Roll20 as <strong>console.log</strong>, so there&rsquo;s no need to use it. </p>
+</div></div>
+
+
+
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-3 kt-inner-tab_c3ca91-1f"><div class="kt-tab-inner-content-inner">
+<p>You aren&rsquo;t limited to using the inbuilt styles. You can apply lots of styling information, but how you do it is a bit counterintuitive. </p>
+
+
+<pre class="wp-block-code" aria-describedby="shcb-language-9" data-shcb-language-name="JavaScript" data-shcb-language-slug="javascript"><span><code class="hljs language-javascript shcb-wrap-lines"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">"This is standard text. %cThis is blue.%cThis is green."</span>,<span class="hljs-string">"color:blue"</span>,<span class="hljs-string">"color:green"</span>);</code></span><small class="shcb-language" id="shcb-language-9"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">JavaScript</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">javascript</span><span class="shcb-language__paren">)</span></small></pre>
+
+
+<p>Basically, each %c in your log statement will not be printed, but is a marker saying, &ldquo;start a class here.&rdquo; Then <em>at the end</em> of your log declarations, include each class. Put them after any variables or text. </p>
+
+
+
+<p>You can do more than just change the colour of text. Try every style you want:</p>
+
+
+<div class="wp-block-image is-style-default">
+<figure class="alignright size-full"><img loading="lazy" decoding="async" width="309" height="57" src="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-144.png" alt="" class="wp-image-6131" srcset="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-144.png 309w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-144-150x28.png 150w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-144-300x55.png 300w" sizes="auto, (max-width: 309px) 100vw, 309px"></figure></div>
+
+<pre class="wp-block-code" aria-describedby="shcb-language-10" data-shcb-language-name="JavaScript" data-shcb-language-slug="javascript"><span><code class="hljs language-javascript shcb-wrap-lines"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">"This is standard text. %cThis is bordered.%c This is green."</span>,<span class="hljs-string">"color:blue; border: 1pt solid black;"</span>,<span class="hljs-string">"color:green"</span>);</code></span><small class="shcb-language" id="shcb-language-10"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">JavaScript</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">javascript</span><span class="shcb-language__paren">)</span></small></pre>
+
+
+<p>The %c won&rsquo;t be printed, but the style starts at that point. If you want to print out multiple values, combine them into a single string. </p>
+
+
+<pre class="wp-block-code" aria-describedby="shcb-language-11" data-shcb-language-name="JavaScript" data-shcb-language-slug="javascript"><span><code class="hljs language-javascript shcb-wrap-lines"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">"att1 = "</span> + att1 + <span class="hljs-string">";%catt2 ="</span> + att2, <span class="hljs-string">"color:blue; border: 1pt solid black;"</span>);</code></span><small class="shcb-language" id="shcb-language-11"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">JavaScript</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">javascript</span><span class="shcb-language__paren">)</span></small></pre>
+
+
+<p></p>
+</div></div>
+
+
+
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-4 kt-inner-tab_20ee7a-33"><div class="kt-tab-inner-content-inner">
+<p>When you have a bunch of separate statements but want to show them together in the console, you can group them. This creates a natural block of statements that you can open and collapse &ndash; they stand out and are easily found, and you can label the group.</p>
+
+
+<pre class="wp-block-code" aria-describedby="shcb-language-12" data-shcb-language-name="JavaScript" data-shcb-language-slug="javascript"><span><code class="hljs language-javascript shcb-wrap-lines"><span class="hljs-keyword">const</span> stat1 = <span class="hljs-string">"test"</span>;
+<span class="hljs-keyword">const</span> stat2 = <span class="hljs-string">"another test"</span>;
+<span class="hljs-keyword">const</span> stat3 = <span class="hljs-string">"final test"</span>;
+        
+<span class="hljs-built_in">console</span>.group(<span class="hljs-string">'Test Group'</span>);
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">'log: '</span> + stat1);
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">'log: '</span> + stat2);
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">'log: '</span> + stat3);
+<span class="hljs-built_in">console</span>.info(<span class="hljs-string">'info: '</span> + stat1);
+<span class="hljs-built_in">console</span>.warn(<span class="hljs-string">'warn: '</span> + stat2);
+<span class="hljs-built_in">console</span>.error(<span class="hljs-string">'error: '</span> + stat3);
+<span class="hljs-built_in">console</span>.groupEnd();</code></span><small class="shcb-language" id="shcb-language-12"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">JavaScript</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">javascript</span><span class="shcb-language__paren">)</span></small></pre>
+
+
+<figure class="wp-block-image size-full is-style-default"><img loading="lazy" decoding="async" width="246" height="174" src="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-145.png" alt="" class="wp-image-6136" srcset="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-145.png 246w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-145-150x106.png 150w" sizes="auto, (max-width: 246px) 100vw, 246px"></figure>
+
+
+
+<p>The group label is optional. And the group starts out expanded by default, but you can make it start collapsed. by using <strong>groupCollapsed() </strong>instead of <strong>group()</strong>. </p>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-9d6595d7 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"><pre class="wp-block-code" aria-describedby="shcb-language-13" data-shcb-language-name="JavaScript" data-shcb-language-slug="javascript"><span><code class="hljs language-javascript shcb-wrap-lines"><span class="hljs-built_in">console</span>.group();
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">'log: '</span> + stat1);</code></span><small class="shcb-language" id="shcb-language-13"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">JavaScript</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">javascript</span><span class="shcb-language__paren">)</span></small></pre></div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"><pre class="wp-block-code" aria-describedby="shcb-language-14" data-shcb-language-name="JavaScript" data-shcb-language-slug="javascript"><span><code class="hljs language-javascript shcb-wrap-lines"><span class="hljs-built_in">console</span>.groupCollapsed();
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">'log: '</span> + stat1);</code></span><small class="shcb-language" id="shcb-language-14"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">JavaScript</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">javascript</span><span class="shcb-language__paren">)</span></small></pre></div>
+</div>
+
+
+
+<p>Groups are a great way to make a, ahem, group of log statements stand out.</p>
+</div></div>
+
+
+
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-5 kt-inner-tab_8b23f5-0f"><div class="kt-tab-inner-content-inner">
+<p>You can print your log statements as a formatted table. This should be used when you have an <a href="birdbrainiac.github.io/roll20sheet/arrays-in-sheet-workers/">array</a> or <a href="birdbrainiac.github.io/roll20sheet/javascript-objects/">object</a> to print and you want it nicely formatted.</p>
+
+
+<pre class="wp-block-code" aria-describedby="shcb-language-15" data-shcb-language-name="JavaScript" data-shcb-language-slug="javascript"><span><code class="hljs language-javascript shcb-wrap-lines"><span class="hljs-keyword">const</span> weapons = {
+   <span class="hljs-attr">sword</span>: {<span class="hljs-attr">attack</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">Damage</span>: <span class="hljs-string">"1d6+1"</span>, <span class="hljs-attr">strength</span>: <span class="hljs-number">13</span>},
+   <span class="hljs-attr">greatsword</span>: {<span class="hljs-attr">attack</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">Damage</span>: <span class="hljs-string">"2d6"</span>, <span class="hljs-attr">strength</span>: <span class="hljs-number">17</span>},
+   <span class="hljs-attr">hammer</span>: {<span class="hljs-attr">attack</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">Damage</span>: <span class="hljs-string">"1d6+1"</span>, <span class="hljs-attr">strength</span>: <span class="hljs-number">10</span>},
+}
+<span class="hljs-built_in">console</span>.table(weapons);
+<span class="hljs-built_in">console</span>.table(weapons, [<span class="hljs-string">'Damage'</span>]);</code></span><small class="shcb-language" id="shcb-language-15"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">JavaScript</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">javascript</span><span class="shcb-language__paren">)</span></small></pre>
+
+<div class="wp-block-image is-style-default">
+<figure class="alignright size-full"><img loading="lazy" decoding="async" width="466" height="237" src="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-146.png" alt="" class="wp-image-6143" srcset="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-146.png 466w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-146-150x76.png 150w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-146-300x153.png 300w" sizes="auto, (max-width: 466px) 100vw, 466px"></figure></div>
+
+
+<p>As shown here you can print the enter array or object, and it will be given row titles and headings. And for objects, you can print a specific column, by enclosing the name of that column in [ ], and treating it as a string (which must therefore be spelt accurately). </p>
+</div></div>
+
+
+
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-6 kt-inner-tab_9bd271-d2"><div class="kt-tab-inner-content-inner">
+<p>The final tip we&rsquo;ll cover here is how to make conditional logs. In javascript, everything is either <strong>truthy </strong>(it exists, and is kind true), or <strong>falsy </strong>(empty statements and errors). So you can do this:</p>
+
+
+<pre class="wp-block-code" aria-describedby="shcb-language-16" data-shcb-language-name="JavaScript" data-shcb-language-slug="javascript"><span><code class="hljs language-javascript"><span class="hljs-keyword">let</span> show_log = <span class="hljs-number">0</span>;
+<span class="hljs-built_in">console</span>.assert(show_log, <span class="hljs-string">"Show this."</span>);
+<span class="hljs-keyword">let</span> dont_show_log = <span class="hljs-number">1</span>;
+<span class="hljs-built_in">console</span>.assert(dont_show_log, <span class="hljs-string">"Don't show this."</span>);
+</code></span><small class="shcb-language" id="shcb-language-16"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">JavaScript</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">javascript</span><span class="shcb-language__paren">)</span></small></pre>
+
+
+<p>That looks like this in the browser console: <img loading="lazy" decoding="async" width="300" height="31" class="wp-image-6153" style="width: 300px;" src="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-147.png" alt="" srcset="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-147.png 244w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-147-150x15.png 150w" sizes="auto, (max-width: 300px) 100vw, 300px"></p>
+
+
+
+<p>When creating a conditional log, use <strong>console.assert(value_to_evaluate,&rdquo;test to show&rdquo;)</strong>;</p>
+
+
+
+<p>If the value to evaluate is truthy the log won&rsquo;t be printed, and if false it will be. So you can build a worker that shows errors only when values aren&rsquo;t as they should be. </p>
+
+
+
+<p>While this is neat, it probably isn&rsquo;t very useful in the context of Roll20. You don&rsquo;t control the output message and can&rsquo;t apply your own styles. But it&rsquo;s neat enough to show.</p>
+</div></div>
+</div></div></div>
+
+
+
+<h2 class="wp-block-heading">Wrapping Up</h2>
+
+
+
+<p>There you have it. There are lots of ways to use the console, including a few more than listed here, but I think these are the most useful for Roll20. I haven&rsquo;t covered making your own logging function &ndash; maybe I&rsquo;ll post that later. Have fun making your browser console more useful 🙂</p>
+<fieldset><legend>Series Navigation</legend><span class="series-nav-left"><a href="birdbrainiac.github.io/roll20sheet/strings/" title="&lt;&lt; Strings in Sheet Workers">&lt;&lt; Strings in Sheet Workers</a></span><span class="series-nav-right"><a href="birdbrainiac.github.io/roll20sheet/strings-arrays-and-loops/" title="Strings, Arrays, and Loops &gt;&gt;">Strings, Arrays, and Loops &gt;&gt;</a></span></fieldset><div class="clear-me"></div>    </div><!-- .entry-content -->
+
+    
+    
+            <footer class="entry-footer gridme-entry-footer">
+    <div class="gridme-entry-footer-inside">
+        <span class="gridme-tags-links"><i class="fas fa-tags" aria-hidden="true"></i> Tagged <a href="birdbrainiac.github.io/roll20sheet/tag/javascript/" rel="tag">javascript</a>, <a href="birdbrainiac.github.io/roll20sheet/tag/log/" rel="tag">log</a>, <a href="birdbrainiac.github.io/roll20sheet/tag/console/" rel="tag">console</a>, <a href="birdbrainiac.github.io/roll20sheet/tag/console-log/" rel="tag">console.log</a>, <a href="birdbrainiac.github.io/roll20sheet/tag/console-info/" rel="tag">console.info</a>, <a href="birdbrainiac.github.io/roll20sheet/tag/console-styles/" rel="tag">console styles</a>, <a href="birdbrainiac.github.io/roll20sheet/tag/console-groups/" rel="tag">console groups</a>, <a href="birdbrainiac.github.io/roll20sheet/tag/console-clear/" rel="tag">console.clear</a></span>    </div>
+    </footer><!-- .entry-footer -->
+        
+</div>
+</article>
+
+
+	<nav class="navigation post-navigation" aria-label="Posts">
+		<h2 class="screen-reader-text">Post navigation</h2>
+		<div class="nav-links"><div class="nav-previous"><a href="birdbrainiac.github.io/roll20sheet/strings/" rel="prev">Strings in Sheet Workers &rarr;</a></div><div class="nav-next"><a href="birdbrainiac.github.io/roll20sheet/strings-arrays-and-loops/" rel="next">&larr; Strings, Arrays, and Loops</a></div></div>
+	</nav>
+<div id="comments" class="comments-area gridme-box">
+<div class="gridme-box-inside">
+
+    	<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="birdbrainiac.github.io/roll20sheet/logging/#respond" style="display:none;">Cancel reply</a></small></h3><form action="birdbrainiac.github.io/roll20sheet/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> <span class="required-field-message">Required fields are marked <span class="required">*</span></span></p><p class="comment-form-comment"><label for="comment">Comment <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200" autocomplete="url"></p>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"> <label for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="3970" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p></form>	</div><!-- #respond -->
+	
+</div>
+</div><!-- #comments -->
+<div class="clear"></div>
+</div><!--/#gridme-posts-wrapper -->
+
+
+<div class="gridme-featured-posts-area gridme-featured-posts-area-bottom gridme-clearfix">
+
+<div id="text-2" class="gridme-main-widget widget gridme-widget-box widget_text"><div class="gridme-widget-box-inside">			<div class="textwidget"><p>Visit the <a href="birdbrainiac.github.io/roll20sheet/roll20-sheet-author-master-list/">Sheet Author Master List</a></p>
+</div>
+		</div></div></div>
+
+
+</div>
+</div>
+</div><!-- /#gridme-main-wrapper -->
+
+
+<div class="gridme-sidebar-one-wrapper gridme-sidebar-widget-areas gridme-clearfix" id="gridme-sidebar-one-wrapper" itemscope="itemscope" itemtype="http://schema.org/WPSideBar" role="complementary">
+<div class="theiaStickySidebar">
+<div class="gridme-sidebar-one-wrapper-inside gridme-clearfix">
+
+<div id="search-3" class="gridme-side-widget widget gridme-widget-box widget_search"><div class="gridme-widget-box-inside">
+<form role="search" method="get" class="gridme-search-form" action="birdbrainiac.github.io/roll20sheet/">
+<label>
+    <span class="gridme-sr-only">Search for:</span>
+    <input type="search" class="gridme-search-field" placeholder="Search &hellip;" value="" name="s">
+</label>
+<input type="submit" class="gridme-search-submit" value="">
+</form></div></div><div id="nav_menu-3" class="gridme-side-widget widget gridme-widget-box widget_nav_menu"><div class="gridme-widget-box-inside"><div class="gridme-widget-header"><h2 class="gridme-widget-title"><span class="gridme-widget-title-inside">VTT</span></h2></div><nav class="menu-vtt-links-container" aria-label="VTT"><ul id="menu-vtt-links" class="menu"><li id="menu-item-808" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-808"><a href="https://roll20.net/">Roll20</a>
+<ul class="sub-menu">
+	<li id="menu-item-3595" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3595"><a href="https://wiki.roll20.net/Main_Page">Roll20 Wiki</a></li>
+	<li id="menu-item-821" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-821"><a href="https://github.com/roll20/">Roll20&rsquo;s Github</a></li>
+	<li id="menu-item-3753" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3753"><a href="https://app.roll20.net/forum/post/8380005/sheet-templating-with-handlebars/?pageforid=8654298">Sheet Templating</a></li>
+</ul>
+</li>
+<li id="menu-item-3619" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3619"><a href="https://www.rptools.net/2018/07/token-tool-2-0/">Token Tool</a></li>
+</ul></nav></div></div><div id="nav_menu-5" class="gridme-side-widget widget gridme-widget-box widget_nav_menu"><div class="gridme-widget-box-inside"><div class="gridme-widget-header"><h2 class="gridme-widget-title"><span class="gridme-widget-title-inside">RPG</span></h2></div><nav class="menu-rpg-container" aria-label="RPG"><ul id="menu-rpg" class="menu"><li id="menu-item-3621" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-3621"><a href="birdbrainiac.github.io/roll20sheet/category/thinking/pendragon/">Pendragon</a>
+<ul class="sub-menu">
+	<li id="menu-item-3618" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3618"><a href="https://www.chaosium.com/pendragon/">Pendragon Store</a></li>
+</ul>
+</li>
+</ul></nav></div></div><div id="nav_menu-6" class="gridme-side-widget widget gridme-widget-box widget_nav_menu"><div class="gridme-widget-box-inside"><div class="gridme-widget-header"><h2 class="gridme-widget-title"><span class="gridme-widget-title-inside">Other Blogs</span></h2></div><nav class="menu-other-blogs-container" aria-label="Other Blogs"><ul id="menu-other-blogs" class="menu"><li id="menu-item-5524" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5524"><a href="https://knightattheopera.blogspot.com/">Knight at the Opera</a></li>
+<li id="menu-item-8125" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8125"><a href="https://talestoastound.wordpress.com/traveller-out-of-the-box/">Traveller &ndash; Out of the Box</a></li>
+</ul></nav></div></div>
+</div>
+</div>
+</div><!-- /#gridme-sidebar-one-wrapper-->
+
+</div>
+
+</div><!--/#gridme-content-wrapper -->
+</div><!--/#gridme-wrapper -->
+
+
+
+
+
+<div class="gridme-clearfix" id="gridme-footer-blocks" itemscope="itemscope" itemtype="http://schema.org/WPFooter" role="contentinfo">
+<div class="gridme-container gridme-clearfix">
+<div class="gridme-outer-wrapper">
+
+<div class="gridme-clearfix">
+<div class="gridme-top-footer-block">
+<div id="eu_cookie_law_widget-2" class="gridme-footer-widget widget widget_eu_cookie_law_widget">
+<div class="hide-on-button" data-hide-timeout="30" data-consent-expiration="180" id="eu-cookie-law">
+	<form method="post" id="jetpack-eu-cookie-law-form">
+		<input type="submit" value="Close and accept" class="accept">
+	</form>
+
+	I'm required by European Law to tell you that this site use Cookies. But they aren't viewed or used in any way - don't worry about that.
+		<a href="birdbrainiac.github.io/roll20sheet/?page_id=3" rel="">
+		Cookie Policy	</a>
+</div>
+</div></div>
+</div>
+
+
+
+</div>
+</div>
+</div><!--/#gridme-footer-blocks-->
+
+<div class="gridme-clearfix" id="gridme-copyright-area">
+<div class="gridme-copyright-area-inside gridme-container">
+<div class="gridme-outer-wrapper">
+
+<div class="gridme-copyright-area-inside-content gridme-clearfix">
+
+<div class="gridme-copyright-area-inside-left">
+  <p class="gridme-copyright">Copyright &copy; 2025 Cybersphere</p>
+<p class="gridme-credit"><a href="https://themesdna.com/">Design by ThemesDNA.com</a></p>
+</div>
+
+<div class="gridme-copyright-area-inside-right">
+
+<div class="gridme-footer-social-icons">
+                                                                                                                                                                                                                                                                               </div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+</div><!--/#gridme-copyright-area -->
+
+
+<button class="gridme-scroll-top" title="Scroll to Top"><i class="fas fa-arrow-up" aria-hidden="true"></i><span class="gridme-sr-only">Scroll to Top</span></button>
+
+				<script type='text/javascript'><!--
+			var seriesdropdown = document.getElementById("orgseries_dropdown");
+			if (seriesdropdown) {
+			 function onSeriesChange() {
+					if ( seriesdropdown.options[seriesdropdown.selectedIndex].value != ( 0 || -1 ) ) {
+						location.href = "birdbrainiac.github.io/roll20sheet/series/"+seriesdropdown.options[seriesdropdown.selectedIndex].value;
+					}
+				}
+				seriesdropdown.onchange = onSeriesChange;
+			}
+			--></script>
+			<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/gridme-child\/*","\/wp-content\/themes\/gridme\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<link rel="stylesheet" id="eu-cookie-law-style-css" href="https://c0.wp.com/p/jetpack/15.0/modules/widgets/eu-cookie-law/style.css" type="text/css" media="all">
+<style id="core-block-supports-inline-css" type="text/css">
+.wp-container-core-columns-is-layout-9d6595d7{flex-wrap:nowrap;}
+</style>
+<script type="text/javascript" src="birdbrainiac.github.io/roll20sheet/wp-content/themes/gridme/assets/js/jquery.fitvids.min.js" id="fitvids-js"></script>
+<script type="text/javascript" src="birdbrainiac.github.io/roll20sheet/wp-content/themes/gridme/assets/js/ResizeSensor.min.js" id="ResizeSensor-js"></script>
+<script type="text/javascript" src="birdbrainiac.github.io/roll20sheet/wp-content/themes/gridme/assets/js/theia-sticky-sidebar.min.js" id="theia-sticky-sidebar-js"></script>
+<script type="text/javascript" src="birdbrainiac.github.io/roll20sheet/wp-content/themes/gridme/assets/js/navigation.js" id="gridme-navigation-js"></script>
+<script type="text/javascript" src="birdbrainiac.github.io/roll20sheet/wp-content/themes/gridme/assets/js/skip-link-focus-fix.js" id="gridme-skip-link-focus-fix-js"></script>
+<script type="text/javascript" src="https://c0.wp.com/c/6.8.3/wp-includes/js/imagesloaded.min.js" id="imagesloaded-js"></script>
+<script type="text/javascript" id="gridme-customjs-js-extra">
+/* <![CDATA[ */
+var gridme_ajax_object = {"ajaxurl":"birdbrainiac.github.io\/roll20sheet\/wp-admin\/admin-ajax.php","primary_menu_active":"1","secondary_menu_active":"","primary_mobile_menu_active":"1","secondary_mobile_menu_active":"1","sticky_header_active":"1","sticky_header_mobile_active":"","sticky_sidebar_active":"1","fitvids_active":"1","columnwidth":".gridme-4-col-sizer","gutter":".gridme-4-col-gutter"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="birdbrainiac.github.io/roll20sheet/wp-content/themes/gridme/assets/js/custom.js" id="gridme-customjs-js"></script>
+<script type="text/javascript" src="https://c0.wp.com/c/6.8.3/wp-includes/js/comment-reply.min.js" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+<script type="text/javascript" id="gridme-html5shiv-js-js-extra">
+/* <![CDATA[ */
+var gridme_custom_script_vars = {"elements_name":"abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output picture progress section summary template time video"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="birdbrainiac.github.io/roll20sheet/wp-content/themes/gridme/assets/js/html5shiv.js" id="gridme-html5shiv-js-js"></script>
+<script type="text/javascript" src="birdbrainiac.github.io/roll20sheet/wp-content/plugins/kadence-blocks/includes/assets/js/kt-tabs.min.js?ver=3.5.21" id="kadence-blocks-tabs-js"></script>
+<script type="text/javascript" id="jetpack-stats-js-before">
+/* <![CDATA[ */
+_stq = window._stq || [];
+_stq.push([ "view", JSON.parse("{\"v\":\"ext\",\"blog\":\"203757609\",\"post\":\"3970\",\"tz\":\"1\",\"srv\":\"cybersphere.local\"}") ]);
+_stq.push([ "clickTrackerInit", "203757609", "3970" ]);
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://stats.wp.com/e-202540.js" id="jetpack-stats-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" src="https://c0.wp.com/p/jetpack/15.0/_inc/build/widgets/eu-cookie-law/eu-cookie-law.min.js" id="eu-cookie-law-script-js"></script>
+</body>
+</html>

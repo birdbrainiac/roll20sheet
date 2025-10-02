@@ -1,0 +1,1755 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<title>How To Roll Dice in Roll20 &ndash; Cybersphere</title>
+<meta name="robots" content="max-image-preview:large">
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<link rel="dns-prefetch" href="//stats.wp.com">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="preconnect" href="//c0.wp.com">
+<link rel="alternate" type="application/rss+xml" title="Cybersphere &raquo; Feed" href="birdbrainiac.github.io/roll20sheet/feed/">
+<link rel="alternate" type="application/rss+xml" title="Cybersphere &raquo; Comments Feed" href="birdbrainiac.github.io/roll20sheet/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Cybersphere &raquo; How To Roll Dice in Roll20 Comments Feed" href="birdbrainiac.github.io/roll20sheet/dice-roll20/feed/">
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"birdbrainiac.github.io\/roll20sheet\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.3"}};
+/*! This file is auto-generated */
+!function(s,n){var o,i,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),a=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===a[t]})}function u(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);for(var n=e.getImageData(16,16,1,1),a=0;a<n.data.length;a++)if(0!==n.data[a])return!1;return!0}function f(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\udedf")}return!1}function g(e,t,n,a){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):s.createElement("canvas"),o=r.getContext("2d",{willReadFrequently:!0}),i=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(function(e){i[e]=t(o,e,n,a)}),i}function t(e){var t=s.createElement("script");t.src=e,t.defer=!0,s.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",i=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){s.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+g.toString()+"("+[JSON.stringify(i),f.toString(),p.toString(),u.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"}),r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=function(e){c(n=e.data),r.terminate(),t(n)})}catch(e){}c(n=g(i,f,p,u))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<link rel="stylesheet" id="sdm-styles-css" href="birdbrainiac.github.io/roll20sheet/wp-content/plugins/simple-download-monitor/css/sdm_wp_styles.css?ver=6.8.3" type="text/css" media="all">
+<style id="wp-emoji-styles-inline-css" type="text/css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel="stylesheet" id="wp-block-library-css" href="https://c0.wp.com/c/6.8.3/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all">
+<style id="classic-theme-styles-inline-css" type="text/css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<link rel="stylesheet" id="mediaelement-css" href="https://c0.wp.com/c/6.8.3/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-mediaelement-css" href="https://c0.wp.com/c/6.8.3/wp-includes/js/mediaelement/wp-mediaelement.min.css" type="text/css" media="all">
+<style id="jetpack-sharing-buttons-style-inline-css" type="text/css">
+.jetpack-sharing-buttons__services-list{display:flex;flex-direction:row;flex-wrap:wrap;gap:0;list-style-type:none;margin:5px;padding:0}.jetpack-sharing-buttons__services-list.has-small-icon-size{font-size:12px}.jetpack-sharing-buttons__services-list.has-normal-icon-size{font-size:16px}.jetpack-sharing-buttons__services-list.has-large-icon-size{font-size:24px}.jetpack-sharing-buttons__services-list.has-huge-icon-size{font-size:36px}@media print{.jetpack-sharing-buttons__services-list{display:none!important}}.editor-styles-wrapper .wp-block-jetpack-sharing-buttons{gap:0;padding-inline-start:0}ul.jetpack-sharing-buttons__services-list.has-background{padding:1.25em 2.375em}
+</style>
+<link rel="stylesheet" id="syntax-highlighting-code-block-theme-css" href="birdbrainiac.github.io/roll20sheet/wp-content/plugins/syntax-highlighting-code-block/vendor/scrivo/highlight-php/styles/github.css?ver=1.5.1" type="text/css" media="all">
+<style id="syntax-highlighting-code-block-inline-css" type="text/css">
+.wp-block-code {
+	border: 0;
+	padding: 0;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+.wp-block-code > span {
+	display: block;
+	overflow: auto;
+}
+
+.shcb-language {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	-webkit-clip-path: inset(50%);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	word-wrap: normal;
+	word-break: normal;
+}
+
+.hljs {
+	box-sizing: border-box;
+}
+
+.hljs.shcb-code-table {
+	display: table;
+	width: 100%;
+}
+
+.hljs.shcb-code-table > .shcb-loc {
+	color: inherit;
+	display: table-row;
+	width: 100%;
+}
+
+.hljs.shcb-code-table .shcb-loc > span {
+	display: table-cell;
+}
+
+.wp-block-code code.hljs:not(.shcb-wrap-lines) {
+	white-space: pre;
+}
+
+.wp-block-code code.hljs.shcb-wrap-lines {
+	white-space: pre-wrap;
+}
+
+.hljs.shcb-line-numbers {
+	border-spacing: 0;
+	counter-reset: line;
+}
+
+.hljs.shcb-line-numbers > .shcb-loc {
+	counter-increment: line;
+}
+
+.hljs.shcb-line-numbers .shcb-loc > span {
+	padding-left: 0.75em;
+}
+
+.hljs.shcb-line-numbers .shcb-loc::before {
+	border-right: 1px solid #ddd;
+	content: counter(line);
+	display: table-cell;
+	padding: 0 0.75em;
+	text-align: right;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	white-space: nowrap;
+	width: 1%;
+}
+
+.hljs > mark.shcb-loc { background-color: #ddf6ff; }
+</style>
+<style id="global-styles-inline-css" type="text/css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="stylesheet" id="rgg-simplelightbox-css" href="birdbrainiac.github.io/roll20sheet/wp-content/plugins/responsive-gallery-grid/lib/simplelightbox/simplelightbox.min.css?ver=2.3.18" type="text/css" media="all">
+<link rel="stylesheet" id="slickstyle-css" href="birdbrainiac.github.io/roll20sheet/wp-content/plugins/responsive-gallery-grid/lib/slick/slick.1.9.0.min.css?ver=2.3.18" type="text/css" media="all">
+<link rel="stylesheet" id="slick-theme-css" href="birdbrainiac.github.io/roll20sheet/wp-content/plugins/responsive-gallery-grid/lib/slick/slick-theme.css?ver=2.3.18" type="text/css" media="all">
+<link rel="stylesheet" id="rgg-style-css" href="birdbrainiac.github.io/roll20sheet/wp-content/plugins/responsive-gallery-grid/css/style.css?ver=2.3.18" type="text/css" media="all">
+<link rel="stylesheet" id="light-style-css" href="birdbrainiac.github.io/roll20sheet/wp-content/plugins/organize-series/orgSeriesLightTheme.css?ver=6.8.3" type="text/css" media="all">
+<link rel="stylesheet" id="ez-toc-css" href="birdbrainiac.github.io/roll20sheet/wp-content/plugins/easy-table-of-contents/assets/css/screen.min.css?ver=2.0.76" type="text/css" media="all">
+<style id="ez-toc-inline-css" type="text/css">
+div#ez-toc-container .ez-toc-title {font-size: 120%;}div#ez-toc-container .ez-toc-title {font-weight: 500;}div#ez-toc-container ul li , div#ez-toc-container ul li a {font-size: 95%;}div#ez-toc-container ul li , div#ez-toc-container ul li a {font-weight: 500;}div#ez-toc-container nav ul ul li {font-size: 90%;}div#ez-toc-container {width: 100%;}
+.ez-toc-container-direction {direction: ltr;}.ez-toc-counter ul{counter-reset: item ;}.ez-toc-counter nav ul li a::before {content: counters(item, '.', decimal) '. ';display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }.ez-toc-widget-direction {direction: ltr;}.ez-toc-widget-container ul{counter-reset: item ;}.ez-toc-widget-container nav ul li a::before {content: counters(item, '.', decimal) '. ';display: inline-block;counter-increment: item;flex-grow: 0;flex-shrink: 0;margin-right: .2em; float: left; }
+</style>
+<link rel="stylesheet" id="chld_thm_cfg_parent-css" href="birdbrainiac.github.io/roll20sheet/wp-content/themes/gridme/style.css?ver=6.8.3" type="text/css" media="all">
+<link rel="stylesheet" id="gridme-maincss-css" href="birdbrainiac.github.io/roll20sheet/wp-content/themes/gridme-child/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="fontawesome-css" href="birdbrainiac.github.io/roll20sheet/wp-content/themes/gridme/assets/css/all.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="chld_thm_cfg_separate-css" href="birdbrainiac.github.io/roll20sheet/wp-content/themes/gridme-child/ctc-style.css?ver=6.8.3" type="text/css" media="all">
+<link rel="stylesheet" id="gridme-webfont-css" href="//fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i%7CDomine:400,700%7COswald:400,700%7CPatua+One&amp;display=swap" type="text/css" media="all">
+<link rel="stylesheet" id="kadence-blocks-tabs-css" href="birdbrainiac.github.io/roll20sheet/wp-content/plugins/kadence-blocks/dist/style-blocks-tabs.css?ver=3.5.21" type="text/css" media="all">
+<style id="kadence-blocks-global-variables-inline-css" type="text/css">
+:root {--global-kb-font-size-sm:clamp(0.8rem, 0.73rem + 0.217vw, 0.9rem);--global-kb-font-size-md:clamp(1.1rem, 0.995rem + 0.326vw, 1.25rem);--global-kb-font-size-lg:clamp(1.75rem, 1.576rem + 0.543vw, 2rem);--global-kb-font-size-xl:clamp(2.25rem, 1.728rem + 1.63vw, 3rem);--global-kb-font-size-xxl:clamp(2.5rem, 1.456rem + 3.26vw, 4rem);--global-kb-font-size-xxxl:clamp(2.75rem, 0.489rem + 7.065vw, 6rem);}:root {--global-palette1: #3182CE;--global-palette2: #2B6CB0;--global-palette3: #1A202C;--global-palette4: #2D3748;--global-palette5: #4A5568;--global-palette6: #718096;--global-palette7: #EDF2F7;--global-palette8: #F7FAFC;--global-palette9: #ffffff;}
+</style>
+<style id="kadence_blocks_css-inline-css" type="text/css">
+.kt-tabs-id_171769-76 > .kt-tabs-content-wrap > .wp-block-kadence-tab{border-top-width:3px;border-right-width:0px;border-bottom-width:0px;border-left-width:0px;border-color:#0a6689;background:#ffffff;}.wp-block-kadence-tabs .kt-tabs-id_171769-76 > .kt-tabs-title-list li{margin-top:0px;margin-right:8px;margin-bottom:0px;margin-left:0px;}.wp-block-kadence-tabs .kt-tabs-id_171769-76 > .kt-tabs-title-list li .kt-tab-title, .wp-block-kadence-tabs .kt-tabs-id_171769-76 > .kt-tabs-content-wrap > .kt-tabs-accordion-title .kt-tab-title{font-size:1.1em;line-height:1.4em;border-top-width:0px;border-right-width:0px;border-bottom-width:0px;border-left-width:0px;border-top-left-radius:4px;border-top-right-radius:4px;border-bottom-right-radius:0px;border-bottom-left-radius:0px;padding-top:8px;padding-right:20px;padding-bottom:8px;padding-left:20px;border-color:#eeeeee;color:#222222;background:#eeeeee;}.wp-block-kadence-tabs .kt-tabs-id_171769-76 > .kt-tabs-content-wrap > .kt-tabs-accordion-title .kt-tab-title{margin-top:0px;margin-right:8px;margin-bottom:0px;margin-left:0px;}.wp-block-kadence-tabs .kt-tabs-id_171769-76 > .kt-tabs-title-list li .kt-tab-title:hover, .wp-block-kadence-tabs .kt-tabs-id_171769-76 > .kt-tabs-content-wrap > .kt-tabs-accordion-title .kt-tab-title:hover{border-color:#eeeeee;color:#222222;background:#e2e2e2;}.wp-block-kadence-tabs .kt-tabs-id_171769-76 > .kt-tabs-title-list li.kt-tab-title-active .kt-tab-title, .wp-block-kadence-tabs .kt-tabs-id_171769-76 > .kt-tabs-content-wrap > .kt-tabs-accordion-title.kt-tab-title-active .kt-tab-title{border-color:#eeeeee;color:#ffffff;background:#0a6689;}.kt-tabs-id_2791e9-96 > .kt-tabs-content-wrap > .wp-block-kadence-tab{border-top-width:3px;border-right-width:0px;border-bottom-width:0px;border-left-width:0px;border-color:#0a6689;background:#ffffff;}.wp-block-kadence-tabs .kt-tabs-id_2791e9-96 > .kt-tabs-title-list li{margin-top:0px;margin-right:8px;margin-bottom:0px;margin-left:0px;}.wp-block-kadence-tabs .kt-tabs-id_2791e9-96 > .kt-tabs-title-list li .kt-tab-title, .wp-block-kadence-tabs .kt-tabs-id_2791e9-96 > .kt-tabs-content-wrap > .kt-tabs-accordion-title .kt-tab-title{font-size:1.1em;line-height:1.4em;border-top-width:0px;border-right-width:0px;border-bottom-width:0px;border-left-width:0px;border-top-left-radius:4px;border-top-right-radius:4px;border-bottom-right-radius:0px;border-bottom-left-radius:0px;padding-top:8px;padding-right:20px;padding-bottom:8px;padding-left:20px;border-color:#eeeeee;color:#222222;background:#eeeeee;}.wp-block-kadence-tabs .kt-tabs-id_2791e9-96 > .kt-tabs-content-wrap > .kt-tabs-accordion-title .kt-tab-title{margin-top:0px;margin-right:8px;margin-bottom:0px;margin-left:0px;}.wp-block-kadence-tabs .kt-tabs-id_2791e9-96 > .kt-tabs-title-list li .kt-tab-title:hover, .wp-block-kadence-tabs .kt-tabs-id_2791e9-96 > .kt-tabs-content-wrap > .kt-tabs-accordion-title .kt-tab-title:hover{border-color:#eeeeee;color:#222222;background:#e2e2e2;}.wp-block-kadence-tabs .kt-tabs-id_2791e9-96 > .kt-tabs-title-list li.kt-tab-title-active .kt-tab-title, .wp-block-kadence-tabs .kt-tabs-id_2791e9-96 > .kt-tabs-content-wrap > .kt-tabs-accordion-title.kt-tab-title-active .kt-tab-title{border-color:#eeeeee;color:#ffffff;background:#0a6689;}.kt-tabs-id_5220af-45 > .kt-tabs-content-wrap > .wp-block-kadence-tab{border-top-width:3px;border-right-width:0px;border-bottom-width:0px;border-left-width:0px;border-color:#0a6689;background:#ffffff;}.wp-block-kadence-tabs .kt-tabs-id_5220af-45 > .kt-tabs-title-list li{margin-top:0px;margin-right:8px;margin-bottom:0px;margin-left:0px;}.wp-block-kadence-tabs .kt-tabs-id_5220af-45 > .kt-tabs-title-list li .kt-tab-title, .wp-block-kadence-tabs .kt-tabs-id_5220af-45 > .kt-tabs-content-wrap > .kt-tabs-accordion-title .kt-tab-title{font-size:1.1em;line-height:1.4em;border-top-width:0px;border-right-width:0px;border-bottom-width:0px;border-left-width:0px;border-top-left-radius:4px;border-top-right-radius:4px;border-bottom-right-radius:0px;border-bottom-left-radius:0px;padding-top:8px;padding-right:20px;padding-bottom:8px;padding-left:20px;border-color:#eeeeee;color:#222222;background:#eeeeee;}.wp-block-kadence-tabs .kt-tabs-id_5220af-45 > .kt-tabs-content-wrap > .kt-tabs-accordion-title .kt-tab-title{margin-top:0px;margin-right:8px;margin-bottom:0px;margin-left:0px;}.wp-block-kadence-tabs .kt-tabs-id_5220af-45 > .kt-tabs-title-list li .kt-tab-title:hover, .wp-block-kadence-tabs .kt-tabs-id_5220af-45 > .kt-tabs-content-wrap > .kt-tabs-accordion-title .kt-tab-title:hover{border-color:#eeeeee;color:#222222;background:#e2e2e2;}.wp-block-kadence-tabs .kt-tabs-id_5220af-45 > .kt-tabs-title-list li.kt-tab-title-active .kt-tab-title, .wp-block-kadence-tabs .kt-tabs-id_5220af-45 > .kt-tabs-content-wrap > .kt-tabs-accordion-title.kt-tab-title-active .kt-tab-title{border-color:#eeeeee;color:#ffffff;background:#0a6689;}.kt-tabs-id_84e0db-dc > .kt-tabs-content-wrap > .wp-block-kadence-tab{border-top-width:3px;border-right-width:0px;border-bottom-width:0px;border-left-width:0px;border-color:#0a6689;background:#ffffff;}.wp-block-kadence-tabs .kt-tabs-id_84e0db-dc > .kt-tabs-title-list li{margin-top:0px;margin-right:8px;margin-bottom:0px;margin-left:0px;}.wp-block-kadence-tabs .kt-tabs-id_84e0db-dc > .kt-tabs-title-list li .kt-tab-title, .wp-block-kadence-tabs .kt-tabs-id_84e0db-dc > .kt-tabs-content-wrap > .kt-tabs-accordion-title .kt-tab-title{font-size:1.1em;line-height:1.4em;border-top-width:0px;border-right-width:0px;border-bottom-width:0px;border-left-width:0px;border-top-left-radius:4px;border-top-right-radius:4px;border-bottom-right-radius:0px;border-bottom-left-radius:0px;padding-top:8px;padding-right:20px;padding-bottom:8px;padding-left:20px;border-color:#eeeeee;color:#222222;background:#eeeeee;}.wp-block-kadence-tabs .kt-tabs-id_84e0db-dc > .kt-tabs-content-wrap > .kt-tabs-accordion-title .kt-tab-title{margin-top:0px;margin-right:8px;margin-bottom:0px;margin-left:0px;}.wp-block-kadence-tabs .kt-tabs-id_84e0db-dc > .kt-tabs-title-list li .kt-tab-title:hover, .wp-block-kadence-tabs .kt-tabs-id_84e0db-dc > .kt-tabs-content-wrap > .kt-tabs-accordion-title .kt-tab-title:hover{border-color:#eeeeee;color:#222222;background:#e2e2e2;}.wp-block-kadence-tabs .kt-tabs-id_84e0db-dc > .kt-tabs-title-list li.kt-tab-title-active .kt-tab-title, .wp-block-kadence-tabs .kt-tabs-id_84e0db-dc > .kt-tabs-content-wrap > .kt-tabs-accordion-title.kt-tab-title-active .kt-tab-title{border-color:#eeeeee;color:#ffffff;background:#0a6689;}.kt-tabs-id_53f894-46 > .kt-tabs-content-wrap > .wp-block-kadence-tab{border-top-width:3px;border-right-width:0px;border-bottom-width:0px;border-left-width:0px;border-color:#0a6689;background:#ffffff;}.wp-block-kadence-tabs .kt-tabs-id_53f894-46 > .kt-tabs-title-list li{margin-top:0px;margin-right:8px;margin-bottom:0px;margin-left:0px;}.wp-block-kadence-tabs .kt-tabs-id_53f894-46 > .kt-tabs-title-list li .kt-tab-title, .wp-block-kadence-tabs .kt-tabs-id_53f894-46 > .kt-tabs-content-wrap > .kt-tabs-accordion-title .kt-tab-title{font-size:1.1em;line-height:1.4em;border-top-width:0px;border-right-width:0px;border-bottom-width:0px;border-left-width:0px;border-top-left-radius:4px;border-top-right-radius:4px;border-bottom-right-radius:0px;border-bottom-left-radius:0px;padding-top:8px;padding-right:20px;padding-bottom:8px;padding-left:20px;border-color:#eeeeee;color:#222222;background:#eeeeee;}.wp-block-kadence-tabs .kt-tabs-id_53f894-46 > .kt-tabs-content-wrap > .kt-tabs-accordion-title .kt-tab-title{margin-top:0px;margin-right:8px;margin-bottom:0px;margin-left:0px;}.wp-block-kadence-tabs .kt-tabs-id_53f894-46 > .kt-tabs-title-list li .kt-tab-title:hover, .wp-block-kadence-tabs .kt-tabs-id_53f894-46 > .kt-tabs-content-wrap > .kt-tabs-accordion-title .kt-tab-title:hover{border-color:#eeeeee;color:#222222;background:#e2e2e2;}.wp-block-kadence-tabs .kt-tabs-id_53f894-46 > .kt-tabs-title-list li.kt-tab-title-active .kt-tab-title, .wp-block-kadence-tabs .kt-tabs-id_53f894-46 > .kt-tabs-content-wrap > .kt-tabs-accordion-title.kt-tab-title-active .kt-tab-title{border-color:#eeeeee;color:#ffffff;background:#0a6689;}.kt-tabs-id_373a10-f3 > .kt-tabs-content-wrap > .wp-block-kadence-tab{border-top-width:3px;border-right-width:0px;border-bottom-width:0px;border-left-width:0px;border-color:#0a6689;background:#ffffff;}.wp-block-kadence-tabs .kt-tabs-id_373a10-f3 > .kt-tabs-title-list li{margin-top:0px;margin-right:8px;margin-bottom:0px;margin-left:0px;}.wp-block-kadence-tabs .kt-tabs-id_373a10-f3 > .kt-tabs-title-list li .kt-tab-title, .wp-block-kadence-tabs .kt-tabs-id_373a10-f3 > .kt-tabs-content-wrap > .kt-tabs-accordion-title .kt-tab-title{font-size:1.1em;line-height:1.4em;border-top-width:0px;border-right-width:0px;border-bottom-width:0px;border-left-width:0px;border-top-left-radius:4px;border-top-right-radius:4px;border-bottom-right-radius:0px;border-bottom-left-radius:0px;padding-top:8px;padding-right:20px;padding-bottom:8px;padding-left:20px;border-color:#eeeeee;color:#222222;background:#eeeeee;}.wp-block-kadence-tabs .kt-tabs-id_373a10-f3 > .kt-tabs-content-wrap > .kt-tabs-accordion-title .kt-tab-title{margin-top:0px;margin-right:8px;margin-bottom:0px;margin-left:0px;}.wp-block-kadence-tabs .kt-tabs-id_373a10-f3 > .kt-tabs-title-list li .kt-tab-title:hover, .wp-block-kadence-tabs .kt-tabs-id_373a10-f3 > .kt-tabs-content-wrap > .kt-tabs-accordion-title .kt-tab-title:hover{border-color:#eeeeee;color:#222222;background:#e2e2e2;}.wp-block-kadence-tabs .kt-tabs-id_373a10-f3 > .kt-tabs-title-list li.kt-tab-title-active .kt-tab-title, .wp-block-kadence-tabs .kt-tabs-id_373a10-f3 > .kt-tabs-content-wrap > .kt-tabs-accordion-title.kt-tab-title-active .kt-tab-title{border-color:#eeeeee;color:#ffffff;background:#0a6689;}
+</style>
+<script type="text/javascript" src="https://c0.wp.com/c/6.8.3/wp-includes/js/jquery/jquery.min.js" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://c0.wp.com/c/6.8.3/wp-includes/js/jquery/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="sdm-scripts-js-extra">
+/* <![CDATA[ */
+var sdm_ajax_script = {"ajaxurl":"birdbrainiac.github.io\/roll20sheet\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="birdbrainiac.github.io/roll20sheet/wp-content/plugins/simple-download-monitor/js/sdm_wp_scripts.js?ver=6.8.3" id="sdm-scripts-js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="birdbrainiac.github.io/roll20sheet/wp-content/themes/gridme/assets/js/respond.min.js" id="respond-js"></script>
+<![endif]-->
+<link rel="https://api.w.org/" href="birdbrainiac.github.io/roll20sheet/wp-json/"><link rel="alternate" title="JSON" type="application/json" href="birdbrainiac.github.io/roll20sheet/wp-json/wp/v2/posts/1036"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="birdbrainiac.github.io/roll20sheet/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.8.3">
+<link rel="canonical" href="birdbrainiac.github.io/roll20sheet/dice-roll20/">
+<link rel="shortlink" href="birdbrainiac.github.io/roll20sheet/?p=1036">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="birdbrainiac.github.io/roll20sheet/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Fdice-roll20%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="birdbrainiac.github.io/roll20sheet/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Fdice-roll20%2F&amp;format=xml">
+<style>
+
+	.enlighter-t-enlighter .enlighter-text {
+		color: red;
+	}
+	.enlighter-t-enlighter .enlighter-x12 {
+	  color: blue;
+	  text-decoration: none;
+	}
+
+</style>
+	<style>img#wpstats{display:none}</style>
+		<link rel="pingback" href="birdbrainiac.github.io/roll20sheet/xmlrpc.php">    <style type="text/css">
+            .gridme-site-title, .gridme-site-title a, .gridme-site-title a:hover, .gridme-site-title a:focus, .gridme-site-title a:active, .gridme-site-description {color: #ffffff;}
+        </style>
+    <style type="text/css" id="custom-background-css">
+body.custom-background { background-image: url("birdbrainiac.github.io/roll20sheet/wp-content/themes/gridme/assets/images/background.png"); background-position: left top; background-size: auto; background-repeat: repeat; background-attachment: fixed; }
+</style>
+			<style type="text/css" id="wp-custom-css">
+			/* widget separation is too high */
+.gridme-sidebar-widget-areas .widget {
+	margin-bottom: 20px;
+}
+.gridme-sidebar-widget-areas .widget li {
+  padding: 0 0 6px 0px;
+}
+.gridme-sidebar-widget-areas .widget li li {
+	padding: 0 0 0 10px;
+}
+
+/* font size */
+.entry-content p,
+.entry-content ol,
+.entry-content ul {
+	font-size: 110%;
+	
+}
+
+/* temporary date box */
+.gridme-grid-post .gridme-grid-datebox {
+	width:47px;
+}
+
+.gridme-grid-post-details {
+	height: 100px;
+}
+
+.gridme-grid-post,
+.gridme-sidebar-widget-areas .widget {
+	margin-bottom: 15px;
+}
+
+h2 {
+	font-variant-caps: small-caps;
+	background-color: none; /*black; */
+	border-radius:5px;
+	color: #ec008c; /* #f8f8f8;*/
+	padding: 5px;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	border: 1pt solid #ec008c;
+text-align: center;
+	text-decoration: none;
+}
+h3 {
+  text-decoration: underline;
+}
+.entry-title {
+	font: normal bold 32px 'Playfair Display',Arial,sans-serif;
+		/* normal normal 32px Domine,Arial,Helvetica,sans-serif; */
+	background-color: black;
+	padding: 10px;
+	padding-bottom: 15px;
+	border-radius: 10px;
+	color: #f8f8f8;
+	
+}
+.entry-title a,
+.entry-title a:hover {
+	color: #f8f8f8;
+	text-shadow: 2px 0px 4px #000000;
+}
+/* roll20 colours */
+h1, /* h2, */
+h1.page-title,
+.entry-title,
+.gridme-header-inside,
+.gridme-sidebar-widget-areas .widget .gridme-widget-title,
+.gridme-grid-post .gridme-grid-datebox{
+	color: #FFF;
+	background-color: #ec008c;
+	border-color: #ec008c;
+}
+h1.gridme-site-title {
+	background: transparent;
+}
+/* no gradient on datebox */
+h1, /* h2, */ 
+h1.page-title,
+.entry-title,
+.gridme-header-inside,
+.gridme-sidebar-widget-areas .widget .gridme-widget-title {
+  background: linear-gradient(0deg, rgba(238,174,202,1) 0%, rgba(236,0,110,1) 30%);
+}
+
+h2 {
+	border-radius: 15px;
+	color: #FFF;
+	background-color: #ec008c;
+	border-color: #ec008c;
+}
+
+p {
+	border-radius: 15px;
+}
+.gridme-page-header-inside {
+	width: 100%;
+}
+.gridme-grid-post .gridme-grid-datebox {
+	border-radius: 10px;
+}
+h1.page-title {
+	padding: 10px 50px 15px 50px;
+	border-radius: 10px;
+}
+
+/* active tab colour */
+.wp-block-kadence-tabs .kt-tabs-wrap > .kt-tabs-title-list li.kt-tab-title-active .kt-tab-title {
+	background: #ec008c;
+}
+
+div.enlighter {
+	background-color: whitesmoke;
+}
+
+.curved {
+	border-radius: 10%;
+}
+
+div.taxonomy-description {
+  background-color: #ffffff;
+  color: #333;
+  text-shadow: none;
+	padding: 10px;
+	margin-left: 7px;
+	margin-right: 7px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+/* footer titles */
+#gridme-footer-blocks .widget .gridme-widget-title {
+	padding-top: 7px;
+}
+
+.gridme-primary-nav-menu > li > a {
+  font-size: 120%;
+}
+
+h2 {
+border-radius: 0;
+color: #ec008c;
+background-color: transparent;
+border: 0;
+border-bottom: 1pt solid #ec008c;
+border-top: 3pt solid #ec008c;
+}
+h3 {
+	color: #ec008c;
+}
+
+.gridme-logo {
+	-webkit-flex: 0 0 18%;
+	width: 18%;
+	max-width: 18%;
+	
+}
+.gridme-header-menu {
+	-webkit-flex: 0 0 80%;
+	width: 80%;
+	max-width: 80%;
+}
+
+.wp-block-kadence-tabs .kt-tabs-wrap > .kt-tabs-title-list li.kt-tab-title-active .kt-tab-title {
+	color: white;
+}
+.kt-tabs-wrap  > .kt-tabs-content-wrap > .wp-block-kadence-tab {
+	border-top-color: #ec008c;
+}
+
+ul.lcp_catlist li a {
+	font-weight:bold;
+	color: #ec008c;
+}
+div.seriesbox {
+	display:none;
+}
+div.seriesbox a,
+span.series-nav-left a,
+.entry-content a {
+	color: #ec008c;
+}
+.wp-block-kadence-tabs .kt-tabs-mobile-layout-accordion > .kt-tabs-title-list li.kt-tab-title-active .kt-tab-title,
+.wp-block-kadence-tabs .kt-tabs-mobile-layout-accordion > .kt-tabs-content-wrap > .kt-tabs-accordion-title.kt-tab-title-active .kt-tab-title{
+	background-color: #ec008c;
+}
+
+.entry-content ul.lcp_catlist {
+	list-style: decimal;
+}
+
+.gridme-featured-posts-area .widget {
+	text-align: center;
+}
+
+#post-5420 div.seriesbox {
+	display: none;
+}
+
+.border-top {
+	border-top: 1pt solid black;
+	border-left: 1pt solid black;
+	border-right: 1pt solid black;
+	background-color: antiquewhite;
+	color:black;
+	margin-bottom: 0;
+	padding-bottom: 12px;
+	margin-left: 2%;
+	margin-right: 2%;
+	padding-left: 1%;
+	padding-right: 1%;
+	padding-top: 8px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.border-bottom {
+	border-bottom: 1pt solid black;
+	border-left: 1pt solid black;
+	border-right: 1pt solid black;
+	background-color: antiquewhite;
+	border-radius: 0;
+	margin-left: 2%;
+	margin-right: 2%;
+	padding-left: 1%;
+	padding-right: 1%;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+#gridme-posts-wrapper div.so-panel {
+	margin-bottom: 0;
+}
+
+.panel-grid.panel-no-style {
+	margin-bottom: 0px !important;
+	text-align: center;
+}
+.panel-grid-cell h3.widget-title {
+  margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+.panel-grid-cell .panel-last-child {
+  margin-bottom: 0;
+  width: 107%;
+	margin-left: -10px;
+}
+.series-nav-right  {
+	float:right
+}
+.gridme-masonry-inactive .gridme-grid-post.gridme-4-col {
+	margin-right: 5px;
+}
+
+.front-page .gridme-grid-post .gridme-grid-datebox {
+  width: 60px;
+}
+.front-page .gridme-grid-post .gridme-grid-datebox {
+  height:75px;
+ }
+.front-page .gridme-grid-post .gridme-grid-datebox .gridme-grid-datebox-day {
+  font-size: 24px;
+}
+.front-page .gridme-grid-post .gridme-grid-datebox .gridme-grid-datebox-month,
+.front-page .gridme-grid-post .gridme-grid-datebox .gridme-grid-datebox-year
+ {
+  font-size: 16px;
+}
+
+#post-8842 h2, #post-8842 h3 {
+	clear: none;
+}
+.heading-band,
+.heading-band a {
+   background-color: #ec008c;
+	color: white;
+}
+.heading-band {
+	border-radius: 10px;
+	font-size: 170%;
+  margin-top: 20px;
+}
+div.gridme-box-inside a:hover {
+	color:yellow; 
+	text-decoration: underline;
+	background:#ec008c;
+	  padding: 5px;
+  margin-left: -5px;
+	border-radius: 5px;
+	
+}
+.heading-band a:hover {
+	color:yellow;
+}
+
+div.front-page a:hover {
+	background:initial;
+}
+
+p.emphasis {
+	font-weight: bold;
+	background-color: #ec008c;
+	color: white;
+	margin-bottom: 2px;
+}
+#ez-toc-container.ez-toc-black {
+  background: #ec008c;
+	border-radius: 15px;
+}
+#ez-toc-container .ez-toc-link:hover,
+#ez-toc-container .ez-toc-link:visited {
+	background-color: blue;	
+}
+
+div.display-posts-online {
+	display: grid;
+	grid-template-columns: repeat(4, 25%);
+	text-align: center;
+}
+div.display-posts-online div.listing-item {
+	display: grid;
+}
+
+div.display-posts-online div.listing-item a.image,
+div.display-posts-online div.listing-item .title,
+div.display-posts-online div.listing-item .excerpt {
+	grid-column: 1 / -1;
+
+}
+div.display-posts-online div.listing-item .excerpt-dash {
+	display: none;
+}
+.small-column {
+	font-size: 70% !important;
+}		</style>
+		</head>
+
+<body class="wp-singular post-template-default single single-post postid-1036 single-format-standard custom-background wp-theme-gridme wp-child-theme-gridme-child gridme-animated gridme-fadein gridme-theme-is-active gridme-layout-type-full gridme-masonry-inactive gridme-header-menu-active gridme-tagline-inactive gridme-primary-menu-active gridme-primary-mobile-menu-active gridme-secondary-mobile-menu-active gridme-secondary-menu-centered gridme-footer-social-buttons-active gridme-uc-links" id="gridme-site-body" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+<a class="skip-link screen-reader-text" href="#gridme-content-wrapper">Skip to content</a>
+
+
+
+<div class="gridme-site-header gridme-container" id="gridme-header" itemscope="itemscope" itemtype="http://schema.org/WPHeader" role="banner">
+<div class="gridme-head-content gridme-clearfix" id="gridme-head-content">
+
+<div class="gridme-header-inside gridme-clearfix">
+<div class="gridme-header-inside-content gridme-clearfix">
+<div class="gridme-outer-wrapper">
+<div class="gridme-header-inside-container">
+
+<div class="gridme-logo">
+    <div class="site-branding">
+                  <p class="gridme-site-title"><a href="birdbrainiac.github.io/roll20sheet/" rel="home">Cybersphere</a></p>
+                    </div>
+</div>
+
+<div class="gridme-header-menu">
+<div class="gridme-container gridme-primary-menu-container gridme-clearfix">
+<div class="gridme-primary-menu-container-inside gridme-clearfix">
+<nav class="gridme-nav-primary" id="gridme-primary-navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement" role="navigation" aria-label="Primary Menu">
+<button class="gridme-primary-responsive-menu-icon" aria-controls="gridme-menu-primary-navigation" aria-expanded="false">Menu</button>
+<ul id="gridme-menu-primary-navigation" class="gridme-primary-nav-menu gridme-menu-primary gridme-clearfix"><li id="menu-item-8501" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8501"><a href="birdbrainiac.github.io/roll20sheet/blog/">Blog</a></li>
+<li id="menu-item-5625" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-5625"><a href="birdbrainiac.github.io/roll20sheet/roll20-sheet-author-master-list/">Roll20 Sheet Author</a>
+<ul class="sub-menu">
+	<li id="menu-item-5639" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5639"><a href="birdbrainiac.github.io/roll20sheet/guide-to-the-guide/">Guide to the Guide</a></li>
+	<li id="menu-item-4245" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-4245"><a href="birdbrainiac.github.io/roll20sheet/html-building-blocks/">HTML</a></li>
+	<li id="menu-item-4244" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-4244"><a href="birdbrainiac.github.io/roll20sheet/guide-to-css-styling-a-character-sheet/">CSS</a></li>
+	<li id="menu-item-4246" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-4246"><a href="birdbrainiac.github.io/roll20sheet/sheet-workers-automating-the-sheet/">Sheet Workers</a></li>
+	<li id="menu-item-8768" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-8768"><a href="birdbrainiac.github.io/roll20sheet/repeating-section/">Repeating Sections</a></li>
+	<li id="menu-item-9903" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9903"><a href="birdbrainiac.github.io/roll20sheet/guide-to-rolltemplates-and-translations/">rollTemplates</a></li>
+	<li id="menu-item-11340" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11340"><a href="birdbrainiac.github.io/roll20sheet/guide-to-custom-roll-parsing/">Custom Roll Parsing</a></li>
+	<li id="menu-item-12152" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12152"><a href="birdbrainiac.github.io/roll20sheet/guide-to-rolltemplates-and-translations/">Translations</a></li>
+	<li id="menu-item-13092" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13092"><a href="birdbrainiac.github.io/roll20sheet/guide-to-sheet-templating/">Templating with Handlebars</a></li>
+</ul>
+</li>
+<li id="menu-item-1513" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-1513"><a href="birdbrainiac.github.io/roll20sheet/category/online/playing-roll20/">Playing Online</a></li>
+<li id="menu-item-923" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-923"><a href="birdbrainiac.github.io/roll20sheet/category/thinking/">RPG Talk</a>
+<ul class="sub-menu">
+	<li id="menu-item-925" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-925"><a href="birdbrainiac.github.io/roll20sheet/category/thinking/pendragon/">Pendragon</a></li>
+</ul>
+</li>
+<li id="menu-item-8776" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8776"><a href="birdbrainiac.github.io/roll20sheet/game-reviews/">Reviews</a></li>
+<li id="menu-item-8765" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-8765"><a href="birdbrainiac.github.io/roll20sheet/game-designs/">Game Designs</a>
+<ul class="sub-menu">
+	<li id="menu-item-11517" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11517"><a href="birdbrainiac.github.io/roll20sheet/starscape/">Starscape</a></li>
+	<li id="menu-item-13096" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13096"><a href="birdbrainiac.github.io/roll20sheet/carrington/">The Carrington Event</a></li>
+	<li id="menu-item-8766" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8766"><a href="birdbrainiac.github.io/roll20sheet/legends-never-die/">Legends Never Die!</a></li>
+	<li id="menu-item-11518" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11518"><a href="birdbrainiac.github.io/roll20sheet/more-games/">More Games</a></li>
+</ul>
+</li>
+<li id="menu-item-1693" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1693"><a href="birdbrainiac.github.io/roll20sheet/about/">About</a>
+<ul class="sub-menu">
+	<li id="menu-item-1692" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1692"><a href="birdbrainiac.github.io/roll20sheet/portfolio/">Portfolio</a></li>
+</ul>
+</li>
+<li class="gridme-header-icon-search-item"><a href="#" aria-label="Search Button" class="gridme-header-icon-search"><i class="fas fa-search" aria-hidden="true" title="Search"></i></a></li></ul></nav>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div><!--/#gridme-head-content -->
+</div><!--/#gridme-header -->
+
+<div id="gridme-search-overlay-wrap" class="gridme-search-overlay">
+  <div class="gridme-search-overlay-content">
+    
+<form role="search" method="get" class="gridme-search-form" action="birdbrainiac.github.io/roll20sheet/">
+<label>
+    <span class="gridme-sr-only">Search for:</span>
+    <input type="search" class="gridme-search-field" placeholder="Search &hellip;" value="" name="s">
+</label>
+<input type="submit" class="gridme-search-submit" value="">
+</form>  </div>
+  <button class="gridme-search-closebtn" aria-label="Close Search" title="Close Search">&times;</button>
+</div>
+
+
+<div id="gridme-header-end"></div>
+
+
+
+
+<div class="gridme-outer-wrapper" id="gridme-wrapper-outside">
+
+<div class="gridme-container gridme-clearfix" id="gridme-wrapper">
+<div class="gridme-content-wrapper gridme-clearfix" id="gridme-content-wrapper">
+<div class="gridme-main-wrapper gridme-clearfix" id="gridme-main-wrapper" itemscope="itemscope" itemtype="http://schema.org/Blog" role="main">
+<div class="theiaStickySidebar">
+<div class="gridme-main-wrapper-inside gridme-clearfix">
+
+
+
+
+<div class="gridme-posts-wrapper" id="gridme-posts-wrapper">
+
+
+
+<article id="post-1036" class="gridme-post-singular gridme-box post-1036 post type-post status-publish format-standard has-post-thumbnail hentry category-playing-roll20 tag-roll-query tag-selected tag-target tag-roll-templates tag-rollable-tables tag-macros tag-macro-button tag-inline-roll tag-initiative-roll tag-exploding-roll tag-reusing-roll tag-high-low-dice tag-critical-or-fumble-roll tag-exalted-dice tag-chat-menus series-dice-rolls wpcat-19-id">
+<div class="gridme-box-inside">
+
+    
+        <header class="entry-header">
+    <div class="entry-header-inside gridme-clearfix">
+                    <h1 class="post-title entry-title"><a href="birdbrainiac.github.io/roll20sheet/dice-roll20/" rel="bookmark">How To Roll Dice in Roll20</a></h1>        
+                    <div class="gridme-entry-meta-single">
+        <span class="gridme-entry-meta-single-date"><i class="far fa-clock" aria-hidden="true"></i>&nbsp;January 20, 2023</span>        <span class="gridme-entry-meta-single-comments"><i class="far fa-comments" aria-hidden="true"></i>&nbsp;<a href="birdbrainiac.github.io/roll20sheet/dice-roll20/#respond">Leave a Comment<span class="gridme-sr-only"> on How To Roll Dice in Roll20</span></a></span>
+        <span class="gridme-entry-meta-single-cats"><i class="far fa-folder-open" aria-hidden="true"></i>&nbsp;<span class="gridme-sr-only">Posted in </span><a href="birdbrainiac.github.io/roll20sheet/category/online/playing-roll20/" rel="category tag">Playing With Roll20</a></span>        </div>
+        </div>
+    </header><!-- .entry-header -->
+    
+    
+    <div class="entry-content gridme-clearfix">
+            <div class="seriesbox"><div class="center"><br><a href="birdbrainiac.github.io/roll20sheet/series/dice-rolls/" class="series-173" title="Dice Rolls">Dice Rolls</a></div><ol class="serieslist-ol"><li class="serieslist-li-current">How To Roll Dice in Roll20</li> <li class="serieslist-li"><a href="birdbrainiac.github.io/roll20sheet/essence/" title="Essence 20 Dice Rolls for GI Joe RPG">Essence 20 Dice Rolls for GI Joe RPG</a></li> <li class="serieslist-li"><a href="birdbrainiac.github.io/roll20sheet/cheating-dice-rolls-in-roll20/" title="Cheating Dice Rolls in Roll20">Cheating Dice Rolls in Roll20</a></li></ol></div>
+<p>Rolling dice is one of the most common things you&rsquo;ll do in Roll20 as a GM or as a player. You can make all sorts of rolls in Roll20 and do some amazing things, but it can be hard to know exactly <em>what </em>you can do. Everything on this page is also on the <a href="https://wiki.roll20.net/" target="_blank" rel="noreferrer noopener">Roll20 Wiki</a> and can be found there &ndash; <em>if </em>you already know what you&rsquo;re looking for. The wiki is much better organised now than it was in the past (thank you Andreas!), but it would still be handy to have everything related to dice rolls on one page. So that&rsquo;s what this post is.</p>
+
+
+
+<p>This is an extremely comprehensive post and might not be easy reading, but I hope it&rsquo;s a great reference.</p>
+
+
+
+<div id="ez-toc-container" class="ez-toc-v2_0_76 ez-toc-wrap-left counter-hierarchy ez-toc-counter ez-toc-black ez-toc-container-direction">
+<div class="ez-toc-title-container">
+<p class="ez-toc-title" style="cursor:inherit">Table of Contents</p>
+<span class="ez-toc-title-toggle"></span></div>
+<nav><ul class="ez-toc-list ez-toc-list-level-1 "><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-heading-1" href="#Counting_Dice">Counting Dice</a></li><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-heading-2" href="#Getting_Values_From_Sheets">Getting Values From Sheets</a></li><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-heading-3" href="#How_to_Display_Dice_Rolls_in_Chat">How to Display Dice Rolls in Chat</a></li><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-heading-4" href="#Roll_Queries">Roll Queries</a></li><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-heading-5" href="#Using_the_Turn_Tracker">Using the Turn Tracker</a></li><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-heading-6" href="#Reusing_Rolls">Reusing Rolls</a></li><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-heading-7" href="#Wrapping_Up">Wrapping Up</a></li></ul></nav></div>
+<h2 class="wp-block-heading"><span class="ez-toc-section" id="Counting_Dice"></span>Counting Dice<span class="ez-toc-section-end"></span></h2>
+
+
+
+<div class="wp-block-kadence-tabs alignnone"><div class="kt-tabs-wrap kt-tabs-id_171769-76 kt-tabs-has-10-tabs kt-active-tab-1 kt-tabs-layout-vtabs kt-tabs-tablet-layout-inherit kt-tabs-mobile-layout-accordion kt-tab-alignment-left kt-create-accordion" style="max-width:none"><ul class="kt-tabs-title-list"><li id="countsum" class="kt-title-item kt-title-item-1 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-active"><a href="#countsum" data-tab="1" class="kt-tab-title kt-tab-title-1 "><span class="kt-title-text">Simple Dice Rolls</span></a></li><li id="countsuccesses" class="kt-title-item kt-title-item-2 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-inactive"><a href="#countsuccesses" data-tab="2" class="kt-tab-title kt-tab-title-2 "><span class="kt-title-text">Counting Successes</span></a></li><li id="countcriticals" class="kt-title-item kt-title-item-3 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-inactive"><a href="#countcriticals" data-tab="3" class="kt-tab-title kt-tab-title-3 "><span class="kt-title-text">Criticals and Fumbles</span></a></li><li id="countexploding" class="kt-title-item kt-title-item-4 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-inactive"><a href="#countexploding" data-tab="4" class="kt-tab-title kt-tab-title-4 "><span class="kt-title-text">Exploding Dice</span></a></li><li id="countrerolls" class="kt-title-item kt-title-item-5 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-inactive"><a href="#countrerolls" data-tab="5" class="kt-tab-title kt-tab-title-5 "><span class="kt-title-text">Rerolling Dice</span></a></li><li id="countround" class="kt-title-item kt-title-item-6 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-inactive"><a href="#countround" data-tab="6" class="kt-tab-title kt-tab-title-6 "><span class="kt-title-text">Rounding and Math</span></a></li><li id="counthighorlow" class="kt-title-item kt-title-item-7 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-inactive"><a href="#counthighorlow" data-tab="7" class="kt-tab-title kt-tab-title-7 "><span class="kt-title-text">High or Low Dice</span></a></li><li id="countgrouprolls" class="kt-title-item kt-title-item-8 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-inactive"><a href="#countgrouprolls" data-tab="8" class="kt-tab-title kt-tab-title-8 "><span class="kt-title-text">Grouping Rolls</span></a></li><li id="countfails" class="kt-title-item kt-title-item-9 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-inactive"><a href="#countfails" data-tab="9" class="kt-tab-title kt-tab-title-9 "><span class="kt-title-text">Counting Fails (Exalted)</span></a></li><li id="countsort" class="kt-title-item kt-title-item-10 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-inactive"><a href="#countsort" data-tab="10" class="kt-tab-title kt-tab-title-10 "><span class="kt-title-text">Sorting Dice</span></a></li></ul><div class="kt-tabs-content-wrap">
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-1 kt-inner-tab_368f1a-94"><div class="kt-tab-inner-content-inner">
+<p>When a line begins with either <strong>/roll</strong> or <strong>/r</strong> whatever follows is a dice roll. Dice are shown as NdX or NDX, where N is the number of dice and X is the size of those dice. So 3d6 is a roll of three six-sided dice. This should be pretty familiar to most roleplayers.</p>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-9d6595d7 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.33%"><pre class="wp-block-code" aria-describedby="shcb-language-1" data-shcb-language-name="Markdown" data-shcb-language-slug="markdown"><span><code class="hljs language-markdown">/roll 3d6
+/r 1d20+4
+/r d8 + d6 + 2d4
+/r d10 * d6 - d20</code></span><small class="shcb-language" id="shcb-language-1"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">Markdown</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">markdown</span><span class="shcb-language__paren">)</span></small></pre></div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:66.66%"><div class="wp-block-image is-style-default">
+<figure class="alignright size-full"><img decoding="async" width="213" height="132" src="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-108.png" alt="" class="wp-image-4827" srcset="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-108.png 213w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-108-150x93.png 150w" sizes="(max-width: 213px) 100vw, 213px"></figure></div>
+
+
+<p>By default, rolls are simply added up. A 3d6 roll is shown at the right:</p>
+</div>
+</div>
+
+
+
+<p>You can use dF for the Fudge Dice used in the Fudge and Fate systems. These are special d6, where every 2 faces show +, 0, or -, meaning each die can give +1, +0, or -1. A Typical roll is four fudge dice.</p>
+
+
+<pre class="wp-block-code" aria-describedby="shcb-language-2" data-shcb-language-name="Markdown" data-shcb-language-slug="markdown"><span><code class="hljs language-markdown">/r 4dF</code></span><small class="shcb-language" id="shcb-language-2"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">Markdown</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">markdown</span><span class="shcb-language__paren">)</span></small></pre></div></div>
+
+
+
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-2 kt-inner-tab_a97fa3-4f"><div class="kt-tab-inner-content-inner">
+<p>If you want to count <strong>successes</strong>, this is easily done. Just use <strong>&gt;target</strong>, like <strong>&gt;7. </strong>You can use =, &gt;, and &lt;. In Roll20, the &gt; and &lt; symbols include equal values. On a d6 roll &gt;5 means 5 and 6, not just 6. </p>
+
+
+<pre class="wp-block-code" aria-describedby="shcb-language-3" data-shcb-language-name="Markdown" data-shcb-language-slug="markdown"><span><code class="hljs language-markdown">/roll d10&gt;7
+/r d6=6
+/r d20<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">12</span></span></span></code></span><small class="shcb-language" id="shcb-language-3"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">Markdown</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">markdown</span><span class="shcb-language__paren">)</span></small></pre>
+
+
+<p>When building a dice expression, avoid spaces!</p>
+</div></div>
+
+
+
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-3 kt-inner-tab_3a55f9-15"><div class="kt-tab-inner-content-inner">
+<p></p>
+
+
+
+<p>By default, Roll20 shows maximum values (critical) on a die in green, and minimums (fumbles) in red. </p>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-9d6595d7 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:66.66%">
+<p>You can set your own ranges with cs and cf, and can have overlapping zones (shown in blue).</p>
+
+
+
+<p>If you don&rsquo;t want criticals or fumbles to be shown, set a number that can&rsquo;t be rolled on the die.</p>
+
+
+
+<p>You can combine these with counting successes &ndash; dice expressions can get complicated.</p>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.33%"><pre class="wp-block-code" aria-describedby="shcb-language-4" data-shcb-language-name="Markdown" data-shcb-language-slug="markdown"><span><code class="hljs language-markdown">/roll 6d10cf<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">2</span>
+/<span class="hljs-attr">r</span> <span class="hljs-attr">1d20cs10</span>
+/<span class="hljs-attr">r</span> <span class="hljs-attr">2d6cs</span>&gt;</span></span>5cf<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">2</span>
+/<span class="hljs-attr">r</span> <span class="hljs-attr">3d6cs</span>&gt;</span></span>3cf<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">4</span>
+/<span class="hljs-attr">r</span> <span class="hljs-attr">6d6cs10cf0</span>
+/<span class="hljs-attr">r</span> <span class="hljs-attr">3d6</span>&gt;</span></span>3cs&gt;5</code></span><small class="shcb-language" id="shcb-language-4"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">Markdown</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">markdown</span><span class="shcb-language__paren">)</span></small></pre></div>
+</div>
+</div></div>
+
+
+
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-4 kt-inner-tab_745f03-47"><div class="kt-tab-inner-content-inner">
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-9d6595d7 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:66.66%">
+<p>Many systems have exploding dice &ndash; where you roll extra dice if the dice rolled maximum or in a range. Show these with !. By default, dice explode on maximum, but you can declare a result or range.</p>
+
+
+
+<p>You can combine mix and match with others, but need to be careful about the order.</p>
+
+
+
+<p>Exploding dice give <strong>extra dice</strong>. If you want the extra dice to make a bigger die, use <strong>!!</strong> (e.g. in Shadowrun, rolling a 6 means you roll another die and add to the original die).</p>
+
+
+
+<p>All extra dice can have a -1 applied, by using <strong>!p</strong> (Penetrating dice).</p>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.33%"><pre class="wp-block-code" aria-describedby="shcb-language-5" data-shcb-language-name="Markdown" data-shcb-language-slug="markdown"><span><code class="hljs language-markdown">/r 3d6!
+/r 2d10!=1
+/r 5d10!&gt;7
+/r 5d10!&gt;7
+/r 5d10&gt;7cs&gt;9!&gt;7
+/r 7d6!!
+/r 5d6!!&gt;5
+/r 6d10!p
+/r 5d8!p&gt;7</code></span><small class="shcb-language" id="shcb-language-5"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">Markdown</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">markdown</span><span class="shcb-language__paren">)</span></small></pre></div>
+</div>
+</div></div>
+
+
+
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-5 kt-inner-tab_e7dc8e-68"><div class="kt-tab-inner-content-inner">
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-9d6595d7 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:66.66%">
+<p>Use <strong>r</strong> to reroll dice (and can use &lt; or &gt; to create a range. Rerolled dice <em>replace </em>the dice they rerolled. Unlike exploding, they are not added in.</p>
+
+
+
+<p>Any rerolled dice can themselves reroll. If you want to reroll dice only once, use <strong>ro</strong>.</p>
+
+
+
+<p>You can as usual combine with other reroll types, but when counting successes, that comes first. Others can be in any order.</p>
+
+
+
+<p><strong>Be careful:</strong> If combining exploding dice and reroll, the reroll triggers if the exploding die is in the reroll range, and can remove a large !! roll. So that&rsquo;s not a good combination.</p>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.33%"><pre class="wp-block-code" aria-describedby="shcb-language-6" data-shcb-language-name="Markdown" data-shcb-language-slug="markdown"><span><code class="hljs language-markdown">/roll 3d6r1
+/r 3d6ro1
+/r 8d10r<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">2</span>
+/<span class="hljs-attr">r</span> <span class="hljs-attr">6d8</span>&gt;</span></span>7r<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">2</span>
+/<span class="hljs-attr">r</span> <span class="hljs-attr">6d10</span>&gt;</span></span>8cs&gt;9!!ro<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">2</span>
+/<span class="hljs-attr">r</span> <span class="hljs-attr">6d10</span>&gt;</span></span>8ro<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">2!!cs</span>&gt;</span></span>9</code></span><small class="shcb-language" id="shcb-language-6"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">Markdown</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">markdown</span><span class="shcb-language__paren">)</span></small></pre></div>
+</div>
+</div></div>
+
+
+
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-6 kt-inner-tab_846874-cb"><div class="kt-tab-inner-content-inner">
+<p>A roll can perform arithmetic. For example</p>
+
+
+<pre class="wp-block-code" aria-describedby="shcb-language-7" data-shcb-language-name="Markdown" data-shcb-language-slug="markdown"><span><code class="hljs language-markdown">/r 6+4
+/r 6 * (5-2) + 4</code></span><small class="shcb-language" id="shcb-language-7"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">Markdown</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">markdown</span><span class="shcb-language__paren">)</span></small></pre>
+
+
+<p>Rolls obey normal arithmetic order of operations (PEMDAS/BODMAS). You can do <strong>+ &ndash; * /</strong>, but also <strong>**</strong> (raise to the power of) and <strong>%</strong> (divide by the amount and report the remainder).</p>
+
+
+
+<p>Using parenthesis is very handy for organising rolls.</p>
+
+
+
+<p>You can also round expressions in three ways:</p>
+
+
+
+<ul class="wp-block-list">
+<li><strong>round( ) </strong>&ndash; round to the nearest</li>
+
+
+
+<li><strong>floor( )</strong> &ndash; round down</li>
+
+
+
+<li><strong>ceil( )</strong> &ndash; round up</li>
+</ul>
+</div></div>
+
+
+
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-7 kt-inner-tab_405b08-27"><div class="kt-tab-inner-content-inner">
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-9d6595d7 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:66.66%">
+<p>You can drop some dice, or keep only some dice. <strong>d3</strong> means to drop the 3 lowest dice, and <strong>k3</strong> means keep only the 3 highest dice.</p>
+
+
+
+<p>Use <strong>dh </strong>or <strong>dl </strong>to drop the highest or lowest dice, and <strong>kh </strong>or <strong>kl </strong>to keep only the highest or lowest dice. </p>
+
+
+
+<p>It&rsquo;s very common to combine this with a grouping roll&hellip;</p>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.33%"><pre class="wp-block-code" aria-describedby="shcb-language-8" data-shcb-language-name="Markdown" data-shcb-language-slug="markdown"><span><code class="hljs language-markdown">/r 6d10k3
+/r 2d6d1
+/r 2d6dl1
+/r 2d6kh1
+</code></span><small class="shcb-language" id="shcb-language-8"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">Markdown</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">markdown</span><span class="shcb-language__paren">)</span></small></pre></div>
+</div>
+</div></div>
+
+
+
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-8 kt-inner-tab_b9bf07-e4"><div class="kt-tab-inner-content-inner">
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-9d6595d7 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:66.66%">
+<p>You can group similar rolls together. Like, 5 bandits are attacking the fighter and you count how many hit. </p>
+
+
+
+<p>A roll like <strong>/r {5d20}&gt;13</strong> takes the <strong>&gt;13</strong> difficulty test and applies it to every roll in the set. Surround a group roll with curly brackets { } and apply rules to the brackets.</p>
+
+
+<div class="wp-block-image is-style-default">
+<figure class="alignleft size-full"><img decoding="async" width="239" height="106" src="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-113.png" alt="" class="wp-image-4903" srcset="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-113.png 239w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-113-150x67.png 150w" sizes="(max-width: 239px) 100vw, 239px"></figure></div></div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.33%"><pre class="wp-block-code" aria-describedby="shcb-language-9" data-shcb-language-name="Markdown" data-shcb-language-slug="markdown"><span><code class="hljs language-markdown">/r {5d20}&gt;13
+/r {7d20+5}&gt;15
+/r {1d8,1d6}kh1
+/r {3d6,4d8}kh1
+/r {1d10,{10}}dh1</code></span><small class="shcb-language" id="shcb-language-9"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">Markdown</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">markdown</span><span class="shcb-language__paren">)</span></small></pre></div>
+</div>
+
+
+
+<p>You might also want to make a Savage Worlds roll, where you roll a die of any size and a wild d6, and take the highest: <strong>/r {1d8, 1d6}kh1</strong>.</p>
+
+
+
+<p>You cant combine numbers and dice. You can trick roll20 into treating numbers as dice by wrapping them in { } (e.g. {10}) or adding an imaginary dice roll (7+d0), and you can treat dice as numbers by using inline rolls (see below).</p>
+</div></div>
+
+
+
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-9 kt-inner-tab_59930e-7b"><div class="kt-tab-inner-content-inner">
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-9d6595d7 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:66.66%">
+<p>You can count failures just like successes, with f&lt;3 or f1. Each failure counts as -1 success.</p>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.33%"><pre class="wp-block-code" aria-describedby="shcb-language-10" data-shcb-language-name="Markdown" data-shcb-language-slug="markdown"><span><code class="hljs language-markdown">/r 7d6&gt;4f1
+/r 7d10&gt;10f<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">6</span> + <span class="hljs-attr">7</span></span></span></code></span><small class="shcb-language" id="shcb-language-10"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">Markdown</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">markdown</span><span class="shcb-language__paren">)</span></small></pre></div>
+</div>
+
+
+
+<p>A common request is for rolls where you can fail, succeed, or get critical successes where rolling max gives 2 successes. You can achieve this with a little creativity. Since a roll generates 0, 1, or 2, you can do this with successes and failures (generating -1, 0, or 1 per die) than adding the number of dice. So something like <strong>/r 7d10&gt;10f&lt;6 + 7</strong>.</p>
+
+
+
+<p>You can also use a Rollable Table (see below).</p>
+</div></div>
+
+
+
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-10 kt-inner-tab_31c924-a8"><div class="kt-tab-inner-content-inner">
+<p>The easiest thing you can do is simply add <strong>sa </strong>or <strong>sd </strong>(sort ascending or sort descending) to the end of the expression, and this shows the dice in order of their size.</p>
+
+
+
+<figure class="wp-block-image size-full is-style-default"><img fetchpriority="high" decoding="async" width="320" height="242" src="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-114.png" alt="" class="wp-image-4906" srcset="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-114.png 320w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-114-150x113.png 150w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-114-300x227.png 300w" sizes="(max-width: 320px) 100vw, 320px"></figure>
+
+
+
+<p>When it&rsquo;s important to visually pick out the dice, this is the way to go.</p>
+</div></div>
+</div></div></div>
+
+
+
+<h2 class="wp-block-heading"><span class="ez-toc-section" id="Getting_Values_From_Sheets"></span>Getting Values From Sheets<span class="ez-toc-section-end"></span></h2>
+
+
+
+<div class="wp-block-kadence-tabs alignnone"><div class="kt-tabs-wrap kt-tabs-id_2791e9-96 kt-tabs-has-4-tabs kt-active-tab-1 kt-tabs-layout-vtabs kt-tabs-tablet-layout-inherit kt-tabs-mobile-layout-accordion kt-tab-alignment-left kt-create-accordion" style="max-width:none"><ul class="kt-tabs-title-list"><li id="callingattributes" class="kt-title-item kt-title-item-1 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-active"><a href="#callingattributes" data-tab="1" class="kt-tab-title kt-tab-title-1 "><span class="kt-title-text">Calling Attributes</span></a></li><li id="getfromname" class="kt-title-item kt-title-item-2 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-inactive"><a href="#getfromname" data-tab="2" class="kt-tab-title kt-tab-title-2 "><span class="kt-title-text">Character Name</span></a></li><li id="getselected" class="kt-title-item kt-title-item-3 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-inactive"><a href="#getselected" data-tab="3" class="kt-tab-title kt-tab-title-3 "><span class="kt-title-text">Selected</span></a></li><li id="gettarget" class="kt-title-item kt-title-item-4 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-inactive"><a href="#gettarget" data-tab="4" class="kt-tab-title kt-tab-title-4 "><span class="kt-title-text">Target</span></a></li></ul><div class="kt-tabs-content-wrap">
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-1 kt-inner-tab_f58d39-b4"><div class="kt-tab-inner-content-inner">
+<p>In theory, you can call a character&rsquo;s attribute with the attributes name, like @{strength}.</p>
+
+
+
+<p>The problem is you need to tell Roll20 which <strong>strength</strong> attribute to use &ndash; there are likely multiple character sheets each with a strength attribute. That&rsquo;s where these tabs come in.</p>
+</div></div>
+
+
+
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-2 kt-inner-tab_9461df-b8"><div class="kt-tab-inner-content-inner">
+<p>You can supply a name like <strong>@{bob|strength}</strong>. The name should match the character sheet exactly (though the case doesn&rsquo;t matter). If you have a character sheet named Bob The Builder, the call would be <strong>@{Bob The Builder|strength}</strong>. </p>
+
+
+
+<p>Names can include spaces and other special characters &ndash; but it&rsquo;s better to just stick with spaces. Others can cause problems.</p>
+</div></div>
+
+
+
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-3 kt-inner-tab_e102dd-46"><div class="kt-tab-inner-content-inner"><div class="wp-block-image is-style-default">
+<figure class="alignright size-full is-resized"><img loading="lazy" decoding="async" width="401" height="318" src="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-119.png" alt="" class="wp-image-4953" style="width:201px;height:159px" srcset="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-119.png 401w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-119-150x119.png 150w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-119-300x238.png 300w" sizes="auto, (max-width: 401px) 100vw, 401px"></figure></div>
+
+
+<p>Supplying a character name is very specific, and those attribute calls only ever apply to that person. But if a token <strong>Represents </strong>a character, you can use selected, like <strong>@{selected|strength}</strong>. </p>
+
+
+
+<p>This is very handy for creating rolls which will work for any character. Just select them and make the roll.</p>
+</div></div>
+
+
+
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-4 kt-inner-tab_b099f0-70"><div class="kt-tab-inner-content-inner">
+<p><strong>Target </strong>works just like <strong>selected</strong>, except you are prompted for the target after starting the roll. You can use this to target characters you don&rsquo;t control, and is handy for attacking opponents: <strong>@{target|armour class}</strong>.</p>
+
+
+
+<p>You can build a roll that targets multiple opponents, but you must give each foe a description: <strong>@{target|foe1|armour class}</strong>. The actual name of the descriptor can be anything, it just has to <em>be there </em>if you have multiple targets,</p>
+</div></div>
+</div></div></div>
+
+
+
+<h2 class="wp-block-heading"><span class="ez-toc-section" id="How_to_Display_Dice_Rolls_in_Chat"></span>How to Display Dice Rolls in Chat<span class="ez-toc-section-end"></span></h2>
+
+
+
+<p>The basic <strong>/roll</strong> method of rolling dice is kind of ugly. Luckily there are other ways to present the output. Most of these deserve a full post and may be expanded on later.</p>
+
+
+
+<div class="wp-block-kadence-tabs alignnone"><div class="kt-tabs-wrap kt-tabs-id_5220af-45 kt-tabs-has-10-tabs kt-active-tab-1 kt-tabs-layout-vtabs kt-tabs-tablet-layout-inherit kt-tabs-mobile-layout-accordion kt-tab-alignment-left kt-create-accordion" style="max-width:none"><ul class="kt-tabs-title-list"><li id="inlinerolls" class="kt-title-item kt-title-item-1 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-active"><a href="#inlinerolls" data-tab="1" class="kt-tab-title kt-tab-title-1 "><span class="kt-title-text">Inline Rolls</span></a></li><li id="tagsorlabels" class="kt-title-item kt-title-item-2 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-inactive"><a href="#tagsorlabels" data-tab="2" class="kt-tab-title kt-tab-title-2 "><span class="kt-title-text">Using Tags or Labels</span></a></li><li id="rolltemplates" class="kt-title-item kt-title-item-3 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-inactive"><a href="#rolltemplates" data-tab="3" class="kt-tab-title kt-tab-title-3 "><span class="kt-title-text">Roll Templates</span></a></li><li id="rollabletables" class="kt-title-item kt-title-item-4 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-inactive"><a href="#rollabletables" data-tab="4" class="kt-tab-title kt-tab-title-4 "><span class="kt-title-text">Rollable Tables</span></a></li><li id="macros" class="kt-title-item kt-title-item-5 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-inactive"><a href="#macros" data-tab="5" class="kt-tab-title kt-tab-title-5 "><span class="kt-title-text">Macros and Quick Bar</span></a></li><li id="abilities" class="kt-title-item kt-title-item-6 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-inactive"><a href="#abilities" data-tab="6" class="kt-tab-title kt-tab-title-6 "><span class="kt-title-text">Character Abilities</span></a></li><li id="sheetbuttons" class="kt-title-item kt-title-item-7 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-inactive"><a href="#sheetbuttons" data-tab="7" class="kt-tab-title kt-tab-title-7 "><span class="kt-title-text">Sheet Buttons</span></a></li><li id="chatbuttons" class="kt-title-item kt-title-item-8 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-inactive"><a href="#chatbuttons" data-tab="8" class="kt-tab-title kt-tab-title-8 "><span class="kt-title-text">Chat Buttons</span></a></li><li id="chatmenus" class="kt-title-item kt-title-item-9 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-inactive"><a href="#chatmenus" data-tab="9" class="kt-tab-title kt-tab-title-9 "><span class="kt-title-text">Chat Menus</span></a></li><li id="secretrolls" class="kt-title-item kt-title-item-10 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-inactive"><a href="#secretrolls" data-tab="10" class="kt-tab-title kt-tab-title-10 "><span class="kt-title-text">Secret Rolls</span></a></li></ul><div class="kt-tabs-content-wrap">
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-1 kt-inner-tab_97b7cc-8c"><div class="kt-tab-inner-content-inner">
+<p>Instead of using <strong>/r</strong>, you can enclose a roll in inline roll brackets <strong>[[ ]]</strong>, like <strong>[[1d20+6]]</strong>. Only the result is displayed &ndash; and you can put it inline (hence the name) with text.</p>
+
+
+
+<figure class="wp-block-image size-full is-style-default"><img loading="lazy" decoding="async" width="267" height="58" src="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-115.png" alt="" class="wp-image-4917" srcset="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-115.png 267w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-115-150x33.png 150w" sizes="auto, (max-width: 267px) 100vw, 267px"></figure>
+
+
+
+<p>If you want to see how the roll was made, hover over the result &ndash; as has been done above.</p>
+
+
+
+<p>Inline rolls are often combined with roll templates.</p>
+</div></div>
+
+
+
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-2 kt-inner-tab_3af232-0c"><div class="kt-tab-inner-content-inner">
+<p>You can include descriptive tags in a roll to label parts of it. </p>
+
+
+<div class="wp-block-image is-style-default">
+<figure class="alignright size-full"><img loading="lazy" decoding="async" width="213" height="67" src="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-127.png" alt="" class="wp-image-5164" srcset="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-127.png 213w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-127-150x47.png 150w" sizes="auto, (max-width: 213px) 100vw, 213px"></figure></div>
+
+
+<p>Let&rsquo;s say you have a complex roll made up for your level, strength bonus, and a flaming sword, and want to know which is which. See the labels in brackets to the right. </p>
+
+
+
+<p>The roll for that (in simple form, and in inline roll form) is:</p>
+
+
+<pre class="wp-block-code" aria-describedby="shcb-language-11" data-shcb-language-name="Markdown" data-shcb-language-slug="markdown"><span><code class="hljs language-markdown">/roll 1d20 [attack] + 4 [strength] + 1d6 [flame]
+[[1d20 [attack] + 4 [strength] + 1d6 [flame] ]]</code></span><small class="shcb-language" id="shcb-language-11"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">Markdown</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">markdown</span><span class="shcb-language__paren">)</span></small></pre>
+
+
+<p>Tags are words or phrases inside single square brackets, and you can include them in normal or inline rolls. You can also add spaces to help break the roll up and make it easier to read.</p>
+</div></div>
+
+
+
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-3 kt-inner-tab_50ae36-64"><div class="kt-tab-inner-content-inner">
+<p>A roll template is a built-in way to display rolls in chat. Many sheets have their own roll templates, each of which is set up differently, but the default roll template is always available. It looks like this:</p>
+
+
+<pre class="wp-block-code" aria-describedby="shcb-language-12" data-shcb-language-name="JavaScript" data-shcb-language-slug="javascript"><span><code lang="" class="hljs language-javascript shcb-wrap-lines ">&amp;{<span class="hljs-attr">template</span>:<span class="hljs-keyword">default</span>} {{name=Sample Roll}} {{first roll=[[<span class="hljs-number">1</span>d6]]}} {{Exploding!!=[[<span class="hljs-number">7</span>d10&gt;<span class="hljs-number">11</span>!!sd]]}}</code></span><small class="shcb-language" id="shcb-language-12"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">JavaScript</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">javascript</span><span class="shcb-language__paren">)</span></small></pre>
+
+<div class="wp-block-image is-style-default">
+<figure class="alignright size-full"><img loading="lazy" decoding="async" width="319" height="178" src="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-116.png" alt="" class="wp-image-4925" srcset="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-116.png 319w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-116-150x84.png 150w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-116-300x167.png 300w" sizes="auto, (max-width: 319px) 100vw, 319px"></figure></div>
+
+
+<p>Here&rsquo;s what that roll looks like: </p>
+
+
+
+<p>You start by naming the inline roll <strong>&amp;{template:default}.</strong></p>
+
+
+
+<p>Each entry after that looks like <strong>{{KEY=VALUE}}. </strong>The key is sometimes a line title, but a key of <strong>name </strong>declares that the value is a title.</p>
+
+
+
+<p>Any rolls must be in inline roll brackets, or they display just as text. You can learn more on the wiki page on <a href="https://wiki.roll20.net/Roll_template" target="_blank" rel="noreferrer noopener">Roll Templates</a>.</p>
+</div></div>
+
+
+
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-4 kt-inner-tab_68dd3a-9b"><div class="kt-tab-inner-content-inner">
+<p>Some rolls can&rsquo;t be created using Roll20 dice rolls but can be created as rollable tables. </p>
+
+
+
+<p>Let&rsquo;s say we want a d10 roll that succeeds on 7-9, gives 2 successes on 10, and a botch on 1 subtracts 1 success. First, we analyse the die, and find:</p>
+
+
+
+<figure class="wp-block-table alignleft has-small-font-size"><table><tbody><tr><td><strong>Roll</strong></td><td><strong>1</strong></td><td><strong>2-6</strong></td><td><strong>7-9</strong></td><td><strong>10</strong></td></tr><tr><td><strong>Successes</strong></td><td>-1</td><td>0</td><td>1</td><td>2</td></tr><tr><td><strong>Weight</strong></td><td>1</td><td>5</td><td>3</td><td>1</td></tr></tbody></table></figure>
+
+
+<div class="wp-block-image is-style-default">
+<figure class="alignright size-full is-resized"><img loading="lazy" decoding="async" width="263" height="180" src="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-117.png" alt="" class="wp-image-4935" style="width:197px;height:135px" srcset="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-117.png 263w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-117-150x103.png 150w" sizes="auto, (max-width: 263px) 100vw, 263px"></figure></div>
+
+
+<p>Count how many times each result appears &ndash; that is the Weight. Then enter them in the table like so:</p>
+
+
+
+<p>Name the table, then you can call it in dice rolls. This table is named <strong>d10</strong>, so rolls are <strong>/r 5t[d10]</strong>. You can make inline rolls <strong>[[ 5t[d10] ]]</strong> &ndash; the spaces here are to make it easier to read. Use them when you can.</p>
+</div></div>
+
+
+
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-5 kt-inner-tab_f1daf3-e2"><div class="kt-tab-inner-content-inner"><div class="wp-block-image is-style-default">
+<figure class="alignright size-full is-resized"><img loading="lazy" decoding="async" width="337" height="614" src="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-118.png" alt="" class="wp-image-4946" style="width:169px;height:307px" srcset="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-118.png 337w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-118-82x150.png 82w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-118-165x300.png 165w" sizes="auto, (max-width: 337px) 100vw, 337px"></figure></div>
+
+
+<p>A macro can contain a dice roll, but can also include any text. For instance:</p>
+
+
+<pre class="wp-block-code" aria-describedby="shcb-language-13" data-shcb-language-name="JavaScript" data-shcb-language-slug="javascript"><span><code lang="" class="hljs language-javascript ">I shout at my enemy!
+&amp;{<span class="hljs-attr">template</span>:<span class="hljs-keyword">default</span>} {{names=attack}} {{roll=[[<span class="hljs-number">2</span>d6&gt;<span class="hljs-number">4</span>]]}}</code></span><small class="shcb-language" id="shcb-language-13"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">JavaScript</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">javascript</span><span class="shcb-language__paren">)</span></small></pre>
+
+
+<p>You can call macros with <strong>#macro-name</strong> (hash followed by macro name). </p>
+
+
+
+<p>Macros can contain line breaks, and even calls to other macros &ndash; though that can get tricky (see HTML Entities).</p>
+
+
+
+<p>Create macros on the macro pane, shown to the right. Make sure Show Macro Quick Bar is checked &ndash; this creates a bar along the bottom of your screen where you can drag macros ttheir for quick access.</p>
+</div></div>
+
+
+
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-6 kt-inner-tab_0e12de-79"><div class="kt-tab-inner-content-inner">
+<p>You can find the Abilities frame on the Attributes &amp; Abilities tab of your character sheet. There you can create macros personal to that character. They are called Abilities, but they work exactly like Macros, but you call them with a different syntax:<strong> %{character-name|ability-name}</strong>, so an ability named Attack on Bob&rsquo;s sheet would be called with <strong>%{bob|Attack)</strong>.</p>
+
+
+
+<p>If you want to call any attributes on that sheet, don&rsquo;t specify the character- Roll20 defaults to the same character. So if you wanted to use Bob&rsquo;s Strength, you can just use <strong>@{strength}</strong> instead of <strong>@{Bob|strength}</strong>.</p>
+
+
+
+<p>You can still call attributes from other sheets if you supply their name, selected, or target, as described above.</p>
+
+
+
+<p>So remember: @ for Attributes, # for Macros, and % for Abilities.</p>
+</div></div>
+
+
+
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-7 kt-inner-tab_638767-d3"><div class="kt-tab-inner-content-inner">
+<p>Character sheets often have buttons &ndash; you just click them and something happens. Treat them exactly like Character Abilities &ndash; find their name and call them with <strong>%{identifier|button-name}</strong> &ndash; identifier is the character name, selected, or target.</p>
+
+
+
+<p>Finding the button name can be tricky. The easiest way is to make sure your macro bar is showing, and drag the button down to it. The full name of the Button will be shown. Here I am dragging a Tinkering button to the macro bar.</p>
+
+
+
+<figure class="wp-block-image size-full is-style-default"><img loading="lazy" decoding="async" width="929" height="130" src="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-120.png" alt="" class="wp-image-4971" srcset="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-120.png 929w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-120-150x21.png 150w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-120-300x42.png 300w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-120-768x107.png 768w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-120-500x70.png 500w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-120-800x112.png 800w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-120-922x129.png 922w" sizes="auto, (max-width: 929px) 100vw, 929px"></figure>
+
+
+<div class="wp-block-image is-style-default">
+<figure class="alignright size-full"><img loading="lazy" decoding="async" width="115" height="47" src="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-121.png" alt="" class="wp-image-4972"></figure></div>
+
+
+<p>Abilities appear with <strong>Name: Button-Name</strong>. This refers to an Ability <strong>%{Boj|tinkering}</strong>. Replace the colon with |.</p>
+</div></div>
+
+
+
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-8 kt-inner-tab_b4c62d-67"><div class="kt-tab-inner-content-inner">
+<p>A nifty thing you can do is create buttons in chat that can be clicked by anyone (though you might want to use Secret rolls to make sure only you can click them &ndash; see below).</p>
+
+
+
+<p>You can call any ability (buttons on a sheet or Abilities) but have to use a special syntax: <strong>[visible text](~identifier|button-name)</strong></p>
+
+
+<div class="wp-block-image is-style-default">
+<figure class="alignright size-full"><img loading="lazy" decoding="async" width="193" height="33" src="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-122.png" alt="" class="wp-image-4975" srcset="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-122.png 193w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-122-150x26.png 150w" sizes="auto, (max-width: 193px) 100vw, 193px"></figure></div>
+
+
+<p>For example, let&rsquo;s so you have this in chat:</p>
+
+
+
+<p>That is created with the text: <strong>I want to click [this button](~some identified|some ability)</strong>.</p>
+
+
+
+<p>You can create buttons to launch any Ability or Sheet Button, and enter them in other Macros or Abilities.</p>
+</div></div>
+
+
+
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-9 kt-inner-tab_973264-82"><div class="kt-tab-inner-content-inner">
+<p>You can use Chat Buttons and Roll Templates to create a Chat Menu &ndash; a group of related buttons using a roll template. Say you have three abilities, Charisma, Fighting, and Tinkering, and create the following Macro:</p>
+
+
+<pre class="wp-block-code" aria-describedby="shcb-language-14" data-shcb-language-name="Markdown" data-shcb-language-slug="markdown"><span><code class="hljs language-markdown">&amp;{template:default} {{name=A menu of Buttons}} {{[<span class="hljs-string">Charisma</span>](<span class="hljs-link">~selected|charisma</span>)
+[<span class="hljs-string">Fighting</span>](<span class="hljs-link">~selected|fighting</span>) [<span class="hljs-string">Tinkering</span>](<span class="hljs-link">~selected|tinkering</span>) }}</code></span><small class="shcb-language" id="shcb-language-14"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">Markdown</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">markdown</span><span class="shcb-language__paren">)</span></small></pre>
+
+<div class="wp-block-image is-style-default">
+<figure class="alignright size-full"><img loading="lazy" decoding="async" width="274" height="83" src="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-123.png" alt="" class="wp-image-4976" srcset="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-123.png 274w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-123-150x45.png 150w" sizes="auto, (max-width: 274px) 100vw, 274px"></figure></div>
+
+
+<p>That would look like this:</p>
+
+
+
+<p>Because it uses selected, anyone could click it, and if their token is selected, it launches the ability from their sheet. Chat menus like this are a great way to provide quick ass to a character&rsquo;s abilities and have many more uses. For more information, see <a href="https://wiki.roll20.net/Chat_Menus" target="_blank" rel="noreferrer noopener">Chat Menus</a> on the wiki.</p>
+</div></div>
+
+
+
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-10 kt-inner-tab_ba3b84-0d"><div class="kt-tab-inner-content-inner">
+<p>If you want to <strong>whisper</strong> a roll to another character or the GM (or yourself if you are the GM), you can use a Secret roll. These can be used for normal chat too, it&rsquo;s not just for rolls. The format is:</p>
+
+
+<pre class="wp-block-code" aria-describedby="shcb-language-15" data-shcb-language-name="JavaScript" data-shcb-language-slug="javascript"><span><code lang="" class="hljs language-javascript ">/w <span class="hljs-string">"character or player name"</span> <span class="hljs-string">"text or roll"</span>
+/w bob look at <span class="hljs-keyword">this</span>, bob!
+<span class="hljs-regexp">/w gm Bob's perception roll: [[1d20+@{bob|perception}]]</span></code></span><small class="shcb-language" id="shcb-language-15"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">JavaScript</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">javascript</span><span class="shcb-language__paren">)</span></small></pre>
+
+
+<p>When you whisper, only you and the recipient can see it. If you are a player and whisper to another player, the GM can&rsquo;t see it.</p>
+
+
+
+<p>The GM can also use <strong>/gmroll</strong> or <strong>/gr</strong> to make rolls only they can see.</p>
+</div></div>
+</div></div></div>
+
+
+
+<h2 class="wp-block-heading"><span class="ez-toc-section" id="Roll_Queries"></span>Roll Queries<span class="ez-toc-section-end"></span></h2>
+
+
+
+<div class="wp-block-kadence-tabs alignnone"><div class="kt-tabs-wrap kt-tabs-id_84e0db-dc kt-tabs-has-8-tabs kt-active-tab-1 kt-tabs-layout-vtabs kt-tabs-tablet-layout-inherit kt-tabs-mobile-layout-accordion kt-tab-alignment-left kt-create-accordion" style="max-width:none"><ul class="kt-tabs-title-list"><li id="query" class="kt-title-item kt-title-item-1 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-active"><a href="#query" data-tab="1" class="kt-tab-title kt-tab-title-1 "><span class="kt-title-text">Basic Query</span></a></li><li id="querydefault" class="kt-title-item kt-title-item-2 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-inactive"><a href="#querydefault" data-tab="2" class="kt-tab-title kt-tab-title-2 "><span class="kt-title-text">Default Value</span></a></li><li id="querydropdowns" class="kt-title-item kt-title-item-3 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-inactive"><a href="#querydropdowns" data-tab="3" class="kt-tab-title kt-tab-title-3 "><span class="kt-title-text">Dropdowns</span></a></li><li id="querylabels" class="kt-title-item kt-title-item-4 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-inactive"><a href="#querylabels" data-tab="4" class="kt-tab-title kt-tab-title-4 "><span class="kt-title-text">Labels</span></a></li><li id="querylinebreaks" class="kt-title-item kt-title-item-5 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-inactive"><a href="#querylinebreaks" data-tab="5" class="kt-tab-title kt-tab-title-5 "><span class="kt-title-text">Line breaks</span></a></li><li id="queryreusing" class="kt-title-item kt-title-item-6 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-inactive"><a href="#queryreusing" data-tab="6" class="kt-tab-title kt-tab-title-6 "><span class="kt-title-text">Reusing Queries</span></a></li><li id="querynames" class="kt-title-item kt-title-item-7 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-inactive"><a href="#querynames" data-tab="7" class="kt-tab-title kt-tab-title-7 "><span class="kt-title-text">Query Names</span></a></li><li id="querynested" class="kt-title-item kt-title-item-8 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-inactive"><a href="#querynested" data-tab="8" class="kt-tab-title kt-tab-title-8 "><span class="kt-title-text">Nested Queries</span></a></li></ul><div class="kt-tabs-content-wrap">
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-1 kt-inner-tab_21e62d-e0"><div class="kt-tab-inner-content-inner">
+<p>Sometimes you want to prompt the user for a value. </p>
+
+
+<pre class="wp-block-code" aria-describedby="shcb-language-16" data-shcb-language-name="Markdown" data-shcb-language-slug="markdown"><span><code class="hljs language-markdown">/r 1d20+?{Bonus}</code></span><small class="shcb-language" id="shcb-language-16"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">Markdown</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">markdown</span><span class="shcb-language__paren">)</span></small></pre>
+
+
+<p>The text between the curly brackets is the prompt the user will see:</p>
+
+
+
+<figure class="wp-block-image size-full is-style-default"><img loading="lazy" decoding="async" width="308" height="180" src="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-103.png" alt="" class="wp-image-4726" srcset="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-103.png 308w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-103-150x88.png 150w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-103-300x175.png 300w" sizes="auto, (max-width: 308px) 100vw, 308px"></figure>
+</div></div>
+
+
+
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-2 kt-inner-tab_90e1d6-0c"><div class="kt-tab-inner-content-inner">
+<p>You can enter a default value, that will already be filled in. Say you want to show a value of 0, like this:</p>
+
+
+
+<figure class="wp-block-image size-full is-style-default"><img loading="lazy" decoding="async" width="302" height="177" src="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-104.png" alt="" class="wp-image-4727" srcset="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-104.png 302w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-104-150x88.png 150w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-104-300x176.png 300w" sizes="auto, (max-width: 302px) 100vw, 302px"></figure>
+
+
+
+<p>You do this by |0 to the prompt, like so:</p>
+
+
+<pre class="wp-block-code" aria-describedby="shcb-language-17" data-shcb-language-name="Markdown" data-shcb-language-slug="markdown"><span><code class="hljs language-markdown">/r 1d20+?{Bonus|0}</code></span><small class="shcb-language" id="shcb-language-17"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">Markdown</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">markdown</span><span class="shcb-language__paren">)</span></small></pre></div></div>
+
+
+
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-3 kt-inner-tab_3d9acb-2b"><div class="kt-tab-inner-content-inner">
+<p>Maybe you want to prompt for the roll of a d6. You could just use a prompt like before, or you could limit it to specific values with a dropdown list:</p>
+
+
+<pre class="wp-block-code" aria-describedby="shcb-language-18" data-shcb-language-name="Markdown" data-shcb-language-slug="markdown"><span><code class="hljs language-markdown">/r 1d20+?{Bonus|1|2|3|4|5|6}</code></span><small class="shcb-language" id="shcb-language-18"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">Markdown</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">markdown</span><span class="shcb-language__paren">)</span></small></pre>
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-9d6595d7 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<figure class="wp-block-image size-full is-style-default"><img loading="lazy" decoding="async" width="306" height="292" src="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-105.png" alt="" class="wp-image-4728" srcset="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-105.png 306w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-105-150x143.png 150w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-105-300x286.png 300w" sizes="auto, (max-width: 306px) 100vw, 306px"></figure>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p>The user can only pick from the list. This helps the user avoid typos (if entering text) or enter numbers only in the allowed range. It&rsquo;s very useful.</p>
+</div>
+</div>
+</div></div>
+
+
+
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-4 kt-inner-tab_b1a37f-99"><div class="kt-tab-inner-content-inner">
+<p>You might want the text shown to the user to be different from the value used.</p>
+
+
+<pre class="wp-block-code" aria-describedby="shcb-language-19" data-shcb-language-name="Markdown" data-shcb-language-slug="markdown"><span><code class="hljs language-markdown shcb-wrap-lines">/r 1d20+?{Bonus|One,1|Two,2|Three,3|Four,4|Five,5|Six,6}</code></span><small class="shcb-language" id="shcb-language-19"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">Markdown</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">markdown</span><span class="shcb-language__paren">)</span></small></pre>
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-9d6595d7 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<figure class="wp-block-image size-full is-style-default"><img loading="lazy" decoding="async" width="304" height="287" src="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-106.png" alt="" class="wp-image-4736" srcset="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-106.png 304w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-106-150x142.png 150w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-106-300x283.png 300w" sizes="auto, (max-width: 304px) 100vw, 304px"></figure>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p>Notice how the list displays the <strong>Label</strong>, but the roll will use the <strong>Value</strong> (which is a number here).</p>
+
+
+
+<p>Separate Labels and values with a comma.</p>
+</div>
+</div>
+</div></div>
+
+
+
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-5 kt-inner-tab_610d64-b5"><div class="kt-tab-inner-content-inner">
+<p>You can make it easier to read a query by putting a linebreak after the | symbol, like this:</p>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-9d6595d7 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"><pre class="wp-block-code" aria-describedby="shcb-language-20" data-shcb-language-name="Markdown" data-shcb-language-slug="markdown"><span><code class="hljs language-markdown">/r 1d20+?{Bonus|
+One,1|
+Two,2|
+Three,3|
+Four,4|
+Five,5|
+Six,6}</code></span><small class="shcb-language" id="shcb-language-20"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">Markdown</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">markdown</span><span class="shcb-language__paren">)</span></small></pre></div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p>A line break usually ends the roll command, so this is handy.</p>
+</div>
+</div>
+</div></div>
+
+
+
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-6 kt-inner-tab_f8d088-59"><div class="kt-tab-inner-content-inner">
+<p>In the Previous examples, the Query is called Bonus. That is the <strong>Title</strong> of the query. You can reuse that query in a roll, and it has the same value the user enters. So, imagine you did this:</p>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-9d6595d7 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"><pre class="wp-block-code" aria-describedby="shcb-language-21" data-shcb-language-name="Markdown" data-shcb-language-slug="markdown"><span><code class="hljs language-markdown">/r 1d20+?{Bonus|
+One,1|
+Two,2|
+Three,3|
+Four,4|
+Five,5|
+Six,6} + ?{Bonus}</code></span><small class="shcb-language" id="shcb-language-21"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">Markdown</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">markdown</span><span class="shcb-language__paren">)</span></small></pre></div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p>The user would see the prompt once, pick a value, and then that value is used again each time a query named <strong>Bonus</strong> is seen. So, this is a long-winded way of doubling the Bonus query.</p>
+</div>
+</div>
+</div></div>
+
+
+
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-7 kt-inner-tab_988788-c5"><div class="kt-tab-inner-content-inner">
+<p>Be careful with special symbols in query names. </p>
+
+
+<pre class="wp-block-code" aria-describedby="shcb-language-22" data-shcb-language-name="Markdown" data-shcb-language-slug="markdown"><span><code class="hljs language-markdown">/r 1d20+?{Bonus?|0}</code></span><small class="shcb-language" id="shcb-language-22"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">Markdown</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">markdown</span><span class="shcb-language__paren">)</span></small></pre>
+
+
+<p>Here the name or title of the query is <strong>Bonus?</strong> including the question mark. If you want to refer to the query again, use the full name:</p>
+
+
+<pre class="wp-block-code" aria-describedby="shcb-language-23" data-shcb-language-name="Markdown" data-shcb-language-slug="markdown"><span><code class="hljs language-markdown">/r 1d20+?{Bonus?|0}+?{Bonus?}</code></span><small class="shcb-language" id="shcb-language-23"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">Markdown</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">markdown</span><span class="shcb-language__paren">)</span></small></pre>
+
+
+<p></p>
+
+
+
+<p></p>
+</div></div>
+
+
+
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-8 kt-inner-tab_ec87de-95"><div class="kt-tab-inner-content-inner">
+<p>You can include roll and macro text inside a query. </p>
+
+
+<pre class="wp-block-code" aria-describedby="shcb-language-24" data-shcb-language-name="Markdown" data-shcb-language-slug="markdown"><span><code class="hljs language-markdown shcb-wrap-lines">I want to pick one of two roll types. ?{Roll Type|
+D6,/r 1d6|
+A Label and a D6,Rolling D6
+/r d6}</code></span><small class="shcb-language" id="shcb-language-24"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">Markdown</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">markdown</span><span class="shcb-language__paren">)</span></small></pre>
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-9d6595d7 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<figure class="wp-block-image size-full is-style-default"><img loading="lazy" decoding="async" width="301" height="185" src="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-107.png" alt="" class="wp-image-4741" srcset="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-107.png 301w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-107-150x92.png 150w" sizes="auto, (max-width: 301px) 100vw, 301px"></figure>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<p>Everything after the comma is treated as macro text. This means the linebreak after &ldquo;the &ldquo;Rolling D6&rdquo; is part of the output! </p>
+</div>
+</div>
+
+
+
+<p>This can be a bit mind-bending but opens up a huge range of possibilities. But there are also problems which I might cover in a future post. For now, see the wiki&rsquo;s page on <a href="https://wiki.roll20.net/Macros#Advanced_Usage_for_Roll_Queries" target="_blank" rel="noreferrer noopener">Advanced Queries</a>. (Generally, I advise against Nested Queries for any but the simplest options &ndash; the Macro Buttons described above are much, much easier.)</p>
+</div></div>
+</div></div></div>
+
+
+
+<h2 class="wp-block-heading"><span class="ez-toc-section" id="Using_the_Turn_Tracker"></span>Using the Turn Tracker<span class="ez-toc-section-end"></span></h2>
+
+
+
+<div class="wp-block-kadence-tabs alignnone"><div class="kt-tabs-wrap kt-tabs-id_53f894-46 kt-tabs-has-4-tabs kt-active-tab-1 kt-tabs-layout-vtabs kt-tabs-tablet-layout-inherit kt-tabs-mobile-layout-accordion kt-tab-alignment-left kt-create-accordion" style="max-width:none"><ul class="kt-tabs-title-list"><li id="turntracker" class="kt-title-item kt-title-item-1 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-active"><a href="#turntracker" data-tab="1" class="kt-tab-title kt-tab-title-1 "><span class="kt-title-text">Turn Tracker</span></a></li><li id="modifyinitiative" class="kt-title-item kt-title-item-2 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-inactive"><a href="#modifyinitiative" data-tab="2" class="kt-tab-title kt-tab-title-2 "><span class="kt-title-text">Modifying Initiative</span></a></li><li id="callingtracker" class="kt-title-item kt-title-item-3 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-inactive"><a href="#callingtracker" data-tab="3" class="kt-tab-title kt-tab-title-3 "><span class="kt-title-text">Calling Tracker Values</span></a></li><li id="trackertricks" class="kt-title-item kt-title-item-4 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-inactive"><a href="#trackertricks" data-tab="4" class="kt-tab-title kt-tab-title-4 "><span class="kt-title-text">Advanced Tricks</span></a></li></ul><div class="kt-tabs-content-wrap">
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-1 kt-inner-tab_00279c-f0"><div class="kt-tab-inner-content-inner"><div class="wp-block-image is-style-default">
+<figure class="alignright size-full"><img loading="lazy" decoding="async" width="237" height="245" src="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-125.png" alt="" class="wp-image-4993" srcset="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-125.png 237w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-125-145x150.png 145w" sizes="auto, (max-width: 237px) 100vw, 237px"></figure></div>
+
+
+<p>This page won&rsquo;t describe the <a href="https://wiki.roll20.net/Initiative" target="_blank" rel="noreferrer noopener">Turn Tracker</a> in detail, but there are rolls you can do with it.</p>
+
+
+
+<p>First, if you select a token, make a roll, and include &amp;{tracker} in the roll, it&rsquo;ll be added to the Turn Tracker.</p>
+
+
+<pre class="wp-block-code" aria-describedby="shcb-language-25" data-shcb-language-name="Markdown" data-shcb-language-slug="markdown"><span><code class="hljs language-markdown">/r 1d20+6 &amp;{tracker}</code></span><small class="shcb-language" id="shcb-language-25"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">Markdown</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">markdown</span><span class="shcb-language__paren">)</span></small></pre>
+
+
+<p>Many character sheets will have an initiative button that does this for you.</p>
+</div></div>
+
+
+
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-2 kt-inner-tab_dd8f30-e3"><div class="kt-tab-inner-content-inner">
+<p>If you have a token selected, and make another initiative roll, it either adds that token to the Turn Tracker, or replaces the existing initiative. So you can have everyone take their actions for the turn, and have them make new initiative rolls (if appropriate for your system).</p>
+
+
+
+<p>If you use &amp;{tracker:+} or &amp;{tracker:-} the roll doesn&rsquo;t replace the existing initiative &ndash; it adds to it or subtracts from it.</p>
+
+
+
+<p>A &ldquo;roll&rdquo; can be a fixed number, but must still be a &ldquo;roll&rdquo;.</p>
+
+
+<pre class="wp-block-code" aria-describedby="shcb-language-26" data-shcb-language-name="Markdown" data-shcb-language-slug="markdown"><span><code class="hljs language-markdown">/r 5 &amp;{tracker:-}
+/r 1d6 &amp;{tracker:+}</code></span><small class="shcb-language" id="shcb-language-26"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">Markdown</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">markdown</span><span class="shcb-language__paren">)</span></small></pre></div></div>
+
+
+
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-3 kt-inner-tab_547e93-00"><div class="kt-tab-inner-content-inner"><div class="wp-block-image is-style-default">
+<figure class="alignright size-full"><img loading="lazy" decoding="async" width="238" height="220" src="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-126.png" alt="" class="wp-image-4999" srcset="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-126.png 238w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-126-150x139.png 150w" sizes="auto, (max-width: 238px) 100vw, 238px"></figure></div>
+
+
+<p>You can call a specific token&rsquo;s initiative, and use this in rolls. Let&rsquo;s say you have the initiative to the right:</p>
+
+
+
+<p>Then you can call that in chat:</p>
+
+
+<pre class="wp-block-code" aria-describedby="shcb-language-27" data-shcb-language-name="Markdown" data-shcb-language-slug="markdown"><span><code class="hljs language-markdown">@{tracker|Fred}</code></span><small class="shcb-language" id="shcb-language-27"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">Markdown</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">markdown</span><span class="shcb-language__paren">)</span></small></pre>
+
+
+<p>And can use it in rolls:</p>
+
+
+<pre class="wp-block-code" aria-describedby="shcb-language-28" data-shcb-language-name="Markdown" data-shcb-language-slug="markdown"><span><code class="hljs language-markdown">/r 1d6+floor(@{tracker|Fred}/5)</code></span><small class="shcb-language" id="shcb-language-28"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">Markdown</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">markdown</span><span class="shcb-language__paren">)</span></small></pre></div></div>
+
+
+
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-4 kt-inner-tab_c008f2-3f"><div class="kt-tab-inner-content-inner">
+<p>There are a lot of advanced tricks you can do with the Turn Tracker, especially in games where you aren&rsquo;t using it for Initiative. See <a href="https://wiki.roll20.net/Turn_Tracker" target="_blank" rel="noreferrer noopener">Turn Tracker</a> on the Roll20 Wiki for more (including my own <a href="https://app.roll20.net/forum/permalink/8768261/" target="_blank" rel="noreferrer noopener">Reusing Last Roll</a> trick).</p>
+</div></div>
+</div></div></div>
+
+
+
+<h2 class="wp-block-heading"><span class="ez-toc-section" id="Reusing_Rolls"></span>Reusing Rolls<span class="ez-toc-section-end"></span></h2>
+
+
+
+<div class="wp-block-kadence-tabs alignnone"><div class="kt-tabs-wrap kt-tabs-id_373a10-f3 kt-tabs-has-4-tabs kt-active-tab-1 kt-tabs-layout-vtabs kt-tabs-tablet-layout-inherit kt-tabs-mobile-layout-accordion kt-tab-alignment-left kt-create-accordion" style="max-width:none"><ul class="kt-tabs-title-list"><li id="tab-concept" class="kt-title-item kt-title-item-1 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-active"><a href="#tab-concept" data-tab="1" class="kt-tab-title kt-tab-title-1 "><span class="kt-title-text">Concept</span></a></li><li id="tab-contrivedexample" class="kt-title-item kt-title-item-2 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-inactive"><a href="#tab-contrivedexample" data-tab="2" class="kt-tab-title kt-tab-title-2 "><span class="kt-title-text">Contrived Example</span></a></li><li id="tab-rollingdampdstats" class="kt-title-item kt-title-item-3 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-inactive"><a href="#tab-rollingdampdstats" data-tab="3" class="kt-tab-title kt-tab-title-3 "><span class="kt-title-text">Rolling D&amp;D Stats</span></a></li><li id="tab-finalnotes" class="kt-title-item kt-title-item-4 kt-tabs-svg-show-always kt-tabs-icon-side-right kt-tab-title-inactive"><a href="#tab-finalnotes" data-tab="4" class="kt-tab-title kt-tab-title-4 "><span class="kt-title-text">Final Notes</span></a></li></ul><div class="kt-tabs-content-wrap">
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-1 kt-inner-tab_6cd3bd-7b"><div class="kt-tab-inner-content-inner">
+<p>Reusing Rolls is the term given by the community to a technique that may be the result of a bug. It&rsquo;s not officially documented but is so powerful it needs to be covered. It might get its own post &ndash; it deserves one.</p>
+
+
+
+<p>Reusing Rolls requires the use of Inline Rolls, and is usually done in a Roll template.</p>
+
+
+
+<p>Note that all parts of a Reused Roll must be on the same line.</p>
+</div></div>
+
+
+
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-2 kt-inner-tab_5dfa7a-ba"><div class="kt-tab-inner-content-inner">
+<p>Roll20 appears to identify each inline roll on a line &ndash; the first is $[[0]], the second is $[[1]], the third $[[2]] and so on. If you have inline rolls inside other inline rolls, count the innermost first.</p>
+
+
+<pre class="wp-block-code" aria-describedby="shcb-language-29" data-shcb-language-name="JSON / JSON with Comments" data-shcb-language-slug="json"><span><code lang="" class="hljs language-json shcb-wrap-lines ">[[<span class="hljs-number">1</span>d20+ [[<span class="hljs-number">1</span>d12 + [[<span class="hljs-number">1</span>d10]] ]] + [[<span class="hljs-number">1</span>d8]] + <span class="hljs-number">1</span>d6]]</code></span><small class="shcb-language" id="shcb-language-29"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">JSON / JSON with Comments</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">json</span><span class="shcb-language__paren">)</span></small></pre>
+
+
+<p>In the extremely confusing roll above, $[[0]] (first, innermost) is the 1d10 roll. The 1d12 +1d10 and 1d8 are at the same &lsquo;depth&rsquo;, and the d12 is listed first, so 1d12 +1d10 is $[[1]] (it is the whole inline roll), and 1d8 is $[2]]. The d6 isn&rsquo;t inside its own inline roll so it can&rsquo;t be addressed in this way. Finally, the whole roll starting with the 1d20 is $[[3]].</p>
+
+
+
+<p>identifying and keeping track of each inline roll is a skill in itself &ndash; remember, this is not an officially supported technique.</p>
+</div></div>
+
+
+
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-3 kt-inner-tab_b39442-7c"><div class="kt-tab-inner-content-inner">
+<p>A good, practical example comes from a question that is asked occasionally on the forums: &ldquo;I want to roll each of the 6 stats, and also count up their totals&rdquo;. </p>
+
+
+
+<p>This isn&rsquo;t possible with standard rolls. A roll can be used only once for one thing &ndash; so if you want to know what one of the stats is, you can&rsquo;t also include it in a total. That&rsquo;s a separate roll.</p>
+
+
+
+<p>But with reusing rolls, you can do this:</p>
+
+
+<pre class="wp-block-code" aria-describedby="shcb-language-30" data-shcb-language-name="Markdown" data-shcb-language-slug="markdown"><span><code class="hljs language-markdown shcb-wrap-lines">&amp;{template:default} {{name=Stats}} {{total=[[ [[4d6kh3]] + [[4d6kh3]] + [[4d6kh3]] + [[4d6kh3]] + [[4d6kh3]] +[[4d6kh3]] ]] }} {{STR= $[[0]]}} {{DEX= $[[1]]}} {{CON= $[[2]]}} {{INT= $[[3]]}} {{WIS= $[[4]]}} {{CHA= $[[5]]}}</code></span><small class="shcb-language" id="shcb-language-30"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">Markdown</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">markdown</span><span class="shcb-language__paren">)</span></small></pre>
+
+
+<p>That would give something like this<em>:</em></p>
+
+
+
+<figure class="wp-block-image size-full is-style-default"><img loading="lazy" decoding="async" width="279" height="244" src="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-124.png" alt="" class="wp-image-4990" srcset="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-124.png 279w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-124-150x131.png 150w" sizes="auto, (max-width: 279px) 100vw, 279px"></figure>
+</div></div>
+
+
+
+<div class="wp-block-kadence-tab kt-tab-inner-content kt-inner-tab-4 kt-inner-tab_01819a-c6"><div class="kt-tab-inner-content-inner">
+<p>There are a lot of ways to use this technique. You can find out more, as ever, on the Roll20 Wiki, under <a href="https://wiki.roll20.net/Reusing_Rolls" target="_blank" rel="noreferrer noopener">Reusing Rolls</a>.</p>
+</div></div>
+</div></div></div>
+
+
+
+<h2 class="wp-block-heading"><span class="ez-toc-section" id="Wrapping_Up"></span>Wrapping Up<span class="ez-toc-section-end"></span></h2>
+
+
+
+<p>There is a lot more you can do with roll20 rolls (like including images). There&rsquo;s also a lot you can&rsquo;t do. If you want to know your limits, it&rsquo;s handy to look at the <a href="https://wiki.roll20.net/" target="_blank" rel="noreferrer noopener">Roll20 Wiki</a>, especially the <a href="https://wiki.roll20.net/Dice_Reference" target="_blank" rel="noreferrer noopener">Dice Reference</a> page.</p>
+<fieldset><legend>Series Navigation</legend><span class="series-nav-left"></span><span class="series-nav-right"><a href="birdbrainiac.github.io/roll20sheet/essence/" title="Essence 20 Dice Rolls for GI Joe RPG &gt;&gt;">Essence 20 Dice Rolls for GI Joe RPG &gt;&gt;</a></span></fieldset><div class="clear-me"></div>    </div><!-- .entry-content -->
+
+    
+    
+            <footer class="entry-footer gridme-entry-footer">
+    <div class="gridme-entry-footer-inside">
+        <span class="gridme-tags-links"><i class="fas fa-tags" aria-hidden="true"></i> Tagged <a href="birdbrainiac.github.io/roll20sheet/tag/roll-query/" rel="tag">roll query</a>, <a href="birdbrainiac.github.io/roll20sheet/tag/selected/" rel="tag">selected</a>, <a href="birdbrainiac.github.io/roll20sheet/tag/target/" rel="tag">target</a>, <a href="birdbrainiac.github.io/roll20sheet/tag/roll-templates/" rel="tag">roll templates</a>, <a href="birdbrainiac.github.io/roll20sheet/tag/rollable-tables/" rel="tag">rollable tables</a>, <a href="birdbrainiac.github.io/roll20sheet/tag/macros/" rel="tag">macros</a>, <a href="birdbrainiac.github.io/roll20sheet/tag/macro-button/" rel="tag">macro button</a>, <a href="birdbrainiac.github.io/roll20sheet/tag/inline-roll/" rel="tag">inline roll</a>, <a href="birdbrainiac.github.io/roll20sheet/tag/initiative-roll/" rel="tag">initiative roll</a>, <a href="birdbrainiac.github.io/roll20sheet/tag/exploding-roll/" rel="tag">exploding roll</a>, <a href="birdbrainiac.github.io/roll20sheet/tag/reusing-roll/" rel="tag">reusing roll</a>, <a href="birdbrainiac.github.io/roll20sheet/tag/high-low-dice/" rel="tag">high/low dice</a>, <a href="birdbrainiac.github.io/roll20sheet/tag/critical-or-fumble-roll/" rel="tag">critical or fumble roll</a>, <a href="birdbrainiac.github.io/roll20sheet/tag/exalted-dice/" rel="tag">exalted dice</a>, <a href="birdbrainiac.github.io/roll20sheet/tag/chat-menus/" rel="tag">chat menus</a></span>    </div>
+    </footer><!-- .entry-footer -->
+        
+</div>
+</article>
+
+
+	<nav class="navigation post-navigation" aria-label="Posts">
+		<h2 class="screen-reader-text">Post navigation</h2>
+		<div class="nav-links"><div class="nav-previous"><a href="birdbrainiac.github.io/roll20sheet/sheet-workers-automating-the-sheet/" rel="prev">Sheet Workers &ndash; Automating The Sheet &rarr;</a></div><div class="nav-next"><a href="birdbrainiac.github.io/roll20sheet/variables/" rel="next">&larr; Variables &ndash; How to Name Things</a></div></div>
+	</nav>
+<div id="comments" class="comments-area gridme-box">
+<div class="gridme-box-inside">
+
+    	<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="birdbrainiac.github.io/roll20sheet/dice-roll20/#respond" style="display:none;">Cancel reply</a></small></h3><form action="birdbrainiac.github.io/roll20sheet/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> <span class="required-field-message">Required fields are marked <span class="required">*</span></span></p><p class="comment-form-comment"><label for="comment">Comment <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200" autocomplete="url"></p>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"> <label for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="1036" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p></form>	</div><!-- #respond -->
+	
+</div>
+</div><!-- #comments -->
+<div class="clear"></div>
+</div><!--/#gridme-posts-wrapper -->
+
+
+<div class="gridme-featured-posts-area gridme-featured-posts-area-bottom gridme-clearfix">
+
+<div id="text-2" class="gridme-main-widget widget gridme-widget-box widget_text"><div class="gridme-widget-box-inside">			<div class="textwidget"><p>Visit the <a href="birdbrainiac.github.io/roll20sheet/roll20-sheet-author-master-list/">Sheet Author Master List</a></p>
+</div>
+		</div></div></div>
+
+
+</div>
+</div>
+</div><!-- /#gridme-main-wrapper -->
+
+
+<div class="gridme-sidebar-one-wrapper gridme-sidebar-widget-areas gridme-clearfix" id="gridme-sidebar-one-wrapper" itemscope="itemscope" itemtype="http://schema.org/WPSideBar" role="complementary">
+<div class="theiaStickySidebar">
+<div class="gridme-sidebar-one-wrapper-inside gridme-clearfix">
+
+<div id="search-3" class="gridme-side-widget widget gridme-widget-box widget_search"><div class="gridme-widget-box-inside">
+<form role="search" method="get" class="gridme-search-form" action="birdbrainiac.github.io/roll20sheet/">
+<label>
+    <span class="gridme-sr-only">Search for:</span>
+    <input type="search" class="gridme-search-field" placeholder="Search &hellip;" value="" name="s">
+</label>
+<input type="submit" class="gridme-search-submit" value="">
+</form></div></div><div id="nav_menu-3" class="gridme-side-widget widget gridme-widget-box widget_nav_menu"><div class="gridme-widget-box-inside"><div class="gridme-widget-header"><h2 class="gridme-widget-title"><span class="gridme-widget-title-inside">VTT</span></h2></div><nav class="menu-vtt-links-container" aria-label="VTT"><ul id="menu-vtt-links" class="menu"><li id="menu-item-808" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-808"><a href="https://roll20.net/">Roll20</a>
+<ul class="sub-menu">
+	<li id="menu-item-3595" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3595"><a href="https://wiki.roll20.net/Main_Page">Roll20 Wiki</a></li>
+	<li id="menu-item-821" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-821"><a href="https://github.com/roll20/">Roll20&rsquo;s Github</a></li>
+	<li id="menu-item-3753" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3753"><a href="https://app.roll20.net/forum/post/8380005/sheet-templating-with-handlebars/?pageforid=8654298">Sheet Templating</a></li>
+</ul>
+</li>
+<li id="menu-item-3619" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3619"><a href="https://www.rptools.net/2018/07/token-tool-2-0/">Token Tool</a></li>
+</ul></nav></div></div><div id="nav_menu-5" class="gridme-side-widget widget gridme-widget-box widget_nav_menu"><div class="gridme-widget-box-inside"><div class="gridme-widget-header"><h2 class="gridme-widget-title"><span class="gridme-widget-title-inside">RPG</span></h2></div><nav class="menu-rpg-container" aria-label="RPG"><ul id="menu-rpg" class="menu"><li id="menu-item-3621" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-3621"><a href="birdbrainiac.github.io/roll20sheet/category/thinking/pendragon/">Pendragon</a>
+<ul class="sub-menu">
+	<li id="menu-item-3618" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3618"><a href="https://www.chaosium.com/pendragon/">Pendragon Store</a></li>
+</ul>
+</li>
+</ul></nav></div></div><div id="nav_menu-6" class="gridme-side-widget widget gridme-widget-box widget_nav_menu"><div class="gridme-widget-box-inside"><div class="gridme-widget-header"><h2 class="gridme-widget-title"><span class="gridme-widget-title-inside">Other Blogs</span></h2></div><nav class="menu-other-blogs-container" aria-label="Other Blogs"><ul id="menu-other-blogs" class="menu"><li id="menu-item-5524" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5524"><a href="https://knightattheopera.blogspot.com/">Knight at the Opera</a></li>
+<li id="menu-item-8125" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8125"><a href="https://talestoastound.wordpress.com/traveller-out-of-the-box/">Traveller &ndash; Out of the Box</a></li>
+</ul></nav></div></div>
+</div>
+</div>
+</div><!-- /#gridme-sidebar-one-wrapper-->
+
+</div>
+
+</div><!--/#gridme-content-wrapper -->
+</div><!--/#gridme-wrapper -->
+
+
+
+
+
+<div class="gridme-clearfix" id="gridme-footer-blocks" itemscope="itemscope" itemtype="http://schema.org/WPFooter" role="contentinfo">
+<div class="gridme-container gridme-clearfix">
+<div class="gridme-outer-wrapper">
+
+<div class="gridme-clearfix">
+<div class="gridme-top-footer-block">
+<div id="eu_cookie_law_widget-2" class="gridme-footer-widget widget widget_eu_cookie_law_widget">
+<div class="hide-on-button" data-hide-timeout="30" data-consent-expiration="180" id="eu-cookie-law">
+	<form method="post" id="jetpack-eu-cookie-law-form">
+		<input type="submit" value="Close and accept" class="accept">
+	</form>
+
+	I'm required by European Law to tell you that this site use Cookies. But they aren't viewed or used in any way - don't worry about that.
+		<a href="birdbrainiac.github.io/roll20sheet/?page_id=3" rel="">
+		Cookie Policy	</a>
+</div>
+</div></div>
+</div>
+
+
+
+</div>
+</div>
+</div><!--/#gridme-footer-blocks-->
+
+<div class="gridme-clearfix" id="gridme-copyright-area">
+<div class="gridme-copyright-area-inside gridme-container">
+<div class="gridme-outer-wrapper">
+
+<div class="gridme-copyright-area-inside-content gridme-clearfix">
+
+<div class="gridme-copyright-area-inside-left">
+  <p class="gridme-copyright">Copyright &copy; 2025 Cybersphere</p>
+<p class="gridme-credit"><a href="https://themesdna.com/">Design by ThemesDNA.com</a></p>
+</div>
+
+<div class="gridme-copyright-area-inside-right">
+
+<div class="gridme-footer-social-icons">
+                                                                                                                                                                                                                                                                               </div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+</div><!--/#gridme-copyright-area -->
+
+
+<button class="gridme-scroll-top" title="Scroll to Top"><i class="fas fa-arrow-up" aria-hidden="true"></i><span class="gridme-sr-only">Scroll to Top</span></button>
+
+				<script type='text/javascript'><!--
+			var seriesdropdown = document.getElementById("orgseries_dropdown");
+			if (seriesdropdown) {
+			 function onSeriesChange() {
+					if ( seriesdropdown.options[seriesdropdown.selectedIndex].value != ( 0 || -1 ) ) {
+						location.href = "birdbrainiac.github.io/roll20sheet/series/"+seriesdropdown.options[seriesdropdown.selectedIndex].value;
+					}
+				}
+				seriesdropdown.onchange = onSeriesChange;
+			}
+			--></script>
+			<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/gridme-child\/*","\/wp-content\/themes\/gridme\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<link rel="stylesheet" id="eu-cookie-law-style-css" href="https://c0.wp.com/p/jetpack/15.0/modules/widgets/eu-cookie-law/style.css" type="text/css" media="all">
+<style id="core-block-supports-inline-css" type="text/css">
+.wp-container-core-columns-is-layout-9d6595d7{flex-wrap:nowrap;}
+</style>
+<script type="text/javascript" id="ez-toc-scroll-scriptjs-js-extra">
+/* <![CDATA[ */
+var eztoc_smooth_local = {"scroll_offset":"30","add_request_uri":"","add_self_reference_link":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="birdbrainiac.github.io/roll20sheet/wp-content/plugins/easy-table-of-contents/assets/js/smooth_scroll.min.js?ver=2.0.76" id="ez-toc-scroll-scriptjs-js"></script>
+<script type="text/javascript" src="birdbrainiac.github.io/roll20sheet/wp-content/plugins/easy-table-of-contents/vendor/js-cookie/js.cookie.min.js?ver=2.2.1" id="ez-toc-js-cookie-js"></script>
+<script type="text/javascript" src="birdbrainiac.github.io/roll20sheet/wp-content/plugins/easy-table-of-contents/vendor/sticky-kit/jquery.sticky-kit.min.js?ver=1.9.2" id="ez-toc-jquery-sticky-kit-js"></script>
+<script type="text/javascript" id="ez-toc-js-js-extra">
+/* <![CDATA[ */
+var ezTOC = {"smooth_scroll":"1","scroll_offset":"30","fallbackIcon":"<span class=\"\"><span class=\"eztoc-hide\" style=\"display:none;\">Toggle<\/span><span class=\"ez-toc-icon-toggle-span\"><svg style=\"fill: #000000;color:#000000\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" class=\"list-377408\" width=\"20px\" height=\"20px\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z\" fill=\"currentColor\"><\/path><\/svg><svg style=\"fill: #000000;color:#000000\" class=\"arrow-unsorted-368013\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"10px\" height=\"10px\" viewBox=\"0 0 24 24\" version=\"1.2\" baseProfile=\"tiny\"><path d=\"M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z\"\/><\/svg><\/span><\/span>","chamomile_theme_is_on":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="birdbrainiac.github.io/roll20sheet/wp-content/plugins/easy-table-of-contents/assets/js/front.min.js?ver=2.0.76-1757127971" id="ez-toc-js-js"></script>
+<script type="text/javascript" src="birdbrainiac.github.io/roll20sheet/wp-content/themes/gridme/assets/js/jquery.fitvids.min.js" id="fitvids-js"></script>
+<script type="text/javascript" src="birdbrainiac.github.io/roll20sheet/wp-content/themes/gridme/assets/js/ResizeSensor.min.js" id="ResizeSensor-js"></script>
+<script type="text/javascript" src="birdbrainiac.github.io/roll20sheet/wp-content/themes/gridme/assets/js/theia-sticky-sidebar.min.js" id="theia-sticky-sidebar-js"></script>
+<script type="text/javascript" src="birdbrainiac.github.io/roll20sheet/wp-content/themes/gridme/assets/js/navigation.js" id="gridme-navigation-js"></script>
+<script type="text/javascript" src="birdbrainiac.github.io/roll20sheet/wp-content/themes/gridme/assets/js/skip-link-focus-fix.js" id="gridme-skip-link-focus-fix-js"></script>
+<script type="text/javascript" src="https://c0.wp.com/c/6.8.3/wp-includes/js/imagesloaded.min.js" id="imagesloaded-js"></script>
+<script type="text/javascript" id="gridme-customjs-js-extra">
+/* <![CDATA[ */
+var gridme_ajax_object = {"ajaxurl":"birdbrainiac.github.io\/roll20sheet\/wp-admin\/admin-ajax.php","primary_menu_active":"1","secondary_menu_active":"","primary_mobile_menu_active":"1","secondary_mobile_menu_active":"1","sticky_header_active":"1","sticky_header_mobile_active":"","sticky_sidebar_active":"1","fitvids_active":"1","columnwidth":".gridme-4-col-sizer","gutter":".gridme-4-col-gutter"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="birdbrainiac.github.io/roll20sheet/wp-content/themes/gridme/assets/js/custom.js" id="gridme-customjs-js"></script>
+<script type="text/javascript" src="https://c0.wp.com/c/6.8.3/wp-includes/js/comment-reply.min.js" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+<script type="text/javascript" id="gridme-html5shiv-js-js-extra">
+/* <![CDATA[ */
+var gridme_custom_script_vars = {"elements_name":"abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output picture progress section summary template time video"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="birdbrainiac.github.io/roll20sheet/wp-content/themes/gridme/assets/js/html5shiv.js" id="gridme-html5shiv-js-js"></script>
+<script type="text/javascript" src="birdbrainiac.github.io/roll20sheet/wp-content/plugins/kadence-blocks/includes/assets/js/kt-tabs.min.js?ver=3.5.21" id="kadence-blocks-tabs-js"></script>
+<script type="text/javascript" id="jetpack-stats-js-before">
+/* <![CDATA[ */
+_stq = window._stq || [];
+_stq.push([ "view", JSON.parse("{\"v\":\"ext\",\"blog\":\"203757609\",\"post\":\"1036\",\"tz\":\"1\",\"srv\":\"cybersphere.local\"}") ]);
+_stq.push([ "clickTrackerInit", "203757609", "1036" ]);
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://stats.wp.com/e-202540.js" id="jetpack-stats-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" src="https://c0.wp.com/p/jetpack/15.0/_inc/build/widgets/eu-cookie-law/eu-cookie-law.min.js" id="eu-cookie-law-script-js"></script>
+</body>
+</html>

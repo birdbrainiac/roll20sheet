@@ -1,12 +1,12 @@
 @font-face {
     font-family: "rml";
-    src: url("/wp-content/plugins/real-media-library-lite/public/others/icons/font/rml.eot?21909263");
+    src: url("birdbrainiac.github.io/roll20sheet/wp-content/plugins/real-media-library-lite/public/others/icons/font/rml.eot?21909263");
     src:
-        url("/wp-content/plugins/real-media-library-lite/public/others/icons/font/rml.eot?21909263#iefix") format("embedded-opentype"),
-        url("/wp-content/plugins/real-media-library-lite/public/others/icons/font/rml.woff2?21909263") format("woff2"),
-        url("/wp-content/plugins/real-media-library-lite/public/others/icons/font/rml.woff?21909263") format("woff"),
-        url("/wp-content/plugins/real-media-library-lite/public/others/icons/font/rml.ttf?21909263") format("truetype"),
-        url("/wp-content/plugins/real-media-library-lite/public/others/icons/font/rml.svg?21909263#rml") format("svg");
+        url("birdbrainiac.github.io/roll20sheet/wp-content/plugins/real-media-library-lite/public/others/icons/font/rml.eot?21909263#iefix") format("embedded-opentype"),
+        url("birdbrainiac.github.io/roll20sheet/wp-content/plugins/real-media-library-lite/public/others/icons/font/rml.woff2?21909263") format("woff2"),
+        url("birdbrainiac.github.io/roll20sheet/wp-content/plugins/real-media-library-lite/public/others/icons/font/rml.woff?21909263") format("woff"),
+        url("birdbrainiac.github.io/roll20sheet/wp-content/plugins/real-media-library-lite/public/others/icons/font/rml.ttf?21909263") format("truetype"),
+        url("birdbrainiac.github.io/roll20sheet/wp-content/plugins/real-media-library-lite/public/others/icons/font/rml.svg?21909263#rml") format("svg");
     font-weight: normal;
     font-style: normal;
 }
@@ -16,7 +16,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'rml';
-    src: url('/wp-content/plugins/real-media-library-lite/public/others/icons/font/rml.svg?21909263#rml') format('svg');
+    src: url('birdbrainiac.github.io/roll20sheet/wp-content/plugins/real-media-library-lite/public/others/icons/font/rml.svg?21909263#rml') format('svg');
   }
 }
 */

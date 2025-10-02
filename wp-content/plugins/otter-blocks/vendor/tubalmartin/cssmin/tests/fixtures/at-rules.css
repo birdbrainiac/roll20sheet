@@ -33,8 +33,8 @@ regexp("https:.*")
     max-width: 800px;
 }
 @charset "utf-8";
-@import url("/wp-content/plugins/otter-blocks/vendor/tubalmartin/cssmin/tests/fixtures/fineprint.css") print;
-@import url("/wp-content/plugins/otter-blocks/vendor/tubalmartin/cssmin/tests/fixtures/bluish.css") projection, tv;
+@import url("birdbrainiac.github.io/roll20sheet/wp-content/plugins/otter-blocks/vendor/tubalmartin/cssmin/tests/fixtures/fineprint.css") print;
+@import url("birdbrainiac.github.io/roll20sheet/wp-content/plugins/otter-blocks/vendor/tubalmartin/cssmin/tests/fixtures/bluish.css") projection, tv;
 @namespace svg url(http://www.w3.org/2000/svg);
 #foo {
     border-width:1px;
@@ -98,13 +98,13 @@ The compressor should not get involved.
 @import 'custom.css';
 @IMPORT url("chrome://communicator/skin/");
 @import "common.css" screen, projection;
-@import url('/wp-content/plugins/otter-blocks/vendor/tubalmartin/cssmin/tests/fixtures/landscape.css') screen and (orientation:landscape);
+@import url('birdbrainiac.github.io/roll20sheet/wp-content/plugins/otter-blocks/vendor/tubalmartin/cssmin/tests/fixtures/landscape.css') screen and (orientation:landscape);
 @namespace url(http://www.w3.org/1999/xhtml);
 @font-face {
     font-family: 'gzipper';
-    src: url(/wp-content/plugins/otter-blocks/vendor/tubalmartin/cssmin/tests/fixtures/yanone.eot);
+    src: url(birdbrainiac.github.io/roll20sheet/wp-content/plugins/otter-blocks/vendor/tubalmartin/cssmin/tests/fixtures/yanone.eot);
     src: local('gzipper'),
-    url(/wp-content/plugins/otter-blocks/vendor/tubalmartin/cssmin/tests/fixtures/yanone.ttf) format('truetype');
+    url(birdbrainiac.github.io/roll20sheet/wp-content/plugins/otter-blocks/vendor/tubalmartin/cssmin/tests/fixtures/yanone.ttf) format('truetype');
 }
 #bar {
     border-width:10px;

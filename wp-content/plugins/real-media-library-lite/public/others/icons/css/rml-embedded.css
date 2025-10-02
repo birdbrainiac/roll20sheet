@@ -1,9 +1,9 @@
 @font-face {
     font-family: "rml";
-    src: url("/wp-content/plugins/real-media-library-lite/public/others/icons/font/rml.eot?20287719");
+    src: url("birdbrainiac.github.io/roll20sheet/wp-content/plugins/real-media-library-lite/public/others/icons/font/rml.eot?20287719");
     src:
-        url("/wp-content/plugins/real-media-library-lite/public/others/icons/font/rml.eot?20287719#iefix") format("embedded-opentype"),
-        url("/wp-content/plugins/real-media-library-lite/public/others/icons/font/rml.svg?20287719#rml") format("svg");
+        url("birdbrainiac.github.io/roll20sheet/wp-content/plugins/real-media-library-lite/public/others/icons/font/rml.eot?20287719#iefix") format("embedded-opentype"),
+        url("birdbrainiac.github.io/roll20sheet/wp-content/plugins/real-media-library-lite/public/others/icons/font/rml.svg?20287719#rml") format("svg");
     font-weight: normal;
     font-style: normal;
 }
@@ -21,7 +21,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'rml';
-    src: url('/wp-content/plugins/real-media-library-lite/public/others/icons/font/rml.svg?20287719#rml') format('svg');
+    src: url('birdbrainiac.github.io/roll20sheet/wp-content/plugins/real-media-library-lite/public/others/icons/font/rml.svg?20287719#rml') format('svg');
   }
 }
 */
