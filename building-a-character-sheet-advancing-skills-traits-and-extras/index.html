@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<title>Building a Character Sheet &ndash; Advancing Skills, Traits, and Extras &ndash; Cybersphere</title>
+<meta name="robots" content="max-image-preview:large">
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<link rel="dns-prefetch" href="//stats.wp.com">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="preconnect" href="//c0.wp.com">
+<link rel="alternate" type="application/rss+xml" title="Cybersphere &raquo; Feed" href="birdbrainiac.github.io/roll20sheet/feed/">
+<link rel="alternate" type="application/rss+xml" title="Cybersphere &raquo; Comments Feed" href="birdbrainiac.github.io/roll20sheet/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Cybersphere &raquo; Building a Character Sheet &ndash; Advancing Skills, Traits, and Extras Comments Feed" href="birdbrainiac.github.io/roll20sheet/building-a-character-sheet-advancing-skills-traits-and-extras/feed/">
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"birdbrainiac.github.io\/roll20sheet\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.3"}};
+/*! This file is auto-generated */
+!function(s,n){var o,i,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),a=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===a[t]})}function u(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);for(var n=e.getImageData(16,16,1,1),a=0;a<n.data.length;a++)if(0!==n.data[a])return!1;return!0}function f(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\udedf")}return!1}function g(e,t,n,a){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):s.createElement("canvas"),o=r.getContext("2d",{willReadFrequently:!0}),i=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(function(e){i[e]=t(o,e,n,a)}),i}function t(e){var t=s.createElement("script");t.src=e,t.defer=!0,s.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",i=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){s.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+g.toString()+"("+[JSON.stringify(i),f.toString(),p.toString(),u.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"}),r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=function(e){c(n=e.data),r.terminate(),t(n)})}catch(e){}c(n=g(i,f,p,u))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<link rel="stylesheet" id="sdm-styles-css" href="birdbrainiac.github.io/roll20sheet/wp-content/plugins/simple-download-monitor/css/sdm_wp_styles.css?ver=6.8.3" type="text/css" media="all">
+<style id="wp-emoji-styles-inline-css" type="text/css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel="stylesheet" id="wp-block-library-css" href="https://c0.wp.com/c/6.8.3/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all">
+<style id="classic-theme-styles-inline-css" type="text/css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<link rel="stylesheet" id="mediaelement-css" href="https://c0.wp.com/c/6.8.3/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-mediaelement-css" href="https://c0.wp.com/c/6.8.3/wp-includes/js/mediaelement/wp-mediaelement.min.css" type="text/css" media="all">
+<style id="jetpack-sharing-buttons-style-inline-css" type="text/css">
+.jetpack-sharing-buttons__services-list{display:flex;flex-direction:row;flex-wrap:wrap;gap:0;list-style-type:none;margin:5px;padding:0}.jetpack-sharing-buttons__services-list.has-small-icon-size{font-size:12px}.jetpack-sharing-buttons__services-list.has-normal-icon-size{font-size:16px}.jetpack-sharing-buttons__services-list.has-large-icon-size{font-size:24px}.jetpack-sharing-buttons__services-list.has-huge-icon-size{font-size:36px}@media print{.jetpack-sharing-buttons__services-list{display:none!important}}.editor-styles-wrapper .wp-block-jetpack-sharing-buttons{gap:0;padding-inline-start:0}ul.jetpack-sharing-buttons__services-list.has-background{padding:1.25em 2.375em}
+</style>
+<link rel="stylesheet" id="syntax-highlighting-code-block-theme-css" href="birdbrainiac.github.io/roll20sheet/wp-content/plugins/syntax-highlighting-code-block/vendor/scrivo/highlight-php/styles/github.css?ver=1.5.1" type="text/css" media="all">
+<style id="syntax-highlighting-code-block-inline-css" type="text/css">
+.wp-block-code {
+	border: 0;
+	padding: 0;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+.wp-block-code > span {
+	display: block;
+	overflow: auto;
+}
+
+.shcb-language {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	-webkit-clip-path: inset(50%);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	word-wrap: normal;
+	word-break: normal;
+}
+
+.hljs {
+	box-sizing: border-box;
+}
+
+.hljs.shcb-code-table {
+	display: table;
+	width: 100%;
+}
+
+.hljs.shcb-code-table > .shcb-loc {
+	color: inherit;
+	display: table-row;
+	width: 100%;
+}
+
+.hljs.shcb-code-table .shcb-loc > span {
+	display: table-cell;
+}
+
+.wp-block-code code.hljs:not(.shcb-wrap-lines) {
+	white-space: pre;
+}
+
+.wp-block-code code.hljs.shcb-wrap-lines {
+	white-space: pre-wrap;
+}
+
+.hljs.shcb-line-numbers {
+	border-spacing: 0;
+	counter-reset: line;
+}
+
+.hljs.shcb-line-numbers > .shcb-loc {
+	counter-increment: line;
+}
+
+.hljs.shcb-line-numbers .shcb-loc > span {
+	padding-left: 0.75em;
+}
+
+.hljs.shcb-line-numbers .shcb-loc::before {
+	border-right: 1px solid #ddd;
+	content: counter(line);
+	display: table-cell;
+	padding: 0 0.75em;
+	text-align: right;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	white-space: nowrap;
+	width: 1%;
+}
+
+.hljs > mark.shcb-loc { background-color: #ddf6ff; }
+</style>
+<style id="global-styles-inline-css" type="text/css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="stylesheet" id="rgg-simplelightbox-css" href="birdbrainiac.github.io/roll20sheet/wp-content/plugins/responsive-gallery-grid/lib/simplelightbox/simplelightbox.min.css?ver=2.3.18" type="text/css" media="all">
+<link rel="stylesheet" id="slickstyle-css" href="birdbrainiac.github.io/roll20sheet/wp-content/plugins/responsive-gallery-grid/lib/slick/slick.1.9.0.min.css?ver=2.3.18" type="text/css" media="all">
+<link rel="stylesheet" id="slick-theme-css" href="birdbrainiac.github.io/roll20sheet/wp-content/plugins/responsive-gallery-grid/lib/slick/slick-theme.css?ver=2.3.18" type="text/css" media="all">
+<link rel="stylesheet" id="rgg-style-css" href="birdbrainiac.github.io/roll20sheet/wp-content/plugins/responsive-gallery-grid/css/style.css?ver=2.3.18" type="text/css" media="all">
+<link rel="stylesheet" id="light-style-css" href="birdbrainiac.github.io/roll20sheet/wp-content/plugins/organize-series/orgSeriesLightTheme.css?ver=6.8.3" type="text/css" media="all">
+<link rel="stylesheet" id="chld_thm_cfg_parent-css" href="birdbrainiac.github.io/roll20sheet/wp-content/themes/gridme/style.css?ver=6.8.3" type="text/css" media="all">
+<link rel="stylesheet" id="gridme-maincss-css" href="birdbrainiac.github.io/roll20sheet/wp-content/themes/gridme-child/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="fontawesome-css" href="birdbrainiac.github.io/roll20sheet/wp-content/themes/gridme/assets/css/all.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="chld_thm_cfg_separate-css" href="birdbrainiac.github.io/roll20sheet/wp-content/themes/gridme-child/ctc-style.css?ver=6.8.3" type="text/css" media="all">
+<link rel="stylesheet" id="gridme-webfont-css" href="//fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i%7CDomine:400,700%7COswald:400,700%7CPatua+One&amp;display=swap" type="text/css" media="all">
+<style id="kadence-blocks-global-variables-inline-css" type="text/css">
+:root {--global-kb-font-size-sm:clamp(0.8rem, 0.73rem + 0.217vw, 0.9rem);--global-kb-font-size-md:clamp(1.1rem, 0.995rem + 0.326vw, 1.25rem);--global-kb-font-size-lg:clamp(1.75rem, 1.576rem + 0.543vw, 2rem);--global-kb-font-size-xl:clamp(2.25rem, 1.728rem + 1.63vw, 3rem);--global-kb-font-size-xxl:clamp(2.5rem, 1.456rem + 3.26vw, 4rem);--global-kb-font-size-xxxl:clamp(2.75rem, 0.489rem + 7.065vw, 6rem);}:root {--global-palette1: #3182CE;--global-palette2: #2B6CB0;--global-palette3: #1A202C;--global-palette4: #2D3748;--global-palette5: #4A5568;--global-palette6: #718096;--global-palette7: #EDF2F7;--global-palette8: #F7FAFC;--global-palette9: #ffffff;}
+</style>
+<script type="text/javascript" src="https://c0.wp.com/c/6.8.3/wp-includes/js/jquery/jquery.min.js" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://c0.wp.com/c/6.8.3/wp-includes/js/jquery/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="sdm-scripts-js-extra">
+/* <![CDATA[ */
+var sdm_ajax_script = {"ajaxurl":"birdbrainiac.github.io\/roll20sheet\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="birdbrainiac.github.io/roll20sheet/wp-content/plugins/simple-download-monitor/js/sdm_wp_scripts.js?ver=6.8.3" id="sdm-scripts-js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="birdbrainiac.github.io/roll20sheet/wp-content/themes/gridme/assets/js/respond.min.js" id="respond-js"></script>
+<![endif]-->
+<link rel="https://api.w.org/" href="birdbrainiac.github.io/roll20sheet/wp-json/"><link rel="alternate" title="JSON" type="application/json" href="birdbrainiac.github.io/roll20sheet/wp-json/wp/v2/posts/18148"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="birdbrainiac.github.io/roll20sheet/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.8.3">
+<link rel="canonical" href="birdbrainiac.github.io/roll20sheet/building-a-character-sheet-advancing-skills-traits-and-extras/">
+<link rel="shortlink" href="birdbrainiac.github.io/roll20sheet/?p=18148">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="birdbrainiac.github.io/roll20sheet/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Fbuilding-a-character-sheet-advancing-skills-traits-and-extras%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="birdbrainiac.github.io/roll20sheet/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Fbuilding-a-character-sheet-advancing-skills-traits-and-extras%2F&amp;format=xml">
+<style>
+
+	.enlighter-t-enlighter .enlighter-text {
+		color: red;
+	}
+	.enlighter-t-enlighter .enlighter-x12 {
+	  color: blue;
+	  text-decoration: none;
+	}
+
+</style>
+	<style>img#wpstats{display:none}</style>
+		    <style type="text/css">
+            .gridme-site-title, .gridme-site-title a, .gridme-site-title a:hover, .gridme-site-title a:focus, .gridme-site-title a:active, .gridme-site-description {color: #ffffff;}
+        </style>
+    <style type="text/css" id="custom-background-css">
+body.custom-background { background-image: url("birdbrainiac.github.io/roll20sheet/wp-content/themes/gridme/assets/images/background.png"); background-position: left top; background-size: auto; background-repeat: repeat; background-attachment: fixed; }
+</style>
+			<style type="text/css" id="wp-custom-css">
+			/* widget separation is too high */
+.gridme-sidebar-widget-areas .widget {
+	margin-bottom: 20px;
+}
+.gridme-sidebar-widget-areas .widget li {
+  padding: 0 0 6px 0px;
+}
+.gridme-sidebar-widget-areas .widget li li {
+	padding: 0 0 0 10px;
+}
+
+/* font size */
+.entry-content p,
+.entry-content ol,
+.entry-content ul {
+	font-size: 110%;
+	
+}
+
+/* temporary date box */
+.gridme-grid-post .gridme-grid-datebox {
+	width:47px;
+}
+
+.gridme-grid-post-details {
+	height: 100px;
+}
+
+.gridme-grid-post,
+.gridme-sidebar-widget-areas .widget {
+	margin-bottom: 15px;
+}
+
+h2 {
+	font-variant-caps: small-caps;
+	background-color: none; /*black; */
+	border-radius:5px;
+	color: #ec008c; /* #f8f8f8;*/
+	padding: 5px;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	border: 1pt solid #ec008c;
+text-align: center;
+	text-decoration: none;
+}
+h3 {
+  text-decoration: underline;
+}
+.entry-title {
+	font: normal bold 32px 'Playfair Display',Arial,sans-serif;
+		/* normal normal 32px Domine,Arial,Helvetica,sans-serif; */
+	background-color: black;
+	padding: 10px;
+	padding-bottom: 15px;
+	border-radius: 10px;
+	color: #f8f8f8;
+	
+}
+.entry-title a,
+.entry-title a:hover {
+	color: #f8f8f8;
+	text-shadow: 2px 0px 4px #000000;
+}
+/* roll20 colours */
+h1, /* h2, */
+h1.page-title,
+.entry-title,
+.gridme-header-inside,
+.gridme-sidebar-widget-areas .widget .gridme-widget-title,
+.gridme-grid-post .gridme-grid-datebox{
+	color: #FFF;
+	background-color: #ec008c;
+	border-color: #ec008c;
+}
+h1.gridme-site-title {
+	background: transparent;
+}
+/* no gradient on datebox */
+h1, /* h2, */ 
+h1.page-title,
+.entry-title,
+.gridme-header-inside,
+.gridme-sidebar-widget-areas .widget .gridme-widget-title {
+  background: linear-gradient(0deg, rgba(238,174,202,1) 0%, rgba(236,0,110,1) 30%);
+}
+
+h2 {
+	border-radius: 15px;
+	color: #FFF;
+	background-color: #ec008c;
+	border-color: #ec008c;
+}
+
+p {
+	border-radius: 15px;
+}
+.gridme-page-header-inside {
+	width: 100%;
+}
+.gridme-grid-post .gridme-grid-datebox {
+	border-radius: 10px;
+}
+h1.page-title {
+	padding: 10px 50px 15px 50px;
+	border-radius: 10px;
+}
+
+/* active tab colour */
+.wp-block-kadence-tabs .kt-tabs-wrap > .kt-tabs-title-list li.kt-tab-title-active .kt-tab-title {
+	background: #ec008c;
+}
+
+div.enlighter {
+	background-color: whitesmoke;
+}
+
+.curved {
+	border-radius: 10%;
+}
+
+div.taxonomy-description {
+  background-color: #ffffff;
+  color: #333;
+  text-shadow: none;
+	padding: 10px;
+	margin-left: 7px;
+	margin-right: 7px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+/* footer titles */
+#gridme-footer-blocks .widget .gridme-widget-title {
+	padding-top: 7px;
+}
+
+.gridme-primary-nav-menu > li > a {
+  font-size: 120%;
+}
+
+h2 {
+border-radius: 0;
+color: #ec008c;
+background-color: transparent;
+border: 0;
+border-bottom: 1pt solid #ec008c;
+border-top: 3pt solid #ec008c;
+}
+h3 {
+	color: #ec008c;
+}
+
+.gridme-logo {
+	-webkit-flex: 0 0 18%;
+	width: 18%;
+	max-width: 18%;
+	
+}
+.gridme-header-menu {
+	-webkit-flex: 0 0 80%;
+	width: 80%;
+	max-width: 80%;
+}
+
+.wp-block-kadence-tabs .kt-tabs-wrap > .kt-tabs-title-list li.kt-tab-title-active .kt-tab-title {
+	color: white;
+}
+.kt-tabs-wrap  > .kt-tabs-content-wrap > .wp-block-kadence-tab {
+	border-top-color: #ec008c;
+}
+
+ul.lcp_catlist li a {
+	font-weight:bold;
+	color: #ec008c;
+}
+div.seriesbox {
+	display:none;
+}
+div.seriesbox a,
+span.series-nav-left a,
+.entry-content a {
+	color: #ec008c;
+}
+.wp-block-kadence-tabs .kt-tabs-mobile-layout-accordion > .kt-tabs-title-list li.kt-tab-title-active .kt-tab-title,
+.wp-block-kadence-tabs .kt-tabs-mobile-layout-accordion > .kt-tabs-content-wrap > .kt-tabs-accordion-title.kt-tab-title-active .kt-tab-title{
+	background-color: #ec008c;
+}
+
+.entry-content ul.lcp_catlist {
+	list-style: decimal;
+}
+
+.gridme-featured-posts-area .widget {
+	text-align: center;
+}
+
+#post-5420 div.seriesbox {
+	display: none;
+}
+
+.border-top {
+	border-top: 1pt solid black;
+	border-left: 1pt solid black;
+	border-right: 1pt solid black;
+	background-color: antiquewhite;
+	color:black;
+	margin-bottom: 0;
+	padding-bottom: 12px;
+	margin-left: 2%;
+	margin-right: 2%;
+	padding-left: 1%;
+	padding-right: 1%;
+	padding-top: 8px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.border-bottom {
+	border-bottom: 1pt solid black;
+	border-left: 1pt solid black;
+	border-right: 1pt solid black;
+	background-color: antiquewhite;
+	border-radius: 0;
+	margin-left: 2%;
+	margin-right: 2%;
+	padding-left: 1%;
+	padding-right: 1%;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+#gridme-posts-wrapper div.so-panel {
+	margin-bottom: 0;
+}
+
+.panel-grid.panel-no-style {
+	margin-bottom: 0px !important;
+	text-align: center;
+}
+.panel-grid-cell h3.widget-title {
+  margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+.panel-grid-cell .panel-last-child {
+  margin-bottom: 0;
+  width: 107%;
+	margin-left: -10px;
+}
+.series-nav-right  {
+	float:right
+}
+.gridme-masonry-inactive .gridme-grid-post.gridme-4-col {
+	margin-right: 5px;
+}
+
+.front-page .gridme-grid-post .gridme-grid-datebox {
+  width: 60px;
+}
+.front-page .gridme-grid-post .gridme-grid-datebox {
+  height:75px;
+ }
+.front-page .gridme-grid-post .gridme-grid-datebox .gridme-grid-datebox-day {
+  font-size: 24px;
+}
+.front-page .gridme-grid-post .gridme-grid-datebox .gridme-grid-datebox-month,
+.front-page .gridme-grid-post .gridme-grid-datebox .gridme-grid-datebox-year
+ {
+  font-size: 16px;
+}
+
+#post-8842 h2, #post-8842 h3 {
+	clear: none;
+}
+.heading-band,
+.heading-band a {
+   background-color: #ec008c;
+	color: white;
+}
+.heading-band {
+	border-radius: 10px;
+	font-size: 170%;
+  margin-top: 20px;
+}
+div.gridme-box-inside a:hover {
+	color:yellow; 
+	text-decoration: underline;
+	background:#ec008c;
+	  padding: 5px;
+  margin-left: -5px;
+	border-radius: 5px;
+	
+}
+.heading-band a:hover {
+	color:yellow;
+}
+
+div.front-page a:hover {
+	background:initial;
+}
+
+p.emphasis {
+	font-weight: bold;
+	background-color: #ec008c;
+	color: white;
+	margin-bottom: 2px;
+}
+#ez-toc-container.ez-toc-black {
+  background: #ec008c;
+	border-radius: 15px;
+}
+#ez-toc-container .ez-toc-link:hover,
+#ez-toc-container .ez-toc-link:visited {
+	background-color: blue;	
+}
+
+div.display-posts-online {
+	display: grid;
+	grid-template-columns: repeat(4, 25%);
+	text-align: center;
+}
+div.display-posts-online div.listing-item {
+	display: grid;
+}
+
+div.display-posts-online div.listing-item a.image,
+div.display-posts-online div.listing-item .title,
+div.display-posts-online div.listing-item .excerpt {
+	grid-column: 1 / -1;
+
+}
+div.display-posts-online div.listing-item .excerpt-dash {
+	display: none;
+}
+.small-column {
+	font-size: 70% !important;
+}		</style>
+		</head>
+
+<body class="wp-singular post-template-default single single-post postid-18148 single-format-standard custom-background wp-theme-gridme wp-child-theme-gridme-child gridme-animated gridme-fadein gridme-theme-is-active gridme-layout-type-full gridme-masonry-inactive gridme-header-menu-active gridme-tagline-inactive gridme-primary-menu-active gridme-primary-mobile-menu-active gridme-secondary-mobile-menu-active gridme-secondary-menu-centered gridme-footer-social-buttons-active gridme-uc-links" id="gridme-site-body" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+<a class="skip-link screen-reader-text" href="#gridme-content-wrapper">Skip to content</a>
+
+
+
+<div class="gridme-site-header gridme-container" id="gridme-header" itemscope="itemscope" itemtype="http://schema.org/WPHeader" role="banner">
+<div class="gridme-head-content gridme-clearfix" id="gridme-head-content">
+
+<div class="gridme-header-inside gridme-clearfix">
+<div class="gridme-header-inside-content gridme-clearfix">
+<div class="gridme-outer-wrapper">
+<div class="gridme-header-inside-container">
+
+<div class="gridme-logo">
+    <div class="site-branding">
+                  <p class="gridme-site-title"><a href="birdbrainiac.github.io/roll20sheet/" rel="home">Cybersphere</a></p>
+                    </div>
+</div>
+
+<div class="gridme-header-menu">
+<div class="gridme-container gridme-primary-menu-container gridme-clearfix">
+<div class="gridme-primary-menu-container-inside gridme-clearfix">
+<nav class="gridme-nav-primary" id="gridme-primary-navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement" role="navigation" aria-label="Primary Menu">
+<button class="gridme-primary-responsive-menu-icon" aria-controls="gridme-menu-primary-navigation" aria-expanded="false">Menu</button>
+<ul id="gridme-menu-primary-navigation" class="gridme-primary-nav-menu gridme-menu-primary gridme-clearfix"><li id="menu-item-8501" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8501"><a href="birdbrainiac.github.io/roll20sheet/blog/">Blog</a></li>
+<li id="menu-item-5625" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-5625"><a href="birdbrainiac.github.io/roll20sheet/roll20-sheet-author-master-list/">Roll20 Sheet Author</a>
+<ul class="sub-menu">
+	<li id="menu-item-5639" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-5639"><a href="birdbrainiac.github.io/roll20sheet/guide-to-the-guide/">Guide to the Guide</a></li>
+	<li id="menu-item-4245" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-4245"><a href="birdbrainiac.github.io/roll20sheet/html-building-blocks/">HTML</a></li>
+	<li id="menu-item-4244" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-4244"><a href="birdbrainiac.github.io/roll20sheet/guide-to-css-styling-a-character-sheet/">CSS</a></li>
+	<li id="menu-item-4246" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-4246"><a href="birdbrainiac.github.io/roll20sheet/sheet-workers-automating-the-sheet/">Sheet Workers</a></li>
+	<li id="menu-item-8768" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-8768"><a href="birdbrainiac.github.io/roll20sheet/repeating-section/">Repeating Sections</a></li>
+	<li id="menu-item-9903" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9903"><a href="birdbrainiac.github.io/roll20sheet/guide-to-rolltemplates-and-translations/">rollTemplates</a></li>
+	<li id="menu-item-11340" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11340"><a href="birdbrainiac.github.io/roll20sheet/guide-to-custom-roll-parsing/">Custom Roll Parsing</a></li>
+	<li id="menu-item-12152" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12152"><a href="birdbrainiac.github.io/roll20sheet/guide-to-rolltemplates-and-translations/">Translations</a></li>
+	<li id="menu-item-13092" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13092"><a href="birdbrainiac.github.io/roll20sheet/guide-to-sheet-templating/">Templating with Handlebars</a></li>
+</ul>
+</li>
+<li id="menu-item-1513" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1513"><a href="birdbrainiac.github.io/roll20sheet/category/online/playing-roll20/">Playing Online</a></li>
+<li id="menu-item-923" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-923"><a href="birdbrainiac.github.io/roll20sheet/category/thinking/">RPG Talk</a>
+<ul class="sub-menu">
+	<li id="menu-item-925" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-925"><a href="birdbrainiac.github.io/roll20sheet/category/thinking/pendragon/">Pendragon</a></li>
+</ul>
+</li>
+<li id="menu-item-8776" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8776"><a href="birdbrainiac.github.io/roll20sheet/game-reviews/">Reviews</a></li>
+<li id="menu-item-8765" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-8765"><a href="birdbrainiac.github.io/roll20sheet/game-designs/">Game Designs</a>
+<ul class="sub-menu">
+	<li id="menu-item-11517" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11517"><a href="birdbrainiac.github.io/roll20sheet/starscape/">Starscape</a></li>
+	<li id="menu-item-13096" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13096"><a href="birdbrainiac.github.io/roll20sheet/carrington/">The Carrington Event</a></li>
+	<li id="menu-item-8766" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8766"><a href="birdbrainiac.github.io/roll20sheet/legends-never-die/">Legends Never Die!</a></li>
+	<li id="menu-item-11518" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11518"><a href="birdbrainiac.github.io/roll20sheet/more-games/">More Games</a></li>
+</ul>
+</li>
+<li id="menu-item-1693" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1693"><a href="birdbrainiac.github.io/roll20sheet/about/">About</a>
+<ul class="sub-menu">
+	<li id="menu-item-1692" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1692"><a href="birdbrainiac.github.io/roll20sheet/portfolio/">Portfolio</a></li>
+</ul>
+</li>
+<li class="gridme-header-icon-search-item"><a href="#" aria-label="Search Button" class="gridme-header-icon-search"><i class="fas fa-search" aria-hidden="true" title="Search"></i></a></li></ul></nav>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div><!--/#gridme-head-content -->
+</div><!--/#gridme-header -->
+
+<div id="gridme-search-overlay-wrap" class="gridme-search-overlay">
+  <div class="gridme-search-overlay-content">
+    
+<form role="search" method="get" class="gridme-search-form" action="birdbrainiac.github.io/roll20sheet/">
+<label>
+    <span class="gridme-sr-only">Search for:</span>
+    <input type="search" class="gridme-search-field" placeholder="Search &hellip;" value="" name="s">
+</label>
+<input type="submit" class="gridme-search-submit" value="">
+</form>  </div>
+  <button class="gridme-search-closebtn" aria-label="Close Search" title="Close Search">&times;</button>
+</div>
+
+
+<div id="gridme-header-end"></div>
+
+
+
+
+<div class="gridme-outer-wrapper" id="gridme-wrapper-outside">
+
+<div class="gridme-container gridme-clearfix" id="gridme-wrapper">
+<div class="gridme-content-wrapper gridme-clearfix" id="gridme-content-wrapper">
+<div class="gridme-main-wrapper gridme-clearfix" id="gridme-main-wrapper" itemscope="itemscope" itemtype="http://schema.org/Blog" role="main">
+<div class="theiaStickySidebar">
+<div class="gridme-main-wrapper-inside gridme-clearfix">
+
+
+
+
+<div class="gridme-posts-wrapper" id="gridme-posts-wrapper">
+
+
+
+<article id="post-18148" class="gridme-post-singular gridme-box post-18148 post type-post status-publish format-standard has-post-thumbnail hentry category-character-sheet wpcat-430-id">
+<div class="gridme-box-inside">
+
+    
+        <header class="entry-header">
+    <div class="entry-header-inside gridme-clearfix">
+                    <h1 class="post-title entry-title"><a href="birdbrainiac.github.io/roll20sheet/building-a-character-sheet-advancing-skills-traits-and-extras/" rel="bookmark">Building a Character Sheet &ndash; Advancing Skills, Traits, and Extras</a></h1>        
+                    <div class="gridme-entry-meta-single">
+        <span class="gridme-entry-meta-single-date"><i class="far fa-clock" aria-hidden="true"></i>&nbsp;May 22, 2025</span>        <span class="gridme-entry-meta-single-comments"><i class="far fa-comments" aria-hidden="true"></i>&nbsp;<a href="birdbrainiac.github.io/roll20sheet/building-a-character-sheet-advancing-skills-traits-and-extras/#respond">Leave a Comment<span class="gridme-sr-only"> on Building a Character Sheet &ndash; Advancing Skills, Traits, and Extras</span></a></span>
+        <span class="gridme-entry-meta-single-cats"><i class="far fa-folder-open" aria-hidden="true"></i>&nbsp;<span class="gridme-sr-only">Posted in </span><a href="birdbrainiac.github.io/roll20sheet/category/sheet-author/character-sheet/" rel="category tag">Character Sheet</a></span>        </div>
+        </div>
+    </header><!-- .entry-header -->
+    
+    
+    <div class="entry-content gridme-clearfix">
+            
+<p>There are a lot of sections left in advancement, but they are a lot less complex than those first two. We should be able to do them all in this post.</p>
+
+
+
+<h2 class="wp-block-heading">Step 3 &ndash; Tracking Skills, Traits, and Extras</h2>
+
+
+
+<p>This section is more complex than it looks.</p>
+
+
+
+<p><img decoding="async" src="data:image/png;base64,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" alt=""></p>
+
+
+
+<p>Designing the first buttons, for now, is easy &ndash; later, we&rsquo;ll add a feature to stop it being used. But for now, it just adds 1 to the total advances, which automatically redraws the advance track above. This is described in the previous post. Now we need to display the How Many Skills section.</p>
+
+
+
+<p>You should be able to come up with HTML and CSS just by looking at it. The sheet worker is more interesting, and we&rsquo;ll see the advantage pf creating the ranks and skills arrays earlier.</p>
+
+
+
+<p>We know there are 6 skills, and each skill level adds a skill <em>of that level</em> (reducing the lowest levels to account for any overflow).</p>
+
+
+
+<p>This section shows how many skills you DO have, and how many you SHOULD have, given your skill level. It also uses CSS to do something neat.</p>
+
+
+<pre class="wp-block-code" aria-describedby="shcb-language-1" data-shcb-language-name="JavaScript" data-shcb-language-slug="javascript"><span><code lang="javascript" class="hljs language-javascript shcb-wrap-lines language-javascript">on(<span class="hljs-string">`change:skill_level <span class="hljs-subst">${changes(skills)}</span> sheet:opened`</span>, () =&gt; {
+        getAttrs([<span class="hljs-string">'skill_level'</span>, ...skills], v =&gt; {
+            <span class="hljs-keyword">const</span> output = {};
+            <span class="hljs-comment">// finding out how many skills you DO have</span>
+            ranks.forEach(<span class="hljs-function"><span class="hljs-params">rank</span> =&gt;</span> output[<span class="hljs-string">`<span class="hljs-subst">${rank}</span>_owned`</span>] = <span class="hljs-number">0</span>);
+            skills.forEach(<span class="hljs-function"><span class="hljs-params">skill</span> =&gt;</span> {
+                <span class="hljs-keyword">const</span> rank_this = v[skill];
+                output[<span class="hljs-string">`<span class="hljs-subst">${rank_this.toLowerCase()}</span>_owned`</span>] = output[<span class="hljs-string">`<span class="hljs-subst">${rank_this.toLowerCase()}</span>_owned`</span>] +<span class="hljs-number">1</span>;
+            });
+            <span class="hljs-comment">// finding out how many skills you SHOULD have</span>
+            <span class="hljs-keyword">const</span> level = int(v.skill_level);
+            ranks.forEach(<span class="hljs-function"><span class="hljs-params">rank</span> =&gt;</span> output[<span class="hljs-string">`<span class="hljs-subst">${rank}</span>_needed`</span>] = <span class="hljs-number">0</span>);
+            output[<span class="hljs-string">`poor_needed`</span>] = <span class="hljs-built_in">Math</span>.max(<span class="hljs-number">0</span>, <span class="hljs-number">3</span> - level);
+            output[<span class="hljs-string">`fair_needed`</span>] = <span class="hljs-number">1</span> + (level ? <span class="hljs-number">1</span> : <span class="hljs-number">0</span>) - (level &gt; <span class="hljs-number">3</span> ? <span class="hljs-number">1</span> : <span class="hljs-number">0</span>) - (level &gt; <span class="hljs-number">4</span> ? <span class="hljs-number">1</span> : <span class="hljs-number">0</span>);
+            output[<span class="hljs-string">`good_needed`</span>] = <span class="hljs-number">1</span> + (level &gt; <span class="hljs-number">1</span> ? <span class="hljs-number">1</span> : <span class="hljs-number">0</span>);
+            output[<span class="hljs-string">`great_needed`</span>] = <span class="hljs-number">1</span> + (level &gt; <span class="hljs-number">2</span> ? <span class="hljs-number">1</span> : <span class="hljs-number">0</span>);
+            output[<span class="hljs-string">`superb_needed`</span>] = <span class="hljs-number">0</span> + (level &gt; <span class="hljs-number">3</span> ? <span class="hljs-number">1</span> : <span class="hljs-number">0</span>);
+            output[<span class="hljs-string">`spectacular_needed`</span>] = <span class="hljs-number">0</span>+ (level &gt; <span class="hljs-number">4</span> ? <span class="hljs-number">1</span> : <span class="hljs-number">0</span>);
+            <span class="hljs-comment">// check the numbers are equal</span>
+            ranks.forEach(<span class="hljs-function"><span class="hljs-params">rank</span> =&gt;</span> {
+                <span class="hljs-keyword">if</span>([<span class="hljs-string">'terrible'</span>,<span class="hljs-string">'legendary'</span>,<span class="hljs-string">'mythic'</span>, <span class="hljs-string">'perfect'</span>].includes(rank.toLowerCase()) != <span class="hljs-number">1</span>) {
+                    output[<span class="hljs-string">`<span class="hljs-subst">${rank.toLowerCase()}</span>_check`</span>] = (output[<span class="hljs-string">`<span class="hljs-subst">${rank.toLowerCase()}</span>_needed`</span>] == output[<span class="hljs-string">`<span class="hljs-subst">${rank.toLowerCase()}</span>_owned`</span>]) ? <span class="hljs-number">0</span> : <span class="hljs-number">1</span>;
+                };
+            });
+            setAttrs(output);
+        });
+    });</code></span><small class="shcb-language" id="shcb-language-1"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">JavaScript</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">javascript</span><span class="shcb-language__paren">)</span></small></pre>
+
+
+<p>See that <code>_check</code> calculation at the end? It checks that you have the correct skills at that rank (by comparing the number of <code>_needed</code> to <code>_owned</code>), and sets an attribute to 1 if they are different. Then the CSS changes that row to red if they are different, like this:</p>
+
+
+
+<figure class="wp-block-image size-full is-style-default"><img decoding="async" width="230" height="135" src="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-384.png" alt="" class="wp-image-18160" srcset="birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-384.png 230w, birdbrainiac.github.io/roll20sheet/wp-content/uploads/image-384-150x88.png 150w" sizes="(max-width: 230px) 100vw, 230px"></figure>
+
+
+
+<p>In this way, players can see at a glance if they are going wrong.</p>
+
+
+
+<p>Then we have the <code>Trait</code> and <code>Extras</code> calculations. Again we show how many you have, vs how many you should have. This is in principle very simple.</p>
+
+
+
+<p>We are using repeating sections to track the ownership of these, so an use <code>getSectionIDs.length</code> &ndash; the number of rows &ndash; to get number owned. And the <code>level_</code> attribute for how many you should have. In practice, it&rsquo;s a little more complicated, but that&rsquo;s the gist of it.</p>
+
+
+
+<p>In the next post we&rsquo;ll finish up advancement, with the special case of experience points and achievements.</p>
+    </div><!-- .entry-content -->
+
+    
+    
+            
+</div>
+</article>
+
+
+	<nav class="navigation post-navigation" aria-label="Posts">
+		<h2 class="screen-reader-text">Post navigation</h2>
+		<div class="nav-links"><div class="nav-previous"><a href="birdbrainiac.github.io/roll20sheet/turbopulp-decisions-and-skill-rolls/" rel="prev">TurboPulp &ndash; Decisions and Skill Rolls &rarr;</a></div><div class="nav-next"><a href="birdbrainiac.github.io/roll20sheet/turbopulp-starting-skill-ranks-revisited/" rel="next">&larr; TurboPulp &ndash; starting skill ranks, revisited</a></div></div>
+	</nav>
+<div id="comments" class="comments-area gridme-box">
+<div class="gridme-box-inside">
+
+    	<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="birdbrainiac.github.io/roll20sheet/building-a-character-sheet-advancing-skills-traits-and-extras/#respond" style="display:none;">Cancel reply</a></small></h3><form action="birdbrainiac.github.io/roll20sheet/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> <span class="required-field-message">Required fields are marked <span class="required">*</span></span></p><p class="comment-form-comment"><label for="comment">Comment <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200" autocomplete="url"></p>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"> <label for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="18148" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p></form>	</div><!-- #respond -->
+	
+</div>
+</div><!-- #comments -->
+<div class="clear"></div>
+</div><!--/#gridme-posts-wrapper -->
+
+
+<div class="gridme-featured-posts-area gridme-featured-posts-area-bottom gridme-clearfix">
+
+<div id="text-2" class="gridme-main-widget widget gridme-widget-box widget_text"><div class="gridme-widget-box-inside">			<div class="textwidget"><p>Visit the <a href="birdbrainiac.github.io/roll20sheet/roll20-sheet-author-master-list/">Sheet Author Master List</a></p>
+</div>
+		</div></div></div>
+
+
+</div>
+</div>
+</div><!-- /#gridme-main-wrapper -->
+
+
+<div class="gridme-sidebar-one-wrapper gridme-sidebar-widget-areas gridme-clearfix" id="gridme-sidebar-one-wrapper" itemscope="itemscope" itemtype="http://schema.org/WPSideBar" role="complementary">
+<div class="theiaStickySidebar">
+<div class="gridme-sidebar-one-wrapper-inside gridme-clearfix">
+
+<div id="search-3" class="gridme-side-widget widget gridme-widget-box widget_search"><div class="gridme-widget-box-inside">
+<form role="search" method="get" class="gridme-search-form" action="birdbrainiac.github.io/roll20sheet/">
+<label>
+    <span class="gridme-sr-only">Search for:</span>
+    <input type="search" class="gridme-search-field" placeholder="Search &hellip;" value="" name="s">
+</label>
+<input type="submit" class="gridme-search-submit" value="">
+</form></div></div><div id="nav_menu-3" class="gridme-side-widget widget gridme-widget-box widget_nav_menu"><div class="gridme-widget-box-inside"><div class="gridme-widget-header"><h2 class="gridme-widget-title"><span class="gridme-widget-title-inside">VTT</span></h2></div><nav class="menu-vtt-links-container" aria-label="VTT"><ul id="menu-vtt-links" class="menu"><li id="menu-item-808" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-808"><a href="https://roll20.net/">Roll20</a>
+<ul class="sub-menu">
+	<li id="menu-item-3595" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3595"><a href="https://wiki.roll20.net/Main_Page">Roll20 Wiki</a></li>
+	<li id="menu-item-821" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-821"><a href="https://github.com/roll20/">Roll20&rsquo;s Github</a></li>
+	<li id="menu-item-3753" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3753"><a href="https://app.roll20.net/forum/post/8380005/sheet-templating-with-handlebars/?pageforid=8654298">Sheet Templating</a></li>
+</ul>
+</li>
+<li id="menu-item-3619" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3619"><a href="https://www.rptools.net/2018/07/token-tool-2-0/">Token Tool</a></li>
+</ul></nav></div></div><div id="nav_menu-5" class="gridme-side-widget widget gridme-widget-box widget_nav_menu"><div class="gridme-widget-box-inside"><div class="gridme-widget-header"><h2 class="gridme-widget-title"><span class="gridme-widget-title-inside">RPG</span></h2></div><nav class="menu-rpg-container" aria-label="RPG"><ul id="menu-rpg" class="menu"><li id="menu-item-3621" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-3621"><a href="birdbrainiac.github.io/roll20sheet/category/thinking/pendragon/">Pendragon</a>
+<ul class="sub-menu">
+	<li id="menu-item-3618" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3618"><a href="https://www.chaosium.com/pendragon/">Pendragon Store</a></li>
+</ul>
+</li>
+</ul></nav></div></div><div id="nav_menu-6" class="gridme-side-widget widget gridme-widget-box widget_nav_menu"><div class="gridme-widget-box-inside"><div class="gridme-widget-header"><h2 class="gridme-widget-title"><span class="gridme-widget-title-inside">Other Blogs</span></h2></div><nav class="menu-other-blogs-container" aria-label="Other Blogs"><ul id="menu-other-blogs" class="menu"><li id="menu-item-5524" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5524"><a href="https://knightattheopera.blogspot.com/">Knight at the Opera</a></li>
+<li id="menu-item-8125" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8125"><a href="https://talestoastound.wordpress.com/traveller-out-of-the-box/">Traveller &ndash; Out of the Box</a></li>
+</ul></nav></div></div>
+</div>
+</div>
+</div><!-- /#gridme-sidebar-one-wrapper-->
+
+</div>
+
+</div><!--/#gridme-content-wrapper -->
+</div><!--/#gridme-wrapper -->
+
+
+
+
+
+<div class="gridme-clearfix" id="gridme-footer-blocks" itemscope="itemscope" itemtype="http://schema.org/WPFooter" role="contentinfo">
+<div class="gridme-container gridme-clearfix">
+<div class="gridme-outer-wrapper">
+
+<div class="gridme-clearfix">
+<div class="gridme-top-footer-block">
+<div id="eu_cookie_law_widget-2" class="gridme-footer-widget widget widget_eu_cookie_law_widget">
+<div class="hide-on-button" data-hide-timeout="30" data-consent-expiration="180" id="eu-cookie-law">
+	<form method="post" id="jetpack-eu-cookie-law-form">
+		<input type="submit" value="Close and accept" class="accept">
+	</form>
+
+	I'm required by European Law to tell you that this site use Cookies. But they aren't viewed or used in any way - don't worry about that.
+		<a href="birdbrainiac.github.io/roll20sheet/?page_id=3" rel="">
+		Cookie Policy	</a>
+</div>
+</div></div>
+</div>
+
+
+
+</div>
+</div>
+</div><!--/#gridme-footer-blocks-->
+
+<div class="gridme-clearfix" id="gridme-copyright-area">
+<div class="gridme-copyright-area-inside gridme-container">
+<div class="gridme-outer-wrapper">
+
+<div class="gridme-copyright-area-inside-content gridme-clearfix">
+
+<div class="gridme-copyright-area-inside-left">
+  <p class="gridme-copyright">Copyright &copy; 2025 Cybersphere</p>
+<p class="gridme-credit"><a href="https://themesdna.com/">Design by ThemesDNA.com</a></p>
+</div>
+
+<div class="gridme-copyright-area-inside-right">
+
+<div class="gridme-footer-social-icons">
+                                                                                                                                                                                                                                                                               </div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+</div><!--/#gridme-copyright-area -->
+
+
+<button class="gridme-scroll-top" title="Scroll to Top"><i class="fas fa-arrow-up" aria-hidden="true"></i><span class="gridme-sr-only">Scroll to Top</span></button>
+
+				<script type='text/javascript'><!--
+			var seriesdropdown = document.getElementById("orgseries_dropdown");
+			if (seriesdropdown) {
+			 function onSeriesChange() {
+					if ( seriesdropdown.options[seriesdropdown.selectedIndex].value != ( 0 || -1 ) ) {
+						location.href = "birdbrainiac.github.io/roll20sheet/series/"+seriesdropdown.options[seriesdropdown.selectedIndex].value;
+					}
+				}
+				seriesdropdown.onchange = onSeriesChange;
+			}
+			--></script>
+			<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/gridme-child\/*","\/wp-content\/themes\/gridme\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<link rel="stylesheet" id="eu-cookie-law-style-css" href="https://c0.wp.com/p/jetpack/15.0.2/modules/widgets/eu-cookie-law/style.css" type="text/css" media="all">
+<script type="text/javascript" src="birdbrainiac.github.io/roll20sheet/wp-content/themes/gridme/assets/js/jquery.fitvids.min.js" id="fitvids-js"></script>
+<script type="text/javascript" src="birdbrainiac.github.io/roll20sheet/wp-content/themes/gridme/assets/js/ResizeSensor.min.js" id="ResizeSensor-js"></script>
+<script type="text/javascript" src="birdbrainiac.github.io/roll20sheet/wp-content/themes/gridme/assets/js/theia-sticky-sidebar.min.js" id="theia-sticky-sidebar-js"></script>
+<script type="text/javascript" src="birdbrainiac.github.io/roll20sheet/wp-content/themes/gridme/assets/js/navigation.js" id="gridme-navigation-js"></script>
+<script type="text/javascript" src="birdbrainiac.github.io/roll20sheet/wp-content/themes/gridme/assets/js/skip-link-focus-fix.js" id="gridme-skip-link-focus-fix-js"></script>
+<script type="text/javascript" src="https://c0.wp.com/c/6.8.3/wp-includes/js/imagesloaded.min.js" id="imagesloaded-js"></script>
+<script type="text/javascript" id="gridme-customjs-js-extra">
+/* <![CDATA[ */
+var gridme_ajax_object = {"ajaxurl":"birdbrainiac.github.io\/roll20sheet\/wp-admin\/admin-ajax.php","primary_menu_active":"1","secondary_menu_active":"","primary_mobile_menu_active":"1","secondary_mobile_menu_active":"1","sticky_header_active":"1","sticky_header_mobile_active":"","sticky_sidebar_active":"1","fitvids_active":"1","columnwidth":".gridme-4-col-sizer","gutter":".gridme-4-col-gutter"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="birdbrainiac.github.io/roll20sheet/wp-content/themes/gridme/assets/js/custom.js" id="gridme-customjs-js"></script>
+<script type="text/javascript" src="https://c0.wp.com/c/6.8.3/wp-includes/js/comment-reply.min.js" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+<script type="text/javascript" id="gridme-html5shiv-js-js-extra">
+/* <![CDATA[ */
+var gridme_custom_script_vars = {"elements_name":"abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output picture progress section summary template time video"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="birdbrainiac.github.io/roll20sheet/wp-content/themes/gridme/assets/js/html5shiv.js" id="gridme-html5shiv-js-js"></script>
+<script type="text/javascript" id="jetpack-stats-js-before">
+/* <![CDATA[ */
+_stq = window._stq || [];
+_stq.push([ "view", JSON.parse("{\"v\":\"ext\",\"blog\":\"203757609\",\"post\":\"18148\",\"tz\":\"1\",\"srv\":\"cybersphere.local\"}") ]);
+_stq.push([ "clickTrackerInit", "203757609", "18148" ]);
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://stats.wp.com/e-202540.js" id="jetpack-stats-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" src="https://c0.wp.com/p/jetpack/15.0.2/_inc/build/widgets/eu-cookie-law/eu-cookie-law.min.js" id="eu-cookie-law-script-js"></script>
+</body>
+</html>
